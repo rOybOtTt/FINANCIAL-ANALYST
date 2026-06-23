@@ -1,4 +1,4 @@
-# FINANCIAL-ANALYST
+# FINANCIAL-ANALYST roy
 
 *A reusable **deep-tech investment-analysis engine**: name any AI / deep-tech company
 and it reproduces the full workflow — long **or** short — collecting the data with no

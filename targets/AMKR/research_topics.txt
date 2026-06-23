@@ -1,0 +1,13 @@
+# Deck-headline research topics for Amkor Technology (AMKR)
+# one topic per line; researched by tech_agent.py --batch
+
+Amkor Technology core product architecture and the key engineering choice that creates a technical moat
+semiconductor advanced packaging (OSAT) value chain: upstream suppliers and downstream customers
+Amkor Technology end markets total addressable market size and growth CAGR forecast
+Amkor Technology competitive landscape and main competitors technology comparison
+Amkor Technology technology roadmap and next-generation products
+semiconductor advanced packaging (OSAT) pricing trends average selling price and unit volume (PxQ economics)
+Amkor Technology manufacturing supply chain capacity and geographic footprint
+Amkor Technology gross margin and cost structure drivers
+semiconductor advanced packaging (OSAT) demand drivers AI data center capital expenditure
+bear case and key technical risks for Amkor Technology

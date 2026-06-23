@@ -1,0 +1,477 @@
+## COMPANY FUNDAMENTALS (Agent 01: SEC companyfacts XBRL - revenue / margins / EPS / cash flow / balance sheet)
+### AMD fundamentals (ADVANCED MICRO DEVICES INC) - reporting currency USD, SEC companyfacts XBRL
+  FY2025: revenue=34.64B USD (YoY 34.3%), gross_margin=49.5%, op_margin=10.7%, net_margin=12.5%, net_income=4.33B USD, EPS_diluted=2.65, R&D=8.09B USD, op_cash_flow=7.71B USD, capex=974M USD, FCF=6.74B USD, cash=5.54B USD, LT_debt=2.35B USD, equity=63.00B USD
+  FY2024: revenue=25.79B USD (YoY 13.7%), gross_margin=49.4%, op_margin=7.4%, net_margin=6.4%, net_income=1.64B USD, EPS_diluted=1, R&D=6.46B USD, op_cash_flow=3.04B USD, capex=636M USD, FCF=2.40B USD, cash=3.79B USD, LT_debt=1.72B USD, equity=57.57B USD
+  FY2023: revenue=22.68B USD (YoY -3.9%), gross_margin=46.1%, op_margin=1.8%, net_margin=3.8%, net_income=854M USD, EPS_diluted=0.53, R&D=5.87B USD, op_cash_flow=1.67B USD, capex=546M USD, FCF=1.12B USD, cash=3.93B USD, LT_debt=1.72B USD, equity=55.89B USD
+  FY2022: revenue=23.60B USD (YoY 43.6%), gross_margin=44.9%, op_margin=5.4%, net_margin=5.6%, net_income=1.32B USD, EPS_diluted=0.84, R&D=5.00B USD, op_cash_flow=3.56B USD, capex=450M USD, FCF=3.12B USD, cash=4.83B USD, LT_debt=2.47B USD, equity=54.75B USD
+  FY2021: revenue=16.43B USD (YoY 68.3%), gross_margin=48.2%, op_margin=22.2%, net_margin=19.2%, net_income=3.16B USD, EPS_diluted=2.57, R&D=2.85B USD, op_cash_flow=3.52B USD, capex=301M USD, FCF=3.22B USD, cash=2.54B USD, LT_debt=1M USD, equity=7.50B USD
+
+### AVGO fundamentals (Broadcom Inc.) - reporting currency USD, SEC companyfacts XBRL
+  FY2025: revenue=63.89B USD (YoY 23.9%), gross_margin=67.8%, op_margin=39.9%, net_margin=36.2%, net_income=23.13B USD, EPS_diluted=4.77, R&D=10.98B USD, op_cash_flow=27.54B USD, capex=623M USD, FCF=26.91B USD, cash=16.18B USD, LT_debt=n/a, equity=n/a
+  FY2024: revenue=51.57B USD (YoY 44.0%), gross_margin=63.0%, op_margin=26.1%, net_margin=11.4%, net_income=5.89B USD, EPS_diluted=1.23, R&D=9.31B USD, op_cash_flow=19.96B USD, capex=548M USD, FCF=19.41B USD, cash=9.35B USD, LT_debt=n/a, equity=n/a
+  FY2023: revenue=35.82B USD (YoY 7.9%), gross_margin=68.9%, op_margin=45.2%, net_margin=39.3%, net_income=14.08B USD, EPS_diluted=3.3, R&D=5.25B USD, op_cash_flow=18.09B USD, capex=452M USD, FCF=17.63B USD, cash=14.19B USD, LT_debt=n/a, equity=n/a
+  FY2022: revenue=33.20B USD (YoY 21.0%), gross_margin=66.5%, op_margin=42.8%, net_margin=34.6%, net_income=11.49B USD, EPS_diluted=2.65, R&D=4.92B USD, op_cash_flow=16.74B USD, capex=424M USD, FCF=16.31B USD, cash=12.42B USD, LT_debt=n/a, equity=n/a
+  FY2021: revenue=27.45B USD (YoY 14.9%), gross_margin=61.4%, op_margin=31.0%, net_margin=24.5%, net_income=6.74B USD, EPS_diluted=15, R&D=4.85B USD, op_cash_flow=13.76B USD, capex=443M USD, FCF=13.32B USD, cash=12.16B USD, LT_debt=39.44B USD, equity=n/a
+
+### INTC fundamentals (INTEL CORP) - reporting currency USD, SEC companyfacts XBRL
+  FY2025: revenue=52.85B USD (YoY -0.5%), gross_margin=34.8%, op_margin=-4.2%, net_margin=-0.5%, net_income=-267M USD, EPS_diluted=-0.06, R&D=13.77B USD, op_cash_flow=9.70B USD, capex=14.65B USD, FCF=-4.95B USD, cash=14.27B USD, LT_debt=44.09B USD, equity=114.28B USD
+  FY2024: revenue=53.10B USD (YoY -2.1%), gross_margin=32.7%, op_margin=-22.0%, net_margin=-35.3%, net_income=-18.76B USD, EPS_diluted=-4.38, R&D=16.55B USD, op_cash_flow=8.29B USD, capex=23.94B USD, FCF=-15.66B USD, cash=8.25B USD, LT_debt=46.28B USD, equity=99.27B USD
+  FY2023: revenue=54.23B USD (YoY -14.0%), gross_margin=40.0%, op_margin=0.2%, net_margin=3.1%, net_income=1.69B USD, EPS_diluted=0.4, R&D=16.05B USD, op_cash_flow=11.47B USD, capex=25.75B USD, FCF=-14.28B USD, cash=n/a, LT_debt=46.98B USD, equity=105.59B USD
+  FY2022: revenue=63.05B USD (YoY -20.2%), gross_margin=42.6%, op_margin=3.7%, net_margin=12.7%, net_income=8.01B USD, EPS_diluted=1.94, R&D=17.53B USD, op_cash_flow=15.43B USD, capex=24.84B USD, FCF=-9.41B USD, cash=n/a, LT_debt=37.68B USD, equity=101.42B USD
+  FY2021: revenue=79.02B USD (YoY 1.5%), gross_margin=55.4%, op_margin=24.6%, net_margin=25.1%, net_income=19.87B USD, EPS_diluted=4.86, R&D=15.19B USD, op_cash_flow=29.46B USD, capex=18.73B USD, FCF=10.72B USD, cash=n/a, LT_debt=33.51B USD, equity=95.39B USD
+
+### MRVL fundamentals (MARVELL TECHNOLOGY, INC) - reporting currency USD, SEC companyfacts XBRL
+  FY2026: revenue=8.19B USD (YoY 42.1%), gross_margin=51.0%, op_margin=16.1%, net_margin=32.6%, net_income=2.67B USD, EPS_diluted=3.07, R&D=2.08B USD, op_cash_flow=1.75B USD, capex=354M USD, FCF=1.40B USD, cash=2.64B USD, LT_debt=3.97B USD, equity=14.31B USD
+  FY2025: revenue=5.77B USD (YoY 4.7%), gross_margin=41.3%, op_margin=-12.5%, net_margin=-15.3%, net_income=-885M USD, EPS_diluted=-1.02, R&D=1.95B USD, op_cash_flow=1.68B USD, capex=285M USD, FCF=1.40B USD, cash=948M USD, LT_debt=3.93B USD, equity=13.43B USD
+  FY2024: revenue=5.51B USD (YoY -7.0%), gross_margin=41.6%, op_margin=-10.3%, net_margin=-16.9%, net_income=-933M USD, EPS_diluted=-1.08, R&D=1.90B USD, op_cash_flow=1.37B USD, capex=336M USD, FCF=1.03B USD, cash=951M USD, LT_debt=4.06B USD, equity=14.83B USD
+  FY2023: revenue=5.92B USD (YoY 32.7%), gross_margin=50.5%, op_margin=4.0%, net_margin=-2.8%, net_income=-164M USD, EPS_diluted=-0.19, R&D=1.78B USD, op_cash_flow=1.29B USD, capex=206M USD, FCF=1.08B USD, cash=911M USD, LT_debt=3.91B USD, equity=15.64B USD
+  FY2022: revenue=4.46B USD (YoY 50.3%), gross_margin=46.3%, op_margin=-7.8%, net_margin=-9.4%, net_income=-421M USD, EPS_diluted=-0.53, R&D=1.42B USD, op_cash_flow=819M USD, capex=169M USD, FCF=650M USD, cash=614M USD, LT_debt=4.48B USD, equity=15.70B USD
+
+### NVDA fundamentals (NVIDIA CORP) - reporting currency USD, SEC companyfacts XBRL
+  FY2026: revenue=215.94B USD (YoY 65.5%), gross_margin=71.1%, op_margin=60.4%, net_margin=55.6%, net_income=120.07B USD, EPS_diluted=4.9, R&D=18.50B USD, op_cash_flow=102.72B USD, capex=n/a, FCF=n/a, cash=10.61B USD, LT_debt=7.47B USD, equity=157.29B USD
+  FY2025: revenue=130.50B USD (YoY 114.2%), gross_margin=75.0%, op_margin=62.4%, net_margin=55.8%, net_income=72.88B USD, EPS_diluted=2.94, R&D=12.91B USD, op_cash_flow=64.09B USD, capex=n/a, FCF=n/a, cash=8.59B USD, LT_debt=8.46B USD, equity=79.33B USD
+  FY2024: revenue=60.92B USD (YoY 125.9%), gross_margin=72.7%, op_margin=54.1%, net_margin=48.8%, net_income=29.76B USD, EPS_diluted=1.19, R&D=8.68B USD, op_cash_flow=28.09B USD, capex=n/a, FCF=n/a, cash=7.28B USD, LT_debt=8.46B USD, equity=42.98B USD
+  FY2023: revenue=26.97B USD (YoY 0.2%), gross_margin=56.9%, op_margin=15.7%, net_margin=16.2%, net_income=4.37B USD, EPS_diluted=0.17, R&D=7.34B USD, op_cash_flow=5.64B USD, capex=n/a, FCF=n/a, cash=3.39B USD, LT_debt=9.70B USD, equity=22.10B USD
+  FY2022: revenue=26.91B USD (YoY 61.4%), gross_margin=64.9%, op_margin=37.3%, net_margin=36.2%, net_income=9.75B USD, EPS_diluted=3.85, R&D=5.27B USD, op_cash_flow=9.11B USD, capex=n/a, FCF=n/a, cash=1.99B USD, LT_debt=10.95B USD, equity=26.61B USD
+
+### QCOM fundamentals (QUALCOMM INC/DE) - reporting currency USD, SEC companyfacts XBRL
+  FY2025: revenue=44.28B USD (YoY 13.7%), gross_margin=None%, op_margin=27.9%, net_margin=12.5%, net_income=5.54B USD, EPS_diluted=5.01, R&D=9.04B USD, op_cash_flow=14.01B USD, capex=n/a, FCF=n/a, cash=5.52B USD, LT_debt=14.81B USD, equity=n/a
+  FY2024: revenue=38.96B USD (YoY 8.8%), gross_margin=None%, op_margin=25.8%, net_margin=26.0%, net_income=10.14B USD, EPS_diluted=8.97, R&D=8.89B USD, op_cash_flow=12.20B USD, capex=n/a, FCF=n/a, cash=7.85B USD, LT_debt=13.27B USD, equity=n/a
+  FY2023: revenue=35.82B USD (YoY -19.0%), gross_margin=None%, op_margin=21.7%, net_margin=20.2%, net_income=7.23B USD, EPS_diluted=6.42, R&D=8.82B USD, op_cash_flow=11.30B USD, capex=n/a, FCF=n/a, cash=8.45B USD, LT_debt=14.48B USD, equity=n/a
+  FY2022: revenue=44.20B USD (YoY 31.7%), gross_margin=None%, op_margin=35.9%, net_margin=29.3%, net_income=12.94B USD, EPS_diluted=11.37, R&D=8.19B USD, op_cash_flow=9.10B USD, capex=n/a, FCF=n/a, cash=2.77B USD, LT_debt=13.54B USD, equity=n/a
+  FY2021: revenue=33.57B USD (YoY 42.6%), gross_margin=None%, op_margin=29.2%, net_margin=26.9%, net_income=9.04B USD, EPS_diluted=7.87, R&D=7.18B USD, op_cash_flow=10.54B USD, capex=n/a, FCF=n/a, cash=7.12B USD, LT_debt=13.70B USD, equity=n/a
+
+### TSM fundamentals (Taiwan Semiconductor Manufacturing Company Limited) - reporting currency TWD, SEC companyfacts XBRL
+  FY2024: revenue=2,894.31B TWD (YoY 33.9%), gross_margin=56.1%, op_margin=45.7%, net_margin=40.0%, net_income=1,157.52B TWD, EPS_diluted=44.67, R&D=204.18B TWD, op_cash_flow=1,826.18B TWD, capex=n/a, FCF=n/a, cash=2,127.63B TWD, LT_debt=n/a, equity=4,279.27B TWD
+  FY2023: revenue=2,161.74B TWD (YoY -4.5%), gross_margin=54.4%, op_margin=42.6%, net_margin=39.4%, net_income=851.03B TWD, EPS_diluted=32.85, R&D=182.37B TWD, op_cash_flow=1,241.97B TWD, capex=n/a, FCF=n/a, cash=1,465.43B TWD, LT_debt=n/a, equity=3,453.87B TWD
+  FY2022: revenue=2,263.89B TWD (YoY 42.6%), gross_margin=59.6%, op_margin=49.5%, net_margin=43.9%, net_income=993.29B TWD, EPS_diluted=38.29, R&D=163.26B TWD, op_cash_flow=1,610.60B TWD, capex=n/a, FCF=n/a, cash=1,342.81B TWD, LT_debt=n/a, equity=2,917.83B TWD
+  FY2021: revenue=1,587.41B TWD (YoY 18.5%), gross_margin=51.6%, op_margin=40.9%, net_margin=37.3%, net_income=592.88B TWD, EPS_diluted=22.84, R&D=124.73B TWD, op_cash_flow=1,112.16B TWD, capex=n/a, FCF=n/a, cash=1,064.99B TWD, LT_debt=n/a, equity=2,151.68B TWD
+  FY2020: revenue=1,339.25B TWD (YoY 25.2%), gross_margin=53.1%, op_margin=42.3%, net_margin=38.2%, net_income=511.01B TWD, EPS_diluted=19.7, R&D=109.49B TWD, op_cash_flow=822.67B TWD, capex=n/a, FCF=n/a, cash=660.17B TWD, LT_debt=n/a, equity=1,835.76B TWD
+
+## MARKET DATA (Agent 03: financials + reliable news)
+### AMD - Advanced Micro Devices, Inc. (competitor)
+price=542.5 USD, change=0.95%, P/E=180.84, prev_close=537.37, 52wk=[126.82,562.99], volume=13478631, cross_source=AGREE
+recent reliable news:
+  - Should You Buy AMD Stock Now or Wait for a Dip? (Motley Fool)
+  - Nvidia Stock Rises But It Still Lags Intel (Yahoo Finance)
+  - AMD's Rally Has Wall Street Paying Attention (Yahoo Finance)
+  - AI Boom and HBM Demand to Boost Micron's DRAM Revenues in Q3 (Yahoo Finance)
+  - AMD Lands a Massive AI Infrastructure Opportunity With Rackspace (Yahoo Finance)
+
+### AVGO - Broadcom Inc. (competitor)
+price=397.32 USD, change=-3.41%, P/E=66.18, prev_close=411.35, 52wk=[246.46,495.0], volume=11557170, cross_source=AGREE
+recent reliable news:
+  - Got $1,000? Why Broadcom's Guidance Created the Ultimate Artificial Intelligence (AI) Buying Opportunity. (Motley Fool)
+  - J.P. Morgan Fires Back at Google Rumors Threatening Broadcom Stock (Yahoo Finance)
+  - Broadcom Inc. (AVGO) is Attracting Investor Attention: Here is What You Should Know (Yahoo Finance)
+  - Exclusive: Upscale AI wants to be the next Cisco—and it just raised another $190 million (Yahoo Finance)
+  - Better Artificial Intelligence (AI) Stock to Buy: Broadcom vs. Marvell Technology (Motley Fool)
+
+### INTC - Intel Corporation (competitor)
+price=139.12 USD, change=3.83%, P/E=-222.06, prev_close=133.99, 52wk=[18.97,141.45], volume=69695265, cross_source=AGREE
+recent reliable news:
+  - Micron, SpaceX, Super Micro, Moderna, Fervo, and More Stocks That Explain Today’s Market (Yahoo Finance)
+  - Tech stocks live: Tech stocks mixed ahead of Micron earnings Wednesday (Yahoo Finance)
+  - Nvidia Stock Rises But It Still Lags Intel (Yahoo Finance)
+  - Stock Market News for Jun 22, 2026 (Yahoo Finance)
+  - AMD's Rally Has Wall Street Paying Attention (Yahoo Finance)
+
+### MRVL - Marvell Technology, Inc. (competitor)
+price=301.79 USD, change=-2.83%, P/E=103.37, prev_close=310.58, 52wk=[61.44,329.88], volume=27048170, cross_source=AGREE
+recent reliable news:
+  - Stock Market News for Jun 22, 2026 (Yahoo Finance)
+  - AI Boom and HBM Demand to Boost Micron's DRAM Revenues in Q3 (Yahoo Finance)
+  - The Next Phase of AI Infrastructure Could Be Good News for Marvell (MRVL) (Yahoo Finance)
+  - Here's How Much a $1000 Investment in Marvell Technology Made 10 Years Ago Would Be Worth Today (Yahoo Finance)
+  - Here’s What the Street is Saying About Marvell Technology (MRVL) (Yahoo Finance)
+
+### NVDA - NVIDIA Corporation (us)
+price=209.906 USD, change=-0.37%, P/E=32.15, prev_close=210.69, 52wk=[142.03,236.54], volume=61553251, cross_source=AGREE
+recent reliable news:
+  - Why Sandisk Stock Soared Today (Motley Fool)
+  - Better Buy: XRP vs. Chainlink (LINK) (Motley Fool)
+  - Here Are 2 Space Stocks With Less Risk and More Upside Potential Than SpaceX (Motley Fool)
+  - Why SpaceX Stock Is Dropping Again Today (Motley Fool)
+  - Heavy SpaceX Options Trading Driven by New Weekly Contracts (Yahoo Finance)
+
+### QCOM - QUALCOMM Incorporated (competitor)
+price=228.73 USD, change=1.16%, P/E=24.88, prev_close=226.11, 52wk=[121.99,259.92], volume=9162704, cross_source=AGREE
+recent reliable news:
+  - MarketBeat Week in Review – 06/15 - 06/19 (MarketBeat)
+  - QUALCOMM (QCOM) Stock Could Be 34.2% Overvalued Despite Its Recent Rally (Yahoo Finance)
+  - 3 Semiconductor Stocks We Find Risky (Yahoo Finance)
+  - Strength Seen in Qualcomm (QCOM): Can Its 6.2% Jump Turn into More Strength? (Yahoo Finance)
+  - Is Trending Stock QUALCOMM Incorporated (QCOM) a Buy Now? (Yahoo Finance)
+
+### TSM - Taiwan Semiconductor Manufacturing Company Limited (competitor)
+price=469.459 USD, change=1.59%, P/E=39.72, prev_close=462.12, 52wk=[206.2,476.31], volume=8166971, cross_source=AGREE
+recent reliable news:
+  - Cerebras Systems' Q1 Outlook Hinges on Supply, Market Share Gains, Wedbush Says (Yahoo Finance)
+  - Soaring Profits in Emerging Markets Build Case for a Raging Bull Market (Yahoo Finance)
+  - Why TSMC Doesn’t Even Need to Win the AI Race (Barchart)
+  - Intel Is Stealing the Foundry Spotlight. Is TSMC Still the Most Important Company in Chips? (Motley Fool)
+  - Intel Advances Next Generation 18A-P Chip to Risk Production. This Is a Big Deal for INTC Stock. (Barchart)
+
+## ANALYST COVERAGE (Agent 03c: sell-side ratings + reliable news)
+### AMD - analyst coverage & news
+recent sell-side ratings (date | firm | action | rating | target):
+  - Jun-12-26 | Citigroup | Upgrade | Neutral → Buy | $575
+  - May-13-26 | BofA Securities | Reiterated | Buy | $450 → $500
+  - May-13-26 | Daiwa Securities | Downgrade | Buy → Outperform | $500
+  - May-06-26 | Seaport Research Partners | Upgrade | Neutral → Buy | $430
+  - May-06-26 | Goldman | Upgrade | Neutral → Buy | $450
+  - May-06-26 | Bernstein | Upgrade | Mkt Perform → Outperform | $525
+  - May-04-26 | HSBC Securities | Downgrade | Buy → Hold | $340
+  - Apr-27-26 | Northland Capital | Downgrade | Outperform → Market Perform | $260
+analyst-coverage news:
+  - Tactive Advisors LLC Boosts Position in Advanced Micro Devices, Inc. $AMD - MarketBeat (MarketBeat)
+  - TD Cowen Raises PT on Advanced Micro Devices (AMD) Stock - Yahoo Finance (Yahoo Finance)
+  - AMD Stock Upgraded To Buy On GPU Upside - Investor's Business Daily (Investor's Business Daily)
+  - Is Advanced Micro Devices Stock Outperforming the Nasdaq? - Yahoo Finance (Yahoo Finance)
+recent reliable news:
+  - Should You Buy AMD Stock Now or Wait for a Dip? - Yahoo Finance (Yahoo Finance)
+  - What's Going On With AMD Stock Monday? - Benzinga (Benzinga)
+  - Should You Buy AMD Stock Now or Wait for a Dip? - The Motley Fool (Motley Fool)
+  - AMD Stock And 2 US AI Infrastructure Picks With Earnings Growth - simplywall.st (Simply Wall St)
+
+### AVGO - analyst coverage & news
+recent sell-side ratings (date | firm | action | rating | target):
+  - Jun-05-26 | Erste Group | Upgrade | Hold → Buy | 
+  - Jun-04-26 | Macquarie | Downgrade | Outperform → Neutral | $437
+  - May-28-26 | Susquehanna | Reiterated | Positive | $450 → $490
+  - May-15-26 | TD Cowen | Reiterated | Buy | $405 → $500
+  - Apr-08-26 | Seaport Research Partners | Downgrade | Buy → Neutral | 
+  - Apr-02-26 | Erste Group | Downgrade | Buy → Hold | 
+  - Feb-13-26 | DA Davidson | Initiated | Neutral | $335
+  - Jan-30-26 | Wolfe Research | Upgrade | Peer Perform → Outperform | $400
+analyst-coverage news:
+  - JPMorgan Analysts Say Broadcom Stock Is a 'Buy.' What to Know. - Barchart.com (Barchart)
+recent reliable news:
+  - Broadcom (AVGO): Best US Stocks to Buy and Hold for the Next 5 Years - Yahoo Finance (Yahoo Finance)
+  - Better Artificial Intelligence (AI) Stock to Buy: Broadcom vs. Marvell Technology - The Motley Fool (Motley Fool)
+  - ‘Ignore The Noise:’ Top Bank Says AVGO Stock Dip Is A Buying Opportunity, Points To Locked-In Broadcom–Go - Benzinga (Benzinga)
+  - ‘Ignore the Noise,’ Says J.P. Morgan as Broadcom Stock Faces Google Fears - TipRanks (TipRanks)
+
+### INTC - analyst coverage & news
+recent sell-side ratings (date | firm | action | rating | target):
+  - Jun-11-26 | BofA Securities | Upgrade | Underperform → Buy | $135
+  - May-26-26 | Northland Capital | Downgrade | Outperform → Market Perform | 
+  - May-18-26 | The Benchmark Company | Reiterated | Buy | $105 → $140
+  - May-18-26 | Citigroup | Reiterated | Buy | $95 → $130
+  - Apr-24-26 | Roth Capital | Upgrade | Neutral → Buy | $100
+  - Apr-24-26 | Evercore ISI | Upgrade | In-line → Outperform | $111
+  - Apr-24-26 | Citigroup | Upgrade | Neutral → Buy | $95
+  - Apr-24-26 | UBS | Reiterated | Neutral | $65 → $83
+analyst-coverage news:
+  - Mizuho raises Intel stock price target on packaging technology outlook - Investing.com (Investing.com)
+  - Park National Corp OH Lowers Stock Holdings in Intel Corporation $INTC - MarketBeat (MarketBeat)
+  - Intel (INTC) Stock Could Be 10% Undervalued After BofA Double Upgrade - Yahoo Finance (Yahoo Finance)
+  - Mizuho Reiterates Intel Corp (INTC) Stock Rating. Here’s Why - Yahoo Finance (Yahoo Finance)
+recent reliable news:
+  - Why Is Intel (INTC) Stock Rocketing Higher Today - Yahoo Finance (Yahoo Finance)
+  - Intel (INTC) Stock Could Be 3.1% Overvalued After Its Sharp Run Higher - simplywall.st (Simply Wall St)
+  - Intel: Levitating On AI Hype (NASDAQ:INTC) - Seeking Alpha (Seeking Alpha)
+  - Intel Stock Hits 52-Week High - Here's Why - Intel (NASDAQ:INTC) - Benzinga (Benzinga)
+
+### MRVL - analyst coverage & news
+recent sell-side ratings (date | firm | action | rating | target):
+  - May-28-26 | Needham | Reiterated | Buy | $118 → $270
+  - May-26-26 | HSBC Securities | Upgrade | Hold → Buy | $300
+  - May-13-26 | BofA Securities | Reiterated | Buy | $125 → $200
+  - Apr-16-26 | Stifel | Reiterated | Buy | $120 → $140
+  - Apr-09-26 | Barclays | Upgrade | Equal Weight → Overweight | $150
+  - Apr-02-26 | Erste Group | Initiated | Buy | 
+  - Mar-06-26 | The Benchmark Company | Upgrade | Hold → Buy | $130
+  - Mar-06-26 | BofA Securities | Upgrade | Neutral → Buy | $110
+analyst-coverage news:
+  - Analyst Raises Marvell Technology (MRVL) Price Target by $105. Here is Why - Yahoo Finance (Yahoo Finance)
+  - MRVL Stock Jumps 14% Today — KeyBanc Lifts AI Networking Outlook, Raises Marvell’s Price Target - Yahoo Finance (Yahoo Finance)
+  - Stifel Raises its Price Target on Marvell Technology (MRVL) - Yahoo Finance (Yahoo Finance)
+recent reliable news:
+  - Here’s What the Street is Saying About Marvell Technology (MRVL) - Yahoo Finance (Yahoo Finance)
+  - Marvell Technology Stock Has Skyrocketed, But Could MRVL Be Worth 24% More? - Barchart.com (Barchart)
+  - Marvell Technology (MRVL) Stock Could Be 107% Overvalued After S&P 500 And Nvidia News - simplywall.st (Simply Wall St)
+  - Better Artificial Intelligence (AI) Stock to Buy: Broadcom vs. Marvell Technology - The Motley Fool (Motley Fool)
+
+### NVDA - analyst coverage & news
+recent sell-side ratings (date | firm | action | rating | target):
+  - Jun-05-26 | China Renaissance | Initiated | Buy | $319
+  - May-21-26 | Wedbush | Reiterated | Outperform | $300 → $330
+  - May-21-26 | UBS | Reiterated | Buy | $275 → $280
+  - May-21-26 | The Benchmark Company | Reiterated | Buy | $250 → $335
+  - May-21-26 | Stifel | Reiterated | Buy | $250 → $282
+  - May-21-26 | Robert W. Baird | Reiterated | Outperform | $300 → $500
+  - May-21-26 | RBC Capital Mkts | Reiterated | Outperform | $250 → $270
+  - May-21-26 | Needham | Reiterated | Buy | $240 → $270
+analyst-coverage news:
+  - NVIDIA Corporation (NVDA) Invests in a $10B AI Buildout Initiative - Yahoo! Finance Canada (Yahoo Finance)
+recent reliable news:
+  - 16,480 Shares in NVIDIA Corporation $NVDA Purchased by S Harris Financial Group LLC - MarketBeat (MarketBeat)
+  - Is NVIDIA Corporation (NVDA) A Good Stock To Buy Now? - Yahoo Finance (Yahoo Finance)
+  - Nvidia RTX Spark: What I Learned From Apple's iMac (NASDAQ:NVDA) - Seeking Alpha (Seeking Alpha)
+  - BSN CAPITAL PARTNERS Ltd Purchases Shares of 2,506,427 NVIDIA Corporation $NVDA - MarketBeat (MarketBeat)
+
+### QCOM - analyst coverage & news
+recent sell-side ratings (date | firm | action | rating | target):
+  - May-08-26 | Daiwa Securities | Upgrade | Neutral → Outperform | $225
+  - May-08-26 | DZ Bank | Downgrade | Buy → Hold | $195
+  - Apr-30-26 | Summit Insights | Upgrade | Hold → Buy | 
+  - Apr-22-26 | Barclays | Resumed | Underweight | $130
+  - Apr-17-26 | BNP Paribas Exane | Downgrade | Outperform → Neutral | $120
+  - Apr-16-26 | JP Morgan | Downgrade | Overweight → Neutral | $140
+  - Mar-30-26 | Goldman | Initiated | Neutral | $135
+  - Mar-26-26 | Bernstein | Downgrade | Outperform → Mkt Perform | $140
+analyst-coverage news:
+  - Cantor Fitzgerald raises Qualcomm stock price target on data center potential - Investing.com (Investing.com)
+  - Qualcomm (QCOM) shares surge after Daiwa upgrades stock to Outperform - Yahoo Finance (Yahoo Finance)
+  - Cantor Fitzgerald Raises PT on QUALCOMM (QCOM) Stock - Yahoo Finance (Yahoo Finance)
+recent reliable news:
+  - QUALCOMM (QCOM) Stock Could Be 34.2% Overvalued Despite Its Recent Rally - Yahoo Finance (Yahoo Finance)
+  - Qualcomm Goes All-In: The $10B Bet to Crush NVIDIA - MarketBeat (MarketBeat)
+  - Qualcomm (QCOM) Stock Is Up, What You Need To Know - Yahoo Finance (Yahoo Finance)
+  - Why Qualcomm (QCOM) Stock Is Nosediving - Yahoo Finance (Yahoo Finance)
+
+### TSM - analyst coverage & news
+recent sell-side ratings (date | firm | action | rating | target):
+  - Feb-13-26 | DA Davidson | Initiated | Buy | $450
+  - Jan-15-26 | Needham | Reiterated | Buy | $360 → $410
+  - Dec-08-25 | Bernstein | Reiterated | Outperform | $290 → $330
+  - Sep-16-25 | Barclays | Reiterated | Overweight | $275 → $325
+  - Apr-15-25 | Daiwa Securities | Upgrade | Outperform → Buy | 
+  - Jul-18-24 | TD Cowen | Reiterated | Hold | $130 → $170
+  - Jul-15-24 | Needham | Reiterated | Buy | $168 → $210
+  - Apr-18-24 | TD Cowen | Reiterated | Hold | $100 → $130
+analyst-coverage news:
+  - TSMC: The Buying Opportunity Is Finally Flashing (Rating Upgrade) (NYSE:TSM) - Seeking Alpha (Seeking Alpha)
+recent reliable news:
+  - Here's Why TSMC (TSM) is a Great Momentum Stock to Buy - Yahoo Finance (Yahoo Finance)
+  - TSMC, IBD Stock Of The Day, Flirts With Buy Point As Chip Giant Will Raise Prices Amid AI Demand - Investor's Business Daily (Investor's Business Daily)
+  - Why TSMC (TSM) Is Reducing Stake in Vanguard Semiconductor Stock - Yahoo Finance (Yahoo Finance)
+  - Is It Worth Investing in TSMC (TSM) Based on Wall Street's Bullish Views? - Yahoo Finance (Yahoo Finance)
+
+## TECH RESEARCH (Agent 02: reliable-source findings)
+### Tech research: AI accelerator value chain TSMC CoWoS advanced packaging HBM memory hyperscaler customers
+  - [RELIABLE 100] From Compact Plasma Particle Sources to Advanced Accelerators with Modeling at Exascale (arXiv)
+      Developing complex, reliable advanced accelerators requires a coordinated, extensible, and comprehensive approach in modeling, from source to the end of beam lifetime. We present highlights in Exascale Computing to scale accelerator modelin
+  - [RELIABLE 100] Huawei TSMC ad (IEEE Xplore)
+  - [RELIABLE 100] Proceedings of the Advanced Accelerator Concepts Seminar Series 2020 (arXiv)
+      The Advanced Accelerator Concepts (AAC) Seminar Series 2020 (https://aacseminarseries.lbl.gov/), organized and hosted by the Lawrence Berkeley National Laboratory, consisted of nine weekly sessions, each one dedicated to a particular topic 
+  - [RELIABLE 100] Supercarrier Redistribution Layers to Realize Ultra Large 2.5D Wafer Scale Packaging by CoWoS (IEEE Xplore)
+  - [RELIABLE 100] Value-chain oriented identification of indicators to establish a comprehensive process improvement framework (arXiv)
+      The process development and optimization potential needs to be driven by the individial coporate value chain. The identification of this specific value chain and the related indicators is essential to limit the scope of any analysis and opt
+  - [RELIABLE 72] CoWoS, Advanced Packaging Technologies Enabling the AI-Era (Journal of The Japan Institute of Electronics Packaging - Japan Institute of Electronics Packaging)
+      J-STAGE
+
+### Tech research: AI training and inference compute total addressable market size and growth forecast
+  - [RELIABLE 100] Dynamic Pricing for On-Demand DNN Inference in the Edge-AI Market (arXiv)
+      The convergence of edge computing and Artificial Intelligence (AI) gives rise to Edge-AI, which enables the deployment of real-time AI applications at the network edge. A key research challenge in Edge-AI is edge inference acceleration, whi
+  - [RELIABLE 100] Compute-in-Memory for AI: From Inference to Training (IEEE Xplore)
+  - [RELIABLE 100] Foundations of GenIR (arXiv)
+      The chapter discusses the foundational impact of modern generative AI models on information access (IA) systems. In contrast to traditional AI, the large-scale training and superior data modeling of generative AI models enable them to produ
+  - [RELIABLE 100] Analog Compute-in-Memory For AI Edge Inference (IEEE Xplore)
+  - [RELIABLE 100] AI prediction leads people to forgo guaranteed rewards (arXiv)
+      Artificial intelligence (AI) is understood to affect the content of people's decisions. Here, using a behavioral implementation of the classic Newcomb's paradox in 1,305 participants, we show that AI can also change how people decide. In th
+  - [BORDERLINE 58] Forecast Combination with AI-Generated Narrative States: Bias, Correction, and Inference (Elsevier BV)
+      This paper studies forecast combination when the state that drives time-varying weights is estimated from text rather than observed directly. When a generated narrative state enters a nonlinear simplex-constrained weight map, the usual two-
+
+### Tech research: bear case for NVIDIA custom silicon competition export controls and demand digestion
+  - [RELIABLE 100] EXPORT: optical photometry and polarimetry of Vega-type and pre-main sequence stars (arXiv)
+      This paper presents optical UBVRI broadband photo-polarimetry of the EXPORT sample obtained at the 2.5m Nordic Optical Telescope. The database consists of multi-epoch photo-polarimetry of 68 pre-main-sequence and main-sequence stars. An inv
+  - [RELIABLE 100] The pre-main sequence binary HK Ori : Spectro-astrometry and EXPORT data (arXiv)
+      In this paper we present multi-epoch observations of the pre-main sequence binary HK Ori. These data have been drawn from the EXPORT database and are complemented by high quality spectro-astrometric data of the system. The spectroscopic dat
+  - [RELIABLE 100] Spectroscopic investigation of quantum confinement effects in ion implanted silicon-on-sapphire films (arXiv)
+      Crystalline Silicon-on-Sapphire (SOS) films were implanted with boron (B$^+$) and phosphorous (P$^+$) ions. Different samples, prepared by varying the ion dose in the range $10^{14}$ to 5 x $10^{15}$ and ion energy in the range 150-350 keV,
+  - [RELIABLE 82] Balancing the National Interest (National Academies Press)
+      The U.S. national security export controls system—which was instituted to impede Soviet acquisition of high technology from the West—is both necessary and...
+  - [RELIABLE 82] Balancing the National Interest (National Academies Press)
+      Balancing the National Interest: U.S. National Security Export Controls and Global Economic Competition, Working Papers
+  - [BORDERLINE 58] Artificial intelligence, export controls, and great power competition (Expert Essentials - Oxford University PressOxford)
+      Abstract
+                  The 2020s have witnessed rapid progress in the field of artificial intelligence (AI). Prompted by a desire for dominance in this emerging field, the United States of America and the People’s Republic of China (and
+
+### Tech research: data center GPU average selling price and unit volume PxQ trends
+  - [RELIABLE 100] Data Encoding for Byzantine-Resilient Distributed Optimization (arXiv)
+      We study distributed optimization in the presence of Byzantine adversaries, where both data and computation are distributed among $m$ worker machines, $t$ of which may be corrupt. The compromised nodes may collaboratively and arbitrarily de
+  - [RELIABLE 100] Byzantine-Resilient SGD in High Dimensions on Heterogeneous Data (arXiv)
+      We study distributed stochastic gradient descent (SGD) in the master-worker architecture under Byzantine attacks. We consider the heterogeneous data model, where different workers may have different local datasets, and we do not make any pr
+  - [RELIABLE 100] Constraints on dark energy from H II starburst galaxy apparent magnitude versus redshift data (arXiv)
+      In this paper we use H II starburst galaxy apparent magnitude versus redshift data from Siegel et al. (2005) to constrain dark energy cosmological model parameters. These constraints are generally consistent with those derived using other d
+  - [RELIABLE 72] Volume Weighted Average Price Options (University of Queensland Library)
+      The University of Queensland
+  - [BORDERLINE 58] Volume, unit value and price indices: OECD base year (Monthly Statistics of International Trade - OECD Publishing)
+  - [BORDERLINE 58] Monthly Statistics of International Trade (OECD Publishing)
+
+### Tech research: hyperscaler AI data center capital expenditure demand drivers
+  - [RELIABLE 100] A statistical physics analysis of expenditure in the UK (arXiv)
+      Most papers which explored so far macroeconomic variables took into account income and wealth. Equally important as the previous macroeconomic variables is the expenditure or consumption, which shows the amount of goods and services that a 
+  - [RELIABLE 100] Data Encoding for Byzantine-Resilient Distributed Optimization (arXiv)
+      We study distributed optimization in the presence of Byzantine adversaries, where both data and computation are distributed among $m$ worker machines, $t$ of which may be corrupt. The compromised nodes may collaboratively and arbitrarily de
+  - [RELIABLE 100] Byzantine-Resilient SGD in High Dimensions on Heterogeneous Data (arXiv)
+      We study distributed stochastic gradient descent (SGD) in the master-worker architecture under Byzantine attacks. We consider the heterogeneous data model, where different workers may have different local datasets, and we do not make any pr
+  - [RELIABLE 82] Exploring the drivers of international tourism demand and expenditure in Thailand (Office of Academic Resources, Chulalongkorn University)
+      This study investigates the key economic determinants influencing international tourism demand and tourist expenditure in Thailand, with a specific focus on macroeconomic variables from tourists' countries of origin. Using a panel dataset c
+  - [RELIABLE 72] From Data Center to Hyperscaler – Pivotal Data Power (Reaching Your New Digital Heights - CRC Press)
+      A data center (DC) is the powerhouse of digitalization. We know digitalization is all about data. Then DC is the center of everything digital, including cloud
+  - [RELIABLE 72] AI's Power Requirements Under Exponential Growth: Extrapolating AI Data Center Power Demand and Assessing Its Potential Impact on U.S. Competitiveness (RAND Corporation)
+      The authors provide two extrapolations of recent artificial intelligence trends to assess future power needs, summarize current bottlenecks for data center construction, and discuss what a failure to resolve them could mean for U.S. competi
+
+### Tech research: NVIDIA GPU architecture Blackwell tensor cores and the CUDA software moat
+  - [RELIABLE 100] Quality Attributes Optimization of Software Architecture: Research Challenges and Directions (arXiv)
+      The estimation and improvement of quality attributes in software architectures is a challenging and time-consuming activity. On modern software applications, a model-based representation is crucial to face the complexity of such activity. O
+  - [RELIABLE 100] NVIDIA cuda software and gpu parallel computing architecture (ACM Digital Library)
+  - [RELIABLE 100] Multi-objective Software Architecture Refactoring driven by Quality Attributes (arXiv)
+      Architecture optimization is the process of automatically generating design options, typically to enhance software's quantifiable quality attributes, such as performance and reliability. Multi-objective optimization approaches have been use
+  - [RELIABLE 100] Architectural Consistency Checking in Plugin-Based Software Systems (arXiv)
+      Manually ensuring that the implementation of a software system is consistent with the software architecture is a laborious and error-prone task. Thus, a variety of approaches towards automated consistency checking have been developed to cou
+  - [RELIABLE 100] Improving GPU Throughput through Parallel Execution Using Tensor Cores and CUDA Cores (IEEE Xplore)
+  - [BORDERLINE 58] Table 2: Memory of CUDA-capable GPU (NVIDIA, 2020a). (PeerJ)
+
+### Tech research: NVIDIA gross margin drivers and pricing power
+  - [RELIABLE 100] Modified convex hull pricing for power markets with price-sensitive load (arXiv)
+      We consider a general power market with price-sensitive consumer bids and non-convexities originating from supply (start-up and no-load costs, nonzero minimum output limits of generating units, etc.) and demand. The convex hull (minimum-upl
+  - [RELIABLE 100] Continuous-time Marginal Pricing of Power Trajectories in Power Systems (arXiv)
+      In this paper we formulate of the Economic Dispatch (ED) problem in Power Systems in continuous time and include in it ramping constraints to derive an expression of the price that reflects some important inter-temporal constraints of the p
+  - [RELIABLE 100] Option Pricing via Multi-path Autoregressive Monte Carlo Approach (arXiv)
+      The pricing of financial derivatives, which requires massive calculations and close-to-real-time operations under many trading and arbitrage scenarios, were largely infeasible in the past. However, with the advancement of modern computing, 
+  - [RELIABLE 100] Gap Risk KVA and Repo Pricing: An Economic Capital Approach in the Black-Scholes-Merton Framework (arXiv)
+      Although not a formal pricing consideration, gap risk or hedging errors are the norm of derivatives businesses. Starting with the gap risk during a margin period of risk of a repurchase agreement (repo), this article extends the Black-Schol
+  - [RELIABLE 100] On model-independent pricing/hedging using shortfall risk and quantiles (arXiv)
+      We consider the pricing and hedging of exotic options in a model-independent set-up using \emph{shortfall risk and quantiles}. We assume that the marginal distributions at certain times are given. This is tantamount to calibrating the model
+  - [RELIABLE 72] ANALISIS PAJAK, TUNNELING, GROSS MARGIN, DAN KAP SPESIALIS TERHADAP KEPUTUSAN UNTUK MELAKUKAN TRANSFER PRICING (Jurnal Aplikasi Akuntansi - Universitas Mataram)
+      The purpose of is to find out the causal relationship from Tax Independent variable, Turnneling, Gross Margin and KAP Specialist toward transfer pricing decision. The result of the statistic analysis shows that only Tax Independent variable
+
+### Tech research: NVIDIA Rubin next generation GPU roadmap NVLink and rack scale interconnect
+  - [RELIABLE 100] Evaluating Modern GPU Interconnect: PCIe, NVLink, NV-SLI, NVSwitch and GPUDirect (arXiv)
+      High performance multi-GPU computing becomes an inevitable trend due to the ever-increasing demand on computation capability in emerging domains such as deep learning, big data and planet-scale simulations. However, the lack of deep underst
+  - [RELIABLE 100] Ultra-Performance Pascal GPU and NVLink Interconnect (IEEE Xplore)
+  - [RELIABLE 100] Structure theory of Rack-Bialgebras (arXiv)
+      In this paper we focus on a certain self-distributive multiplication on coalgebras, which leads to so-called rack bialgebra. Inspired by semi-group theory (adapting the Suschkewitsch theorem), we do some structure theory for rack bialgebras
+  - [RELIABLE 100] Pascal GPU with NVLink (IEEE Xplore)
+  - [RELIABLE 100] NVBleed: Covert and Side-Channel Attacks on NVIDIA Multi-GPU Interconnect (arXiv)
+      Multi-GPU systems are becoming increasingly important in highperformance computing (HPC) and cloud infrastructure, providing acceleration for data-intensive applications, including machine learning workloads. These systems consist of multip
+  - [BORDERLINE 58] <b>NVIDIA Projects $500bn in GPU Sales</b>
+                    from Blackwell and Rubin (New Electronics - Mark Allen Group)
+
+### Tech research: NVIDIA supply chain TSMC foundry CoWoS capacity and HBM supply constraints
+  - [RELIABLE 100] Exploitation of material consolidation trade-offs in multi-tier complex supply networks (arXiv)
+      While consolidation strategies form the backbone of many supply chain optimisation problems, exploitation of multi-tier material relationships through consolidation remains an understudied area, despite being a prominent feature of industri
+  - [RELIABLE 100] Capacity Constraints Analysis for SCM (SpringerLink)
+  - [RELIABLE 100] SoK: Analysis of Software Supply Chain Security by Establishing Secure Design Properties (arXiv)
+      This paper systematizes knowledge about secure software supply chain patterns. It identifies four stages of a software supply chain attack and proposes three security properties crucial for a secured supply chain: transparency, validity, an
+  - [RELIABLE 100] Large Language Models for Supply Chain Decisions (arXiv)
+      Supply Chain Management requires addressing a variety of complex decision-making challenges, from sourcing strategies to planning and execution. Over the last few decades, advances in computation and information technologies have enabled th
+  - [RELIABLE 72] Supply Chain Impact from Production Capacity Constraints: A Computer-based Simulation Approach (Research Square Platform LLC)
+      Abstract
+        The bullwhip is a well-known phenomenon in supply chain management. Whereas past research has focused on factors like supply rationing, batch-size, lead-time etc., mainly from an analytical perspective. This paper broadens 
+  - [BORDERLINE 58] Enhancing Supply Chain Resilience: The Role of Supply Chain Preparatory Capacity Tools on Response And Recovery Capacity (Elsevier BV)
+
+### Tech research: NVIDIA vs AMD MI300 vs hyperscaler custom ASIC TPU competitive landscape
+  - [RELIABLE 100] TPU-MLIR: A Compiler For TPU Using MLIR (arXiv)
+      Multi-level intermediate representations (MLIR) show great promise for reducing the cost of building domain-specific compilers by providing a reusable and extensible compiler infrastructure. This work presents TPU-MLIR, an end-to-end compil
+  - [RELIABLE 100] VS-Net: Voting with Segmentation for Visual Localization (arXiv)
+      Visual localization is of great importance in robotics and computer vision. Recently, scene coordinate regression based methods have shown good performance in visual localization in small static scenes. However, it still estimates camera po
+  - [RELIABLE 100] SPARC Implementations: ASIC vs. Custom Design (SpringerLink)
+  - [RELIABLE 100] Bringing Auto-tuning to HIP: Analysis of Tuning Impact and Difficulty on AMD and Nvidia GPUs (arXiv)
+      Many studies have focused on developing and improving auto-tuning algorithms for Nvidia Graphics Processing Units (GPUs), but the effectiveness and efficiency of these approaches on AMD devices have hardly been studied. This paper aims to a
+  - [RELIABLE 100] SPARC implementations: ASIC vs. custom design (IEEE Xplore)
+  - [RELIABLE 72] Home | IET (Institution of Engineering and Technology (IET))
+      Home
+
+## SEC EDGAR FILINGS (Agent 01)
+### EDGAR filings for AMD (ADVANCED MICRO DEVICES INC) - last 365d, 11 filing(s):
+  - 2026-05-06 10-Q (0000002488-26-000076)
+  - 2026-05-05 8-K (0000002488-26-000072)
+  - 2026-02-24 8-K (0000002488-26-000045)
+  - 2026-02-04 10-K (0000002488-26-000018)
+  - 2026-02-03 8-K (0000002488-26-000014)
+  - 2025-11-05 10-Q (0000002488-25-000166)
+  - 2025-11-04 8-K (0000002488-25-000163)
+  - 2025-10-27 8-K (0001193125-25-250803)
+  - 2025-10-06 8-K (0001193125-25-230895)
+  - 2025-08-06 10-Q (0000002488-25-000108)
+  - 2025-08-05 8-K (0000002488-25-000106)
+
+  --- excerpt: 2026-02-04 10-K (first 14000 chars of text) ---
+  <?xml version='1.0' encoding='ASCII'?> amd-20251227 10-K false December 27, 2025 2025 FY 0000002488 http://fasb.org/us-gaap/2025#OtherLiabilitiesCurrent iso4217:USD xbrli:shares iso4217:USD xbrli:shares xbrli:pure amd:reportable_segment amd:joint_venture utr:Rate 0000002488 2024-12-29 2025-12-27 0000002488 2024-06-28 0000002488 2026-01-30 0000002488 2023-12-31 2024-12-28 0000002488 2023-01-01 2023-12-30 0000002488 2025-12-27 0000002488 2024-12-28 0000002488 us-gaap:CommonStockMember 2024-12-28 0000002488 us-gaap:CommonStockMember 2023-12-30 0000002488 us-gaap:CommonStockMember 2022-12-31 0000002488 us-gaap:CommonStockMember 2024-12-29 2025-12-27 0000002488 us-gaap:CommonStockMember 2023-12-31 2024-12-28 0000002488 us-gaap:CommonStockMember 2023-01-01 2023-12-30 0000002488 us-gaap:CommonStockMember 2025-12-27 0000002488 us-gaap:AdditionalPaidInCapitalMember 2024-12-28 0000002488 us-gaap:AdditionalPaidInCapitalMember 2023-12-30 0000002488 us-gaap:AdditionalPaidInCapitalMember 2022-12-31 0000002488 us-gaap:AdditionalPaidInCapitalMember 2024-12-29 2025-12-27 0000002488 us-gaap:AdditionalPaidInCapitalMember 2023-12-31 2024-12-28 0000002488 us-gaap:AdditionalPaidInCapitalMember 2023-01-01 2023-12-30 0000002488 amd:FairValueOfCommonStockIssuedAsAcquisitionConsiderationMember us-gaap:AdditionalPaidInCapitalMember 2024-12-29 2025-12-27 0000002488 amd:FairValueOfCommonStockIssuedAsAcquisitionConsiderationMember us-gaap:AdditionalPaidInCapitalMember 2023-12-31 2024-12-28 0000002488 amd:FairValueOfCommonStockIssuedAsAcquisitionConsiderationMember us-gaap:AdditionalPaidInCapitalMember 2023-01-01 2023-12-30 0000002488 us-gaap:AdditionalPaidInCapitalMember 2025-12-27 0000002488 us-gaap:TreasuryStockCommonMember 2024-12-28 0000002488 us-gaap:TreasuryStockCommonMember 2023-12-30 0000002488 us-gaap:TreasuryStockCommonMember 2022-12-31 0000002488 us-gaap:TreasuryStockCommonMember 2024-12-29 2025-12-27 0000002488 us-gaap:TreasuryStockCommonMember 2023-12-31 2024-12-28 0000002488 us-gaap:TreasuryStockCommonMember 2023-01-01 2023-12-30 0000002488 us-gaap:TreasuryStockCommonMember 2025-12-27 0000002488 us-gaap:RetainedEarningsMember 2024-12-28 0000002488 us-gaap:RetainedEarningsMember 2023-12-30 0000002488 us-gaap:RetainedEarningsMember 2022-12-31 0000002488 us-gaap:RetainedEarningsMember 2024-12-29 2025-12-27 0000002488 us-gaap:RetainedEarningsMember 2023-12-31 2024-12-28 0000002488 us-gaap:RetainedEarningsMember 2023-01-01 2023-12-30 0000002488 us-gaap:RetainedEarningsMember 2025-12-27 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2024-12-28 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2023-12-30 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2022-12-31 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2024-12-29 2025-12-27 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2023-12-31 2024-12-28 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2023-01-01 2023-12-30 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-12-27 0000002488 2023-12-30 0000002488 2022-12-31 0000002488 srt:MinimumMember 2024-12-29 2025-12-27 0000002488 srt:MaximumMember 2024-12-29 2025-12-27 0000002488 2021-12-25 2025-12-27 0000002488 us-gaap:TransferredOverTimeMember 2024-12-29 2025-12-27 0000002488 us-gaap:TransferredOverTimeMember 2023-12-31 2024-12-28 0000002488 us-gaap:TransferredOverTimeMember 2023-01-01 2023-12-30 0000002488 us-gaap:OperatingSegmentsMember amd:DatacenterMember 2024-12-29 2025-12-27 0000002488 us-gaap:OperatingSegmentsMember amd:DatacenterMember 2023-12-31 2024-12-28 0000002488 us-gaap:OperatingSegmentsMember amd:DatacenterMember 2023-01-01 2023-12-30 0000002488 amd:ClientMember amd:ClientAndGamingMember 2024-12-29 2025-12-27 0000002488 amd:ClientMember amd:ClientAndGamingMember 2023-12-31 2024-12-28 0000002488 amd:ClientMember amd:ClientAndGamingMember 2023-01-01 2023-12-30 0000002488 amd:GamingMember amd:GamingMember 2024-12-29 2025-12-27 0000002488 amd:GamingMember amd:GamingMember 2023-12-31 2024-12-28 0000002488 amd:GamingMember amd:GamingMember 2023-01-01 2023-12-30 0000002488 us-gaap:OperatingSegmentsMember amd:ClientAndGamingMember 2024-12-29 2025-12-27 0000002488 us-gaap:OperatingSegmentsMember amd:ClientAndGamingMember 2023-12-31 2024-12-28 0000002488 us-gaap:OperatingSegmentsMember amd:ClientAndGamingMember 2023-01-01 2023-12-30 0000002488 us-gaap:OperatingSegmentsMember amd:EmbeddedMember 2024-12-29 2025-12-27 0000002488 us-gaap:OperatingSegmentsMember amd:EmbeddedMember 2023-12-31 2024-12-28 0000002488 us-gaap:OperatingSegmentsMember amd:EmbeddedMember 2023-01-01 2023-12-30 0000002488 us-gaap:OperatingSegmentsMember amd:AllOtherMember 2024-12-29 2025-12-27 0000002488 us-gaap:OperatingSegmentsMember amd:AllOtherMember 2023-12-31 2024-12-28 0000002488 us-gaap:OperatingSegmentsMember amd:AllOtherMember 2023-01-01 2023-12-30 0000002488 us-gaap:OperatingSegmentsMember 2024-12-29 2025-12-27 0000002488 us-gaap:OperatingSegmentsMember 2023-12-31 2024-12-28 0000002488 us-gaap:OperatingSegmentsMember 2023-01-01 2023-12-30 0000002488 us-gaap:MaterialReconcilingItemsMember 2024-12-29 2025-12-27 0000002488 us-gaap:MaterialReconcilingItemsMember 2023-12-31 2024-12-28 0000002488 us-gaap:MaterialReconcilingItemsMember 2023-01-01 2023-12-30 0000002488 country:US 2024-12-29 2025-12-27 0000002488 country:US 2023-12-31 2024-12-28 0000002488 country:US 2023-01-01 2023-12-30 0000002488 country:CN 2024-12-29 2025-12-27 0000002488 country:CN 2023-12-31 2024-12-28 0000002488 country:CN 2023-01-01 2023-12-30 0000002488 country:TW 2024-12-29 2025-12-27 0000002488 country:TW 2023-12-31 2024-12-28 0000002488 country:TW 2023-01-01 2023-12-30 0000002488 country:SG 2024-12-29 2025-12-27 0000002488 country:SG 2023-12-31 2024-12-28 0000002488 country:SG 2023-01-01 2023-12-30 0000002488 amd:OtherCountriesMember 2024-12-29 2025-12-27 0000002488 amd:OtherCountriesMember 2023-12-31 2024-12-28 0000002488 amd:OtherCountriesMember 2023-01-01 2023-12-30 0000002488 amd:CustomerAMember us-gaap:CustomerConcentrationRiskMember us-gaap:RevenueFromContractWithCustomerMember 2023-01-01 2023-12-30 0000002488 country:US 2025-12-27 0000002488 country:US 2024-12-28 0000002488 country:SG 2025-12-27 0000002488 country:SG 2024-12-28 0000002488 country:CA 2025-12-27 0000002488 country:CA 2024-12-28 0000002488 amd:OtherCountriesMember 2025-12-27 0000002488 amd:OtherCountriesMember 2024-12-28 0000002488 amd:ZTSystemsMember 2025-03-31 2025-03-31 0000002488 amd:ZTSystemsMember 2024-12-29 2025-12-27 0000002488 amd:ZTSystemsMember 2025-03-31 0000002488 amd:ZTSystemsMember 2025-03-28 0000002488 amd:ZTSystemsMember 2025-12-27 0000002488 2025-10-27 0000002488 2025-10-27 2025-10-27 0000002488 amd:OtherAcquisitionsMember 2024-12-29 2025-12-27 0000002488 amd:OtherAcquisitionsMember 2025-12-27 0000002488 amd:SiloAIMember 2024-12-29 2025-12-27 0000002488 amd:SiloAIMember 2025-12-27 0000002488 amd:OtherAcquisitionsMember 2024-12-28 0000002488 amd:DatacenterMember 2024-12-28 0000002488 amd:EmbeddedMember 2024-12-28 0000002488 amd:ClientMember 2024-12-28 0000002488 amd:GamingMember 2024-12-28 0000002488 amd:ClientMember 2024-12-29 2025-12-27 0000002488 amd:GamingMember 2024-12-29 2025-12-27 0000002488 amd:ClientAndGamingMember 2024-12-29 2025-12-27 0000002488 amd:DatacenterMember 2024-12-29 2025-12-27 0000002488 amd:DatacenterMember 2025-12-27 0000002488 amd:EmbeddedMember 2025-12-27 0000002488 amd:ClientMember 2025-12-27 0000002488 amd:GamingMember 2025-12-27 0000002488 amd:ClientAndGamingMember 2025-12-27 0000002488 us-gaap:DevelopedTechnologyRightsMember 2025-12-27 0000002488 us-gaap:DevelopedTechnologyRightsMember 2024-12-28 0000002488 us-gaap:CustomerRelationshipsMember 2025-12-27 0000002488 us-gaap:CustomerRelationshipsMember 2024-12-28 0000002488 us-gaap:TrademarksMember 2025-12-27 0000002488 us-gaap:TrademarksMember 2024-12-28 0000002488 us-gaap:OtherIntangibleAssetsMember 2025-12-27 0000002488 us-gaap:OtherIntangibleAssetsMember 2024-12-28 0000002488 amd:ATMPJVMember us-gaap:CorporateJointVentureMember 2025-12-27 0000002488 amd:ATMPJVMember 2025-12-27 0000002488 amd:ATMPJVMember 2024-12-28 0000002488 amd:ATMPJVMember us-gaap:CorporateJointVentureMember 2024-12-28 0000002488 amd:ATMPJVMember 2025-12-27 0000002488 amd:ATMPJVMember us-gaap:CorporateJointVentureMember 2024-12-29 2025-12-27 0000002488 amd:ATMPJVMember us-gaap:CorporateJointVentureMember 2023-12-31 2024-12-28 0000002488 amd:ATMPJVMember us-gaap:CorporateJointVentureMember 2023-01-01 2023-12-30 0000002488 us-gaap:MoneyMarketFundsMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2025-12-27 0000002488 us-gaap:MoneyMarketFundsMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2025-12-27 0000002488 us-gaap:MoneyMarketFundsMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel3Member 2025-12-27 0000002488 us-gaap:MoneyMarketFundsMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2025-12-27 0000002488 us-gaap:MoneyMarketFundsMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2024-12-28 0000002488 us-gaap:MoneyMarketFundsMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2024-12-28 0000002488 us-gaap:MoneyMarketFundsMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel3Member 2024-12-28 0000002488 us-gaap:MoneyMarketFundsMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2024-12-28 0000002488 us-gaap:CommercialPaperMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2025-12-27 0000002488 us-gaap:CommercialPaperMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2025-12-27 0000002488 us-gaap:CommercialPaperMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel3Member 2025-12-27 0000002488 us-gaap:CommercialPaperMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2025-12-27 0000002488 us-gaap:CommercialPaperMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2024-12-28 0000002488 us-gaap:CommercialPaperMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2024-12-28 0000002488 us-gaap:CommercialPaperMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel3Member 2024-12-28 0000002488 us-gaap:CommercialPaperMember us-gaap:CashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2024-12-28 0000002488 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2025-12-27 0000002488 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2025-12-27 0000002488 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel3Member 2025-12-27 0000002488 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2025-12-27 0000002488 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2024-12-28 0000002488 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2024-12-28 0000002488 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel3Member 2024-12-28 0000002488 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2024-12-28 0000002488 us-gaap:ForeignGovernmentShorttermDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2025-12-27 0000002488 us-gaap:ForeignGovernmentShorttermDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2025-12-27 0000002488 us-gaap:ForeignGovernmentShorttermDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel3Member 2025-12-27 0000002488 us-gaap:ForeignGovernmentShorttermDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2025-12-27 0000002488 us-gaap:ForeignGovernmentShorttermDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2024-12-28 0000002488 us-gaap:ForeignGovernmentShorttermDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2024-12-28 0000002488 us-gaap:ForeignGovernmentShorttermDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel3Member 2024-12-28 0000002488 us-gaap:ForeignGovernmentShorttermDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2024-12-28 0000002488 us-gaap:BankTimeDepositsMember us-gaap:CashEquivalentsMem
+
+
+  --- excerpt: 2025-08-06 10-Q (first 14000 chars of text) ---
+  <?xml version='1.0' encoding='ASCII'?> amd-20250628 false 2025 Q2 0000002488 December 27 xbrli:shares iso4217:USD iso4217:USD xbrli:shares xbrli:pure amd:joint_venture 0000002488 2024-12-29 2025-06-28 0000002488 2025-07-30 0000002488 2025-03-30 2025-06-28 0000002488 2024-03-31 2024-06-29 0000002488 2023-12-31 2024-06-29 0000002488 2025-06-28 0000002488 2024-12-28 0000002488 2023-12-30 0000002488 2024-06-29 0000002488 us-gaap:CommonStockMember 2025-03-29 0000002488 us-gaap:CommonStockMember 2024-03-30 0000002488 us-gaap:CommonStockMember 2024-12-28 0000002488 us-gaap:CommonStockMember 2023-12-30 0000002488 us-gaap:CommonStockMember 2025-06-28 0000002488 us-gaap:CommonStockMember 2024-06-29 0000002488 us-gaap:AdditionalPaidInCapitalMember 2025-03-29 0000002488 us-gaap:AdditionalPaidInCapitalMember 2024-03-30 0000002488 us-gaap:AdditionalPaidInCapitalMember 2024-12-28 0000002488 us-gaap:AdditionalPaidInCapitalMember 2023-12-30 0000002488 us-gaap:AdditionalPaidInCapitalMember 2025-03-30 2025-06-28 0000002488 us-gaap:AdditionalPaidInCapitalMember 2024-03-31 2024-06-29 0000002488 us-gaap:AdditionalPaidInCapitalMember 2024-12-29 2025-06-28 0000002488 us-gaap:AdditionalPaidInCapitalMember 2023-12-31 2024-06-29 0000002488 us-gaap:AdditionalPaidInCapitalMember 2025-06-28 0000002488 us-gaap:AdditionalPaidInCapitalMember 2024-06-29 0000002488 us-gaap:TreasuryStockCommonMember 2025-03-29 0000002488 us-gaap:TreasuryStockCommonMember 2024-03-30 0000002488 us-gaap:TreasuryStockCommonMember 2024-12-28 0000002488 us-gaap:TreasuryStockCommonMember 2023-12-30 0000002488 us-gaap:TreasuryStockCommonMember 2025-03-30 2025-06-28 0000002488 us-gaap:TreasuryStockCommonMember 2024-03-31 2024-06-29 0000002488 us-gaap:TreasuryStockCommonMember 2024-12-29 2025-06-28 0000002488 us-gaap:TreasuryStockCommonMember 2023-12-31 2024-06-29 0000002488 us-gaap:TreasuryStockCommonMember 2025-06-28 0000002488 us-gaap:TreasuryStockCommonMember 2024-06-29 0000002488 us-gaap:RetainedEarningsMember 2025-03-29 0000002488 us-gaap:RetainedEarningsMember 2024-03-30 0000002488 us-gaap:RetainedEarningsMember 2024-12-28 0000002488 us-gaap:RetainedEarningsMember 2023-12-30 0000002488 us-gaap:RetainedEarningsMember 2025-03-30 2025-06-28 0000002488 us-gaap:RetainedEarningsMember 2024-03-31 2024-06-29 0000002488 us-gaap:RetainedEarningsMember 2024-12-29 2025-06-28 0000002488 us-gaap:RetainedEarningsMember 2023-12-31 2024-06-29 0000002488 us-gaap:RetainedEarningsMember 2025-06-28 0000002488 us-gaap:RetainedEarningsMember 2024-06-29 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-03-29 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2024-03-30 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2024-12-28 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2023-12-30 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-03-30 2025-06-28 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2024-03-31 2024-06-29 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2024-12-29 2025-06-28 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2023-12-31 2024-06-29 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-06-28 0000002488 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2024-06-29 0000002488 2025-03-29 2025-06-28 0000002488 us-gaap:TransferredOverTimeMember 2025-03-30 2025-06-28 0000002488 us-gaap:TransferredOverTimeMember 2024-12-29 2025-06-28 0000002488 us-gaap:TransferredOverTimeMember 2024-03-31 2024-06-29 0000002488 us-gaap:TransferredOverTimeMember 2023-12-31 2024-06-29 0000002488 us-gaap:OperatingSegmentsMember amd:DataCenterMember 2025-03-30 2025-06-28 0000002488 us-gaap:OperatingSegmentsMember amd:DataCenterMember 2024-03-31 2024-06-29 0000002488 us-gaap:OperatingSegmentsMember amd:DataCenterMember 2024-12-29 2025-06-28 0000002488 us-gaap:OperatingSegmentsMember amd:DataCenterMember 2023-12-31 2024-06-29 0000002488 amd:ClientMember amd:ClientAndGamingMember 2025-03-30 2025-06-28 0000002488 amd:ClientMember amd:ClientAndGamingMember 2024-03-31 2024-06-29 0000002488 amd:ClientMember amd:ClientAndGamingMember 2024-12-29 2025-06-28 0000002488 amd:ClientMember amd:ClientAndGamingMember 2023-12-31 2024-06-29 0000002488 amd:GamingMember amd:ClientAndGamingMember 2025-03-30 2025-06-28 0000002488 amd:GamingMember amd:ClientAndGamingMember 2024-03-31 2024-06-29 0000002488 amd:GamingMember amd:ClientAndGamingMember 2024-12-29 2025-06-28 0000002488 amd:GamingMember amd:ClientAndGamingMember 2023-12-31 2024-06-29 0000002488 us-gaap:OperatingSegmentsMember amd:ClientAndGamingMember 2025-03-30 2025-06-28 0000002488 us-gaap:OperatingSegmentsMember amd:ClientAndGamingMember 2024-03-31 2024-06-29 0000002488 us-gaap:OperatingSegmentsMember amd:ClientAndGamingMember 2024-12-29 2025-06-28 0000002488 us-gaap:OperatingSegmentsMember amd:ClientAndGamingMember 2023-12-31 2024-06-29 0000002488 us-gaap:OperatingSegmentsMember amd:EmbeddedMember 2025-03-30 2025-06-28 0000002488 us-gaap:OperatingSegmentsMember amd:EmbeddedMember 2024-03-31 2024-06-29 0000002488 us-gaap:OperatingSegmentsMember amd:EmbeddedMember 2024-12-29 2025-06-28 0000002488 us-gaap:OperatingSegmentsMember amd:EmbeddedMember 2023-12-31 2024-06-29 0000002488 us-gaap:OperatingSegmentsMember amd:AllOtherMember 2025-03-30 2025-06-28 0000002488 us-gaap:OperatingSegmentsMember amd:AllOtherMember 2024-03-31 2024-06-29 0000002488 us-gaap:OperatingSegmentsMember amd:AllOtherMember 2024-12-29 2025-06-28 0000002488 us-gaap:OperatingSegmentsMember amd:AllOtherMember 2023-12-31 2024-06-29 0000002488 us-gaap:CorporateNonSegmentMember amd:AllOtherMember 2025-03-30 2025-06-28 0000002488 us-gaap:CorporateNonSegmentMember amd:AllOtherMember 2024-03-31 2024-06-29 0000002488 us-gaap:CorporateNonSegmentMember amd:AllOtherMember 2024-12-29 2025-06-28 0000002488 us-gaap:CorporateNonSegmentMember amd:AllOtherMember 2023-12-31 2024-06-29 0000002488 us-gaap:CorporateNonSegmentMember 2025-03-30 2025-06-28 0000002488 us-gaap:CorporateNonSegmentMember 2024-12-29 2025-06-28 0000002488 us-gaap:CorporateNonSegmentMember 2024-03-31 2024-06-29 0000002488 us-gaap:CorporateNonSegmentMember 2023-12-31 2024-06-29 0000002488 amd:ZTSystemsMember 2024-12-29 2025-06-28 0000002488 amd:ZTSystemsMember 2025-03-31 2025-03-31 0000002488 amd:ZTSystemsMember 2025-03-31 0000002488 2025-03-31 0000002488 amd:ZTManufacturingMember 2025-06-28 0000002488 amd:ZTSystemsMember 2025-06-28 0000002488 2025-05-18 0000002488 amd:OtherAcquisitionsMember 2024-12-29 2025-06-28 0000002488 amd:OtherAcquisitionsMember 2025-06-28 0000002488 amd:DataCenterMember 2024-12-28 0000002488 amd:EmbeddedMember 2024-12-28 0000002488 amd:ClientMember 2024-12-28 0000002488 amd:GamingMember 2024-12-28 0000002488 amd:ClientMember 2024-12-29 2025-06-28 0000002488 amd:GamingMember 2024-12-29 2025-06-28 0000002488 amd:ClientAndGamingMember 2024-12-29 2025-06-28 0000002488 amd:DataCenterMember 2024-12-29 2025-06-28 0000002488 amd:DataCenterMember 2025-06-28 0000002488 amd:EmbeddedMember 2025-06-28 0000002488 amd:ClientAndGamingMember 2024-12-28 0000002488 us-gaap:DevelopedTechnologyRightsMember 2025-06-28 0000002488 us-gaap:DevelopedTechnologyRightsMember 2024-12-28 0000002488 us-gaap:CustomerRelationshipsMember 2025-06-28 0000002488 us-gaap:CustomerRelationshipsMember 2024-12-28 0000002488 us-gaap:TrademarksMember 2025-06-28 0000002488 us-gaap:TrademarksMember 2024-12-28 0000002488 us-gaap:OtherIntangibleAssetsMember 2025-06-28 0000002488 us-gaap:OtherIntangibleAssetsMember 2024-12-28 0000002488 2022-02-14 0000002488 amd:ATMPJVMember us-gaap:CorporateJointVentureMember 2025-06-28 0000002488 amd:ATMPJVMember us-gaap:CorporateJointVentureMember 2025-03-30 2025-06-28 0000002488 amd:ATMPJVMember us-gaap:CorporateJointVentureMember 2024-12-29 2025-06-28 0000002488 amd:ATMPJVMember us-gaap:CorporateJointVentureMember 2024-03-31 2024-06-29 0000002488 amd:ATMPJVMember us-gaap:CorporateJointVentureMember 2023-12-31 2024-06-29 0000002488 amd:ATMPJVMember us-gaap:CorporateJointVentureMember 2024-12-28 0000002488 amd:ATMPJVMember 2025-06-28 0000002488 amd:A4.212SeniorNoteDue2026Member us-gaap:SeniorNotesMember 2025-06-28 0000002488 amd:A4.319SeniorNoteDue2028Member us-gaap:SeniorNotesMember 2025-06-28 0000002488 amd:A4.319SeniorNoteDue2028Member us-gaap:SeniorNotesMember 2024-12-28 0000002488 amd:A2.375SeniorNoteDue2030Member us-gaap:SeniorNotesMember 2025-06-28 0000002488 amd:A2.375SeniorNoteDue2030Member us-gaap:SeniorNotesMember 2024-12-28 0000002488 amd:A3924SeniorNoteDue2032Member us-gaap:SeniorNotesMember 2025-06-28 0000002488 amd:A3924SeniorNoteDue2032Member us-gaap:SeniorNotesMember 2024-12-28 0000002488 amd:A4393SeniorNotesDue2052Member us-gaap:SeniorNotesMember 2025-06-28 0000002488 amd:A4393SeniorNotesDue2052Member us-gaap:SeniorNotesMember 2024-12-28 0000002488 amd:PrincipalBalanceDueMember 2025-06-28 0000002488 amd:PrincipalBalanceDueMember 2024-12-28 0000002488 amd:A4.319SeniorNoteDue2028And4.212SeniorNoteDue2026Member us-gaap:SeniorNotesMember 2025-06-28 0000002488 2022-04-29 0000002488 us-gaap:CommercialPaperMember 2022-11-03 0000002488 us-gaap:MoneyMarketFundsMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2025-06-28 0000002488 us-gaap:MoneyMarketFundsMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2025-06-28 0000002488 us-gaap:MoneyMarketFundsMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2025-06-28 0000002488 us-gaap:MoneyMarketFundsMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2024-12-28 0000002488 us-gaap:MoneyMarketFundsMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2024-12-28 0000002488 us-gaap:MoneyMarketFundsMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2024-12-28 0000002488 us-gaap:CommercialPaperMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2025-06-28 0000002488 us-gaap:CommercialPaperMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2025-06-28 0000002488 us-gaap:CommercialPaperMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2025-06-28 0000002488 us-gaap:CommercialPaperMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2024-12-28 0000002488 us-gaap:CommercialPaperMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2024-12-28 0000002488 us-gaap:CommercialPaperMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2024-12-28 0000002488 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2025-06-28 0000002488 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2025-06-28 0000002488 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2025-06-28 0000002488 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2024-12-28 0000002488 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2024-12-28 0000002488 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2024-12-28 0000002488 us-gaap:ForeignGovernmentShorttermDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2025-06-28 0000002488 us-gaap:ForeignGovernmentShorttermDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2025-06-28 0000002488 us-gaap:ForeignGovernmentShorttermDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2025-06-28 0000002488 us-gaap:ForeignGovernmentShorttermDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2024-12-28 0000002488 us-gaap:ForeignGovernmentShorttermDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2024-12-28 0000002488 us-gaap:ForeignGovernmentShorttermDebtSecuritiesMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2024-12-28 0000002488 us-gaap:BankTimeDepositsMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2025-06-28 0000002488 us-gaap:BankTimeDepositsMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2025-06-28 0000002488 us-gaap:BankTimeDepositsMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember 2025-06-28 0000002488 us-gaap:BankTimeDepositsMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel1Member 2024-12-28 0000002488 us-gaap:BankTimeDepositsMember us-gaap:CashAndCashEquivalentsMember us-gaap:FairValueMeasurementsRecurringMember us-gaap:FairValueInputsLevel2Member 2024-12-28 00000024
+
+
+### EDGAR filings for AVGO (Broadcom Inc.) - last 365d, 8 filing(s):
+  - 2026-06-09 10-Q (0001730168-26-000054)
+  - 2026-06-03 8-K (0001730168-26-000051)
+  - 2026-03-11 10-Q (0001730168-26-000016)
+  - 2026-03-04 8-K (0001730168-26-000011)
+  - 2025-12-18 10-K (0001730168-25-000121)
+  - 2025-12-11 8-K (0001730168-25-000116)
+  - 2025-09-10 10-Q (0001730168-25-000098)
+  - 2025-09-04 8-K (0001730168-25-000094)
+
+  --- excerpt: 2025-12-18 10-K (first 14000 chars of text) ---
+  <?xml version='1.0' encoding='ASCII'?> avgo-20251102 0001730168 2025 FY FALSE http://fasb.org/us-gaap/2024#OtherAssetsNoncurrent http://fasb.org/us-gaap/2024#OtherAssetsNoncurrent http://fasb.org/us-gaap/2024#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2024#OtherLiabilitiesCurrent http://fasb.org/us-gaap/2024#OtherLiabilitiesNoncurrent http://fasb.org/us-gaap/2024#OtherLiabilitiesNoncurrent P4Y P4Y iso4217:USD xbrli:shares iso4217:USD xbrli:shares xbrli:pure utr:Rate avgo:segment avgo:Customer 0001730168 2024-11-04 2025-11-02 0001730168 2025-05-02 0001730168 2025-11-28 0001730168 us-gaap:DomesticCountryMember 2024-11-04 2025-11-02 0001730168 2025-11-02 0001730168 2024-11-03 0001730168 us-gaap:ProductMember 2024-11-04 2025-11-02 0001730168 us-gaap:ProductMember 2023-10-30 2024-11-03 0001730168 us-gaap:ProductMember 2022-10-31 2023-10-29 0001730168 avgo:SubscriptionsandServicesMember 2024-11-04 2025-11-02 0001730168 avgo:SubscriptionsandServicesMember 2023-10-30 2024-11-03 0001730168 avgo:SubscriptionsandServicesMember 2022-10-31 2023-10-29 0001730168 2023-10-30 2024-11-03 0001730168 2022-10-31 2023-10-29 0001730168 2023-10-29 0001730168 2022-10-30 0001730168 us-gaap:CommonStockMember 2022-10-30 0001730168 us-gaap:AdditionalPaidInCapitalMember 2022-10-30 0001730168 us-gaap:RetainedEarningsMember 2022-10-30 0001730168 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2022-10-30 0001730168 us-gaap:RetainedEarningsMember 2022-10-31 2023-10-29 0001730168 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2022-10-31 2023-10-29 0001730168 us-gaap:AdditionalPaidInCapitalMember 2022-10-31 2023-10-29 0001730168 us-gaap:CommonStockMember 2022-10-31 2023-10-29 0001730168 us-gaap:CommonStockMember 2023-10-29 0001730168 us-gaap:AdditionalPaidInCapitalMember 2023-10-29 0001730168 us-gaap:RetainedEarningsMember 2023-10-29 0001730168 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2023-10-29 0001730168 us-gaap:RetainedEarningsMember 2023-10-30 2024-11-03 0001730168 us-gaap:CommonStockMember 2023-10-30 2024-11-03 0001730168 us-gaap:AdditionalPaidInCapitalMember 2023-10-30 2024-11-03 0001730168 us-gaap:CommonStockMember 2024-11-03 0001730168 us-gaap:AdditionalPaidInCapitalMember 2024-11-03 0001730168 us-gaap:RetainedEarningsMember 2024-11-03 0001730168 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2024-11-03 0001730168 us-gaap:RetainedEarningsMember 2024-11-04 2025-11-02 0001730168 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2024-11-04 2025-11-02 0001730168 us-gaap:AdditionalPaidInCapitalMember 2024-11-04 2025-11-02 0001730168 us-gaap:CommonStockMember 2024-11-04 2025-11-02 0001730168 us-gaap:CommonStockMember 2025-11-02 0001730168 us-gaap:AdditionalPaidInCapitalMember 2025-11-02 0001730168 us-gaap:RetainedEarningsMember 2025-11-02 0001730168 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-11-02 0001730168 avgo:VMwareAcquisitionMember 2023-11-22 2023-11-22 0001730168 avgo:VMwareAcquisitionMember 2023-11-22 0001730168 avgo:DistributorCreditandSalesReturnAllowancesMember 2025-11-02 0001730168 avgo:DistributorCreditandSalesReturnAllowancesMember 2024-11-03 0001730168 srt:MinimumMember avgo:BuildingsAndLeaseholdImprovementsMember 2025-11-02 0001730168 srt:MaximumMember avgo:BuildingsAndLeaseholdImprovementsMember 2025-11-02 0001730168 srt:MinimumMember us-gaap:MachineryAndEquipmentMember 2025-11-02 0001730168 srt:MaximumMember us-gaap:MachineryAndEquipmentMember 2025-11-02 0001730168 srt:AmericasMember 2024-11-04 2025-11-02 0001730168 srt:AsiaPacificMember 2024-11-04 2025-11-02 0001730168 us-gaap:EMEAMember 2024-11-04 2025-11-02 0001730168 srt:AmericasMember 2023-10-30 2024-11-03 0001730168 srt:AsiaPacificMember 2023-10-30 2024-11-03 0001730168 us-gaap:EMEAMember 2023-10-30 2024-11-03 0001730168 srt:AmericasMember 2022-10-31 2023-10-29 0001730168 srt:AsiaPacificMember 2022-10-31 2023-10-29 0001730168 us-gaap:EMEAMember 2022-10-31 2023-10-29 0001730168 srt:AmericasMember us-gaap:ProductMember 2024-11-04 2025-11-02 0001730168 srt:AsiaPacificMember us-gaap:ProductMember 2024-11-04 2025-11-02 0001730168 us-gaap:EMEAMember us-gaap:ProductMember 2024-11-04 2025-11-02 0001730168 srt:AmericasMember avgo:SubscriptionsandServicesMember 2024-11-04 2025-11-02 0001730168 srt:AsiaPacificMember avgo:SubscriptionsandServicesMember 2024-11-04 2025-11-02 0001730168 us-gaap:EMEAMember avgo:SubscriptionsandServicesMember 2024-11-04 2025-11-02 0001730168 srt:AmericasMember us-gaap:ProductMember 2023-10-30 2024-11-03 0001730168 srt:AsiaPacificMember us-gaap:ProductMember 2023-10-30 2024-11-03 0001730168 us-gaap:EMEAMember us-gaap:ProductMember 2023-10-30 2024-11-03 0001730168 srt:AmericasMember avgo:SubscriptionsandServicesMember 2023-10-30 2024-11-03 0001730168 srt:AsiaPacificMember avgo:SubscriptionsandServicesMember 2023-10-30 2024-11-03 0001730168 us-gaap:EMEAMember avgo:SubscriptionsandServicesMember 2023-10-30 2024-11-03 0001730168 srt:AmericasMember us-gaap:ProductMember 2022-10-31 2023-10-29 0001730168 srt:AsiaPacificMember us-gaap:ProductMember 2022-10-31 2023-10-29 0001730168 us-gaap:EMEAMember us-gaap:ProductMember 2022-10-31 2023-10-29 0001730168 srt:AmericasMember avgo:SubscriptionsandServicesMember 2022-10-31 2023-10-29 0001730168 srt:AsiaPacificMember avgo:SubscriptionsandServicesMember 2022-10-31 2023-10-29 0001730168 us-gaap:EMEAMember avgo:SubscriptionsandServicesMember 2022-10-31 2023-10-29 0001730168 2025-11-02 2025-11-02 0001730168 avgo:VMwareAcquisitionMember 2024-11-04 2025-11-02 0001730168 avgo:VMwareAcquisitionMember 2024-07-01 0001730168 avgo:VMwareAcquisitionMember us-gaap:DevelopedTechnologyRightsMember 2023-11-22 2023-11-22 0001730168 avgo:VMwareAcquisitionMember us-gaap:CustomerContractsMember 2023-11-22 2023-11-22 0001730168 avgo:VMwareAcquisitionMember us-gaap:TrademarksAndTradeNamesMember 2023-11-22 2023-11-22 0001730168 avgo:VMwareAcquisitionMember avgo:OffMarketComponentOfCustomerContractsMember 2023-11-22 2023-11-22 0001730168 avgo:VMwareAcquisitionMember us-gaap:InProcessResearchAndDevelopmentMember 2023-11-22 2023-11-22 0001730168 avgo:VMwareAcquisitionMember avgo:VMwareCloudFoundationJuly2024ReleasesMember us-gaap:InProcessResearchAndDevelopmentMember 2023-11-22 2023-11-22 0001730168 avgo:VMwareAcquisitionMember avgo:VMwareCloudFoundationMarch2025ReleasesMember us-gaap:InProcessResearchAndDevelopmentMember 2023-11-22 2023-11-22 0001730168 avgo:VMwareAcquisitionMember avgo:VMwareCloudFoundationJuly2025ReleasesMember us-gaap:InProcessResearchAndDevelopmentMember 2023-11-22 2023-11-22 0001730168 avgo:VMwareAcquisitionMember avgo:VMwareCloudFoundationNetworkingAndSecurityVirtualizationMember us-gaap:InProcessResearchAndDevelopmentMember 2023-11-22 2023-11-22 0001730168 avgo:VMwareAcquisitionMember avgo:ApplicationNetworkingAndSecurityMember us-gaap:InProcessResearchAndDevelopmentMember 2023-11-22 2023-11-22 0001730168 avgo:VMwareAcquisitionMember avgo:VMwareCloudFoundationMarch2025ReleasesMember us-gaap:InProcessResearchAndDevelopmentMember 2024-11-04 2025-11-02 0001730168 avgo:VMwareAcquisitionMember avgo:VMwareCloudFoundationMarch2025ReleasesMember us-gaap:InProcessResearchAndDevelopmentMember 2023-10-30 2024-11-03 0001730168 avgo:VMwareAcquisitionMember 2023-10-30 2024-11-03 0001730168 avgo:VMwareAcquisitionMember 2022-10-31 2023-10-29 0001730168 avgo:SeagatesSoCBusinessAcquisitionMember 2024-04-23 2024-04-23 0001730168 avgo:SeagatesSoCBusinessAcquisitionMember 2024-11-04 2025-11-02 0001730168 avgo:SeagatesSoCBusinessAcquisitionMember 2024-04-23 0001730168 avgo:SeagatesSoCBusinessAcquisitionMember us-gaap:CustomerContractsMember 2024-04-23 2024-04-23 0001730168 avgo:SeagatesSoCBusinessAcquisitionMember us-gaap:DevelopedTechnologyRightsMember 2024-04-23 2024-04-23 0001730168 avgo:SeagatesSoCBusinessAcquisitionMember us-gaap:InProcessResearchAndDevelopmentMember 2024-04-23 2024-04-23 0001730168 us-gaap:FairValueInputsLevel1Member us-gaap:CashAndCashEquivalentsMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel1Member us-gaap:CashAndCashEquivalentsMember 2024-11-03 0001730168 avgo:SemiconductorSolutionsMember 2023-10-29 0001730168 avgo:InfrastructureSoftwareMember 2023-10-29 0001730168 avgo:VMwareAcquisitionMember avgo:SemiconductorSolutionsMember 2023-10-30 2024-11-03 0001730168 avgo:VMwareAcquisitionMember avgo:InfrastructureSoftwareMember 2023-10-30 2024-11-03 0001730168 avgo:SeagatesSoCBusinessAcquisitionMember avgo:SemiconductorSolutionsMember 2023-10-30 2024-11-03 0001730168 avgo:SeagatesSoCBusinessAcquisitionMember avgo:InfrastructureSoftwareMember 2023-10-30 2024-11-03 0001730168 avgo:SeagatesSoCBusinessAcquisitionMember 2023-10-30 2024-11-03 0001730168 avgo:SemiconductorSolutionsMember 2024-11-03 0001730168 avgo:InfrastructureSoftwareMember 2024-11-03 0001730168 avgo:SemiconductorSolutionsMember 2024-11-04 2025-11-02 0001730168 avgo:InfrastructureSoftwareMember 2024-11-04 2025-11-02 0001730168 avgo:SemiconductorSolutionsMember 2025-11-02 0001730168 avgo:InfrastructureSoftwareMember 2025-11-02 0001730168 us-gaap:TechnologyBasedIntangibleAssetsMember 2025-11-02 0001730168 us-gaap:CustomerContractsMember 2025-11-02 0001730168 us-gaap:TradeNamesMember 2025-11-02 0001730168 us-gaap:OtherIntangibleAssetsMember 2025-11-02 0001730168 us-gaap:InProcessResearchAndDevelopmentMember 2025-11-02 0001730168 us-gaap:TechnologyBasedIntangibleAssetsMember 2024-11-03 0001730168 us-gaap:CustomerContractsMember 2024-11-03 0001730168 us-gaap:TradeNamesMember 2024-11-03 0001730168 us-gaap:OtherIntangibleAssetsMember 2024-11-03 0001730168 us-gaap:InProcessResearchAndDevelopmentMember 2024-11-03 0001730168 us-gaap:TechnologyBasedIntangibleAssetsMember 2024-11-04 2025-11-02 0001730168 us-gaap:CustomerContractsMember 2024-11-04 2025-11-02 0001730168 us-gaap:TradeNamesMember 2024-11-04 2025-11-02 0001730168 us-gaap:OtherIntangibleAssetsMember 2024-11-04 2025-11-02 0001730168 us-gaap:PensionPlansDefinedBenefitMember 2024-11-04 2025-11-02 0001730168 us-gaap:PensionPlansDefinedBenefitMember 2023-10-30 2024-11-03 0001730168 us-gaap:PensionPlansDefinedBenefitMember 2022-10-31 2023-10-29 0001730168 us-gaap:PensionPlansDefinedBenefitMember 2024-11-03 0001730168 us-gaap:PensionPlansDefinedBenefitMember 2023-10-29 0001730168 us-gaap:PensionPlansDefinedBenefitMember 2025-11-02 0001730168 us-gaap:ForeignPlanMember us-gaap:PensionPlansDefinedBenefitMember 2025-11-02 0001730168 us-gaap:ForeignPlanMember us-gaap:PensionPlansDefinedBenefitMember 2024-11-03 0001730168 us-gaap:PensionPlansDefinedBenefitMember us-gaap:FixedIncomeSecuritiesMember 2025-11-02 0001730168 us-gaap:PensionPlansDefinedBenefitMember us-gaap:FixedIncomeSecuritiesMember 2024-11-03 0001730168 us-gaap:FairValueInputsLevel1Member us-gaap:PensionPlansDefinedBenefitMember us-gaap:CashAndCashEquivalentsMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel2Member us-gaap:PensionPlansDefinedBenefitMember us-gaap:CashAndCashEquivalentsMember 2025-11-02 0001730168 us-gaap:PensionPlansDefinedBenefitMember us-gaap:CashAndCashEquivalentsMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel1Member us-gaap:PensionPlansDefinedBenefitMember us-gaap:DefinedBenefitPlanEquitySecuritiesNonUsMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel2Member us-gaap:PensionPlansDefinedBenefitMember us-gaap:DefinedBenefitPlanEquitySecuritiesNonUsMember 2025-11-02 0001730168 us-gaap:PensionPlansDefinedBenefitMember us-gaap:DefinedBenefitPlanEquitySecuritiesNonUsMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel1Member us-gaap:PensionPlansDefinedBenefitMember us-gaap:USTreasurySecuritiesMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel2Member us-gaap:PensionPlansDefinedBenefitMember us-gaap:USTreasurySecuritiesMember 2025-11-02 0001730168 us-gaap:PensionPlansDefinedBenefitMember us-gaap:USTreasurySecuritiesMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel1Member us-gaap:PensionPlansDefinedBenefitMember us-gaap:CorporateDebtSecuritiesMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel2Member us-gaap:PensionPlansDefinedBenefitMember us-gaap:CorporateDebtSecuritiesMember 2025-11-02 0001730168 us-gaap:PensionPlansDefinedBenefitMember us-gaap:CorporateDebtSecuritiesMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel1Member us-gaap:PensionPlansDefinedBenefitMember us-gaap:MunicipalBondsMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel2Member us-gaap:PensionPlansDefinedBenefitMember us-gaap:MunicipalBondsMember 2025-11-02 0001730168 us-gaap:PensionPlansDefinedBenefitMember us-gaap:MunicipalBondsMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel1Member us-gaap:PensionPlansDefinedBenefitMember avgo:GovernmentbondsMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel2Member us-gaap:PensionPlansDefinedBenefitMember avgo:GovernmentbondsMember 2025-11-02 0001730168 us-gaap:PensionPlansDefinedBenefitMember avgo:GovernmentbondsMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel1Member us-gaap:PensionPlansDefinedBenefitMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel2Member us-gaap:PensionPlansDefinedBenefitMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel12And3Member us-gaap:PensionPlansDefinedBenefitMember 2025-11-02 0001730168 us-gaap:PensionPlansDefinedBenefitMember us-gaap:FairValueMeasuredAtNetAssetValuePerShareMember 2025-11-02 0001730168 us-gaap:FairValueInputsLevel1Member us-gaap:PensionPlansDefinedBenefitMember us-gaap:CashAndCashEquivalentsMember 2024-11-03 0001730168 us-gaap:FairValueInputsLevel2Member us-gaap:PensionPlansDefinedBenefitMember us-gaap:CashAndCashEquivalentsMember 2024-11-03 0001730168 us-gaap:PensionPlansDefinedBenefitMember us-gaap:CashAndCashEquivalentsMember 2024-11-03 0001730168 us-gaap:FairValueInputsLevel1Member us-gaap:PensionPlansDefinedBenefitMember us-gaap:DefinedBenefitPlanEquitySecuritiesNonUsMember 2024-11-03 0001730168 us-gaap:FairValueInputsLevel2Member us-gaap:PensionPlansDefinedBenefitMember us-gaap:DefinedBenefitPlanEquitySecuritiesNonUsMember 2024-11-03 0001730168 us-gaap:PensionPlansDefined
+
+
+### EDGAR filings for INTC (INTEL CORP) - last 365d, 14 filing(s):
+  - 2026-04-24 10-Q (0000050863-26-000079)
+  - 2026-04-23 8-K (0000050863-26-000077)
+  - 2026-03-03 8-K (0000050863-26-000044)
+  - 2026-01-23 10-K (0000050863-26-000011)
+  - 2026-01-22 8-K (0000050863-26-000009)
+  - 2025-11-12 8-K (0000050863-25-000194)
+  - 2025-11-06 10-Q (0000050863-25-000179)
+  - 2025-10-23 8-K (0000050863-25-000169)
+  - 2025-09-18 8-K (0000050863-25-000155)
+  - 2025-09-15 8-K (0000050863-25-000153)
+  - 2025-08-25 8-K (0000050863-25-000129)
+  - 2025-08-21 8-K (0000050863-25-000126)
+  - 2025-07-24 10-Q (0000050863-25-000109)
+  - 2025-07-24 8-K (0000050863-25-000107)
+
+### EDGAR filings for MRVL (Marvell Technology, Inc.) - last 365d, 10 filing(s):
+  - 2026-06-11 8-K (0001193125-26-267688)
+  - 2026-05-28 10-Q (0001835632-26-000019)
+  - 2026-05-27 8-K (0001835632-26-000014)
+  - 2026-03-31 8-K (0001193125-26-134462)
+  - 2026-03-11 10-K (0001835632-26-000011)
+  - 2026-03-05 8-K (0001835632-26-000006)
+  - 2025-12-03 10-Q (0001835632-25-000197)
+  - 2025-12-02 8-K (0001835632-25-000193)
+  - 2025-08-29 10-Q (0001835632-25-000189)
+  - 2025-08-28 8-K (0001835632-25-000187)
+
+### EDGAR filings for NVDA (NVIDIA CORP) - last 365d, 8 filing(s):
+  - 2026-05-20 10-Q (0001045810-26-000052)
+  - 2026-05-20 8-K (0001045810-26-000051)
+  - 2026-02-25 10-K (0001045810-26-000021)
+  - 2026-02-25 8-K (0001045810-26-000019)
+  - 2025-11-19 10-Q (0001045810-25-000230)
+  - 2025-11-19 8-K (0001045810-25-000228)
+  - 2025-08-27 10-Q (0001045810-25-000209)
+  - 2025-08-27 8-K (0001045810-25-000207)
+
+### EDGAR filings for QCOM (QUALCOMM INC/DE) - last 365d, 8 filing(s):
+  - 2026-04-29 10-Q (0000804328-26-000061)
+  - 2026-04-29 8-K (0000804328-26-000060)
+  - 2026-02-04 10-Q (0000804328-26-000017)
+  - 2026-02-04 8-K (0000804328-26-000016)
+  - 2025-11-05 10-K (0000804328-25-000085)
+  - 2025-11-05 8-K (0000804328-25-000084)
+  - 2025-07-30 10-Q (0000804328-25-000045)
+  - 2025-07-30 8-K (0000804328-25-000044)
+
+### EDGAR filings for TSM (TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD) - last 365d, 13 filing(s):
+  - 2026-06-04 6-K (0001046179-26-000302)
+  - 2026-05-15 6-K (0001046179-26-000280)
+  - 2026-05-12 6-K (0001046179-26-000274)
+  - 2026-04-17 6-K (0001046179-26-000203)
+  - 2026-04-16 6-K (0001046179-26-000201)
+  - 2026-04-16 6-K (0001046179-26-000199)
+  - 2026-04-16 20-F (0001628280-26-025362)
+  - 2026-02-10 6-K (0001046179-26-000017)
+  - 2026-01-15 6-K (0001046179-26-000008)
+  - 2025-11-12 6-K (0001046179-25-000126)
+  - 2025-10-16 6-K (0001046179-25-000116)
+  - 2025-08-12 6-K (0001046179-25-000093)
+  - 2025-07-17 6-K (0001046179-25-000082)

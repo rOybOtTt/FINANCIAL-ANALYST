@@ -1,0 +1,22 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# --- Generated raw data (re-created by the data agents; can be large) ---
+/data/
+
+# --- Local, machine-specific Claude settings (keep the shared skills/ though) ---
+.claude/settings.local.json
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+
+# --- Scratch / temp ---
+*_preview.png
+*.tmp

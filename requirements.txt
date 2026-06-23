@@ -1,0 +1,10 @@
+# Deep-Tech Investment Analyst — local dependencies (NO API key required)
+#   Install with:  python -m pip install -r requirements.txt
+#   Then once:     python -m playwright install chromium
+
+playwright          # headless-browser fallback for the scrapers (SEC / Yahoo / CNBC / finviz / Google News)
+pymupdf             # optional: render a reference pitch-deck PDF to images
+
+# anthropic         # OPTIONAL — only for the unattended/cron path where the Python
+#                     agents (04-08) call the PAID API themselves. NOT needed for the
+#                     default workflow, where Claude in your session does the analysis.

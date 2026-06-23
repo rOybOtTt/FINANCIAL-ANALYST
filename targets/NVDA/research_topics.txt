@@ -1,0 +1,13 @@
+# Deck-headline research topics for NVIDIA Corporation (NVDA)
+# one topic per line; researched by tech_agent.py --batch
+
+NVIDIA GPU architecture Blackwell tensor cores and the CUDA software moat
+AI accelerator value chain TSMC CoWoS advanced packaging HBM memory hyperscaler customers
+AI training and inference compute total addressable market size and growth forecast
+NVIDIA vs AMD MI300 vs hyperscaler custom ASIC TPU competitive landscape
+NVIDIA Rubin next generation GPU roadmap NVLink and rack scale interconnect
+data center GPU average selling price and unit volume PxQ trends
+NVIDIA supply chain TSMC foundry CoWoS capacity and HBM supply constraints
+NVIDIA gross margin drivers and pricing power
+hyperscaler AI data center capital expenditure demand drivers
+bear case for NVIDIA custom silicon competition export controls and demand digestion

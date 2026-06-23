@@ -1,0 +1,28 @@
+{
+  "ticker": "NVDA",
+  "name": "NVIDIA Corporation",
+  "asof": "2026-06-22",
+  "price": "$209.91",
+  "verdict": "WORTH A LOOK",
+  "stance": "LONG-biased, two-sided (entry discipline)",
+  "thesis": "Sells the AI 'factory,' not just a chip. Fairly valued at spot - the edge is the entry, not the thesis.",
+  "bull": [
+    "Best financials in large-cap tech: FY26 rev $215.9B (+65.5%), 71% GM, 60% op margin [FACT]",
+    "$120B net income, $103B operating cash flow, net cash [FACT]",
+    "Moat = CUDA + NVLink rack-scale + pre-booked CoWoS-L - three layers to beat at once [ATTRIBUTED]",
+    "2nd-cheapest in cohort (~32x fwd, PEG <1) vs AMD 181x, MRVL 103x, AVGO 66x [FACT]",
+    "8/8 sell-side Buy, median target ~$300 [FACT]"
+  ],
+  "bear": [
+    "Gross margin already rolled 75.0% -> 71.1% (FY25->FY26), at the cycle top [FACT]",
+    "Inference (~2/3 of compute) leaks to custom ASICs at 40-65% lower TCO [ATTRIBUTED]",
+    "FY23 air-pocket proven: rev +0.2%, op margin 37%->16% in one year [FACT]",
+    "~43x trailing GAAP on a ~$5.1T base - law of large numbers bites [EST]",
+    ">$40B circular AI vendor-financing vs $10.6B cash [FACT/ATTRIBUTED]"
+  ],
+  "driver": "NVDA's retained $ share of the accelerator TAM - CUDA/NVLink/perf-per-watt moat vs custom-ASIC inference encroachment, gated near-term by TSMC CoWoS-L + HBM supply.",
+  "valuation": "~32x fwd / ~43x trailing; PEG <1; 2nd-cheapest in cohort yet highest growth & margin. Base 75% share / $440B TAM = $244 / +5% IRR.",
+  "entry": "Accumulate <= $195, full size <= $180. Base $244-283 (+5-10%/yr); bull $346-372 (+18-21%/yr).",
+  "risk": "A frontier model trained off-NVDA PLUS a structural sub-67% GM quarter and/or DC revenue growth <+25% -> flips to a paired underweight (put spread + long AVGO/ASIC), target $140-160.",
+  "footnote": "Data on this project's mid-2026 synthetic clock - re-pull before live use. [FACT]=local SEC-XBRL/market brief; [EST]=modeled; [ATTRIBUTED]=third-party. Not investment advice."
+}

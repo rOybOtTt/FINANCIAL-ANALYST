@@ -1,0 +1,42 @@
+# NVDA — LONG Thesis  ·  (Bull PM (04/05))
+
+*In-session (no Anthropic API key). Data 2026-06-22, spot $209.91 [FACT]. Tags: [FACT] data brief · [ESTIMATE] modeled · [ASSUMPTION] input · [ATTRIBUTED] third-party.*
+
+**Single technical driver:** Terminal blended net margin, which is set by NVDA's ability to defend high-ASP rack-scale share (NVLink coherence domain) against ASIC inference encroachment. At base-case FY29 revenue (~$457B), net margin of 45% vs 58% swings FY29 EPS from ~$8.4 to ~$10.9 and the 28x PT from ~$236 to ~$304. Everything else (TAM size, unit volume, cadence) routes through whether the rack moat keeps blended margin in the mid-50s as inference mix grows.
+
+**Entry / expression:** Accumulate $185-210 (spot $209.91, near the lower half of the 52wk [142.03, 236.54] range). Scale in: half here, half on any retest toward $170-185 (a pullback to ~26x the ~$6.5 forward EPS). Add aggressively below $160 absent a thesis-breaking GM print.
+
+**3-yr price targets:** bear $93 (FY23-style digestion: rev ~$236B, net margin ~48% toward peers, multiple compresses to ~20x; EPS ~$4.6) · base $288 (rev ~$457B FY29 at +40/28/18%, net margin ~55%, exit 28x; EPS ~$10.3 — coincides with sell-side median) · bull $448 (rev ~$600B consistent with NVDA's own ~$500B Blackwell+Rubin projection, net margin ~57%, multiple holds 32x; EPS ~$14.0)
+
+**Return:** Base ~+11% IRR/yr (~37% cumulative to $288); Bull ~+29% IRR/yr (~113% cumulative to $448); Bear ~-24% IRR/yr (~-56% to $93). Probability-weighted (Base 50% / Bull 30% / Bear 20%) ~ +9-11% IRR with strongly positive convexity — the bull tail ($448) is larger than the bear tail given the unlevered balance sheet floors the downside.
+
+**Load-bearing claims (the thesis depends on these):**
+- **[LB1]** The defensible moat is the rack-scale coherence domain (NVLink/NVSwitch fusing 72 GPUs into one ~130 TB/s fabric) plus CUDA plus pre-booked CoWoS-L allocation — three stacked moats a competitor must beat simultaneously, which is why custom ASICs erode inference but not frontier-training/large-MoE economics. [ATTRIBUTED]
+- **[LB2]** The 75.0%->71.1% gross-margin roll is a Blackwell-ramp/mix trough, not structural erosion to peer levels; GM stabilizes in the high-60s/low-70s (vs AVGO 67.8%, AMD 49.5%), keeping net margin ~55%. [FACT anchor + ESTIMATE]
+- **[LB3]** Forward EPS clears ~$6.5 (FY27) and revenue compounds to ~$450-600B by FY29, justifying a 28-32x multiple as GARP rather than a bubble, funded by pre-booked CoWoS-L (~60% of 2026) converting backlog to revenue. [FACT/ESTIMATE + ATTRIBUTED]
+
+**Key risks to this side:**
+- Gross margin keeps bleeding toward peer-merchant levels (high-60s -> 50s) as GB200/Rubin mix adds HBM4 (~50% premium) and networking content faster than pass-through pricing — every 100bp of GM at FY26 scale is ~$2.16B of gross profit. [FACT/ATTRIBUTED]
+- Custom-ASIC inference encroachment outruns TAM growth: ASIC unit growth ~44.6% vs merchant GPU ~16.1% (2026), inference ~2/3 of compute, modeled NVDA inference share 90%+ -> 20-30% by 2028 — CUDA does not protect single-model inference where the customer owns the stack. [ATTRIBUTED]
+- A FY23-style air-pocket off a $5.1T base: revenue flat, GM 64.9%->56.9% in one year happened in FY23; a hyperscaler capex digestion on a $725B base de-rates a 32x multiple violently. [FACT]
+- Circular vendor-financing unwinds: >$40B NVDA AI-equity commitments (OpenAI stake cut from $100B LOI to ~$30B), ~15-20% of FY26 DC revenue tied to OpenAI/Anthropic — lower-quality, reflexive demand if startup funding/IPO markets tighten. [ATTRIBUTED]
+- Single-foundry/single-package concentration: TSMC sole leading-edge + CoWoS-L source, HBM 3-vendor oligopoly; any CoWoS-L yield, HBM4 qualification (Samsung slip), Taiwan, or grid-power cap (RAND: power not chips is the binding constraint) gates units regardless of demand. [ATTRIBUTED]
+- Law of large numbers: ~$65B of NET new revenue/yr (~= AVGO's entire FY25) is needed to sustain even ~30% growth off the FY26 base; deceleration below ~25% turns the 'cheap' 32x forward into a rich 43x trailing. [FACT/ESTIMATE]
+
+---
+
+## NVDA Long — the unit of sale moved from a chip to a coherent rack, and the moat moved with it
+
+**The engineering choice that creates the moat.** NVDA's defensible advantage is not any single die — a hyperscaler ASIC can match TOPS/$ on one piece of silicon. It is the **scale-up coherence domain**: NVLink/NVSwitch fuse 72 GPUs into one ~130 TB/s, ~1.8 TB/s/GPU non-blocking fabric (>14x PCIe Gen5) so a trillion-parameter MoE model behaves as a single accelerator, with most expert-hops staying in-rack [ATTRIBUTED]. SemiAnalysis measured GB200 NVL72 at up to ~28x MI355X throughput on DeepSeek-R1 MoE [ATTRIBUTED]. Wrapped around it: ~18 years of CUDA (cuDNN/TensorRT-LLM/NCCL/Triton) that makes the switching cost the *entire ML software stack* [ATTRIBUTED], and CoWoS-L 2.5D packaging (LSI bridges, ~5.5–6x reticle area) that NVDA pre-books at TSMC [ATTRIBUTED]. The annual co-design cadence (Hopper→Blackwell→Rubin→Feynman) re-touches the perf/watt frontier every ~12 months — faster than any challenger's design cycle [ATTRIBUTED]. **Three independent moats — software, interconnect, packaging allocation — sit on top of each other; a competitor must beat all three at once.**
+
+**This monetizes at a level nothing else in semis approaches.** FY26 revenue **215.94B (+65.5% YoY)** at **71.1% gross margin, 60.4% operating margin**, **120.07B net income**, **102.72B operating cash flow** [FACT]. That is a hardware bill-of-materials earning software economics. The nearest custom-silicon enabler, AVGO, runs 39.9% op margin; AMD 10.7% [FACT]. R&D is only 18.50B (8.6% of sales) [FACT], so the cadence self-funds — and the balance sheet is effectively unlevered (cash 10.61B, LT debt 7.47B, equity 157.29B) [FACT], meaning the OpenAI/neocloud investments are paid from cash flow, not debt — categorically different from the Lucent/Nortel debt-vendor-financing template the bears invoke.
+
+**PxQ redefined upward.** NVDA shifted the sellable SKU from a ~$30–35K discrete GPU to a ~$3M GB200 NVL72 rack, and Vera Rubin NVL72 reportedly up to ~$8.8M [ATTRIBUTED] — capturing the tray, NVLink switch, Grace CPU and networking margin a chip-only vendor never sees. Revenue compounded 26.97B→60.92B→130.50B→215.94B [FACT] — ~85B of *incremental* revenue in FY26 alone. The market is still inflecting: four hyperscalers guiding ~$725B 2026 capex, +~77% YoY [ATTRIBUTED]; accelerator TAM ~$140B (2024)→>$440B (2030) [ATTRIBUTED]. **Even with share erosion, the dollar pie expands faster than NVDA's share falls.**
+
+**Honest reading of the bear's best point — the margin roll.** GM peaked 75.0% (FY25) and fell to 71.1% (FY26), a ~390bp give-back at +65.5% growth [FACT]. I do *not* dismiss this. But absolute gross profit still grew from ~97.9B to ~153.5B [FACT] — the roll is a Blackwell yield/CoWoS-L ramp trough plus richer (HBM/networking-heavy) mix, the same per-architecture pattern that preceded the FY24→FY25 recovery to 75% [FACT]. The bull case does **not** require re-touching 75%; it requires GM stabilizing in the high-60s/low-70s. That is well above every merchant peer (AVGO 67.8%, TSM 56.1%, AMD 49.5%) [FACT].
+
+**Why the multiple is the asymmetry.** Reconciling the denominator: 32.15x reported implies ~$6.53 forward EPS; trailing GAAP EPS 4.90 is ~43x [FACT/ESTIMATE]. The forward number requires FY27 EPS clearing ~$6.5 — achievable if the Blackwell/Rubin ramp converts the CoWoS-L allocation NVDA already pre-booked (~60% of 2026) [ATTRIBUTED]. Against AMD 180.8x, MRVL 103.4x, AVGO 66.2x [FACT], a 32x forward multiple on the highest-margin, fastest-growing name in the group is a sub-1.0 PEG. Sell-side is 8/8 Buy, median ~$300 [FACT].
+
+**Valuation (modeled, [ESTIMATE]).** Base: FY26→FY29 revenue 215.94B→~457B (+40/28/18%), net margin 55%, exit 28x → EPS ~10.3, **PT ~$288**, ~11% IRR. Bull: revenue ~600B (consistent with NVDA's own ~$500B Blackwell+Rubin projection [ATTRIBUTED]), margin 57%, 32x → EPS ~14.0, **PT ~$448**, ~29% IRR. Bear: digestion to ~236B, margin 48% to peers, 20x → **PT ~$93**, ~−24% IRR.
+
+**What would break this long.** A genuine FY23-style air-pocket (rev flat, GM 56.9%) [FACT] off a $5.1T base; net margin sustained below ~50% as inference migrates to ASICs faster than TAM grows; or a CoWoS-L/HBM4/Taiwan supply shock. The asymmetry is in the bull's favor only while GM holds the high-60s and growth stays >25%.

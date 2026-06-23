@@ -1,0 +1,51 @@
+{
+  "_comment": "Investor-relations sources for companies NOT on SEC EDGAR (Agent 09 scrapes these with Playwright). Fix ir_url / add seed_urls if a site moved. SPIL is omitted - it merged into ASE in 2018, so ASE's SEC filings cover it.",
+  "keywords": ["annual report", "investor", "presentation", "earnings", "results",
+               "transcript", "fact book", "fact sheet", "financial report",
+               "quarter", "conference", "10-k", "20-f", "filing"],
+  "companies": [
+    {
+      "name": "JCET Group",
+      "slug": "jcet",
+      "seed_urls": [
+        "https://www.jcetglobal.com/en/site/financial-reports",
+        "https://www.jcetglobal.com/en/investor",
+        "https://www.jcetglobal.com/en"
+      ]
+    },
+    {
+      "name": "Powertech Technology",
+      "slug": "powertech",
+      "seed_urls": [
+        "https://www.pti.com.tw/en/ir/news",
+        "https://www.pti.com.tw/en/ir/financial/quarter",
+        "https://www.pti.com.tw/en/ir/financial/annual"
+      ]
+    },
+    {
+      "name": "Samsung Electronics",
+      "slug": "samsung",
+      "seed_urls": [
+        "https://www.samsung.com/global/ir/financial-information/earnings-release/",
+        "https://www.samsung.com/global/ir/"
+      ]
+    },
+    {
+      "name": "SK hynix",
+      "slug": "skhynix",
+      "seed_urls": [
+        "https://www.skhynix.com/ir/UI-FR-IR06/",
+        "https://www.skhynix.com/ir/",
+        "https://www.skhynix.com/eng/ir/irData.do"
+      ]
+    },
+    {
+      "name": "Tianshui Huatian (TSHT)",
+      "slug": "huatian",
+      "seed_urls": [
+        "https://www.tshtcn.com/en/",
+        "http://www.tshtcn.com/"
+      ]
+    }
+  ]
+}

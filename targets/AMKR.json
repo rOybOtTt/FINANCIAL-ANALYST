@@ -1,0 +1,89 @@
+{
+  "ticker": "AMKR",
+  "name": "Amkor Technology",
+  "side": "auto",
+  "sector": "advanced-packaging-osat",
+  "sector_label": "semiconductor advanced packaging (OSAT)",
+  "one_liner": "The world's largest independent OSAT - it packages and tests the chips other companies design and fabricate.",
+  "thesis_question": "Is Amkor fairly valued, and is it a long, a short, or a pass?",
+  "peers": [
+    {
+      "ticker": "ASX",
+      "name": "ASE Technology Holding",
+      "role": "competitor"
+    },
+    {
+      "ticker": "IMOS",
+      "name": "ChipMOS Technologies",
+      "role": "competitor"
+    },
+    {
+      "ticker": "600584.SS",
+      "name": "JCET Group",
+      "role": "competitor"
+    },
+    {
+      "ticker": "6239.TW",
+      "name": "Powertech Technology",
+      "role": "competitor"
+    },
+    {
+      "ticker": "002156.SZ",
+      "name": "Tongfu Microelectronics",
+      "role": "competitor"
+    },
+    {
+      "ticker": "002185.SZ",
+      "name": "Tianshui Huatian (TSHT)",
+      "role": "competitor"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "role": "competitor"
+    },
+    {
+      "ticker": "000660.KS",
+      "name": "SK hynix",
+      "role": "competitor"
+    },
+    {
+      "ticker": "TSM",
+      "name": "TSMC",
+      "role": "competitor"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "role": "competitor"
+    },
+    {
+      "ticker": "005930.KS",
+      "name": "Samsung Electronics",
+      "role": "competitor"
+    },
+    {
+      "ticker": "2449.TW",
+      "name": "King Yuan Electronics (KYEC)",
+      "role": "competitor"
+    },
+    {
+      "ticker": "601231.SS",
+      "name": "USI (Universal Scientific)",
+      "role": "competitor"
+    }
+  ],
+  "deck_topics": [],
+  "deck_topic_slugs": [
+    "amkor-technology-core-product-architecture-and-the-key-engin",
+    "semiconductor-advanced-packaging-osat-value-chain-upstream-s",
+    "amkor-technology-end-markets-total-addressable-market-size-a",
+    "amkor-technology-competitive-landscape-and-main-competitors-",
+    "amkor-technology-technology-roadmap-and-next-generation-prod",
+    "semiconductor-advanced-packaging-osat-pricing-trends-average",
+    "amkor-technology-manufacturing-supply-chain-capacity-and-geo",
+    "amkor-technology-gross-margin-and-cost-structure-drivers",
+    "semiconductor-advanced-packaging-osat-demand-drivers-ai-data",
+    "bear-case-and-key-technical-risks-for-amkor-technology"
+  ]
+}

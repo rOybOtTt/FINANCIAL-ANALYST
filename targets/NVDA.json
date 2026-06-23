@@ -1,0 +1,65 @@
+{
+  "ticker": "NVDA",
+  "name": "NVIDIA Corporation",
+  "side": "auto",
+  "sector": "ai-compute",
+  "sector_label": "AI compute / accelerators",
+  "one_liner": "Designs the GPUs and the CUDA software stack that train and run modern AI - the picks-and-shovels of the AI build-out.",
+  "thesis_question": "Is NVIDIA (NVDA) a long at today's price? Identify the single technical driver that most moves the valuation (e.g. CoWoS/HBM supply, data-center capex, custom-ASIC share loss), and state an entry price and expected IRR/ROI over a 3-year hold.",
+  "peers": [
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "role": "competitor"
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "role": "competitor"
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
+      "role": "competitor"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "role": "competitor"
+    },
+    {
+      "ticker": "TSM",
+      "name": "TSMC",
+      "role": "competitor"
+    },
+    {
+      "ticker": "QCOM",
+      "name": "Qualcomm",
+      "role": "competitor"
+    }
+  ],
+  "deck_topics": [
+    "NVIDIA GPU architecture Blackwell tensor cores and the CUDA software moat",
+    "AI accelerator value chain TSMC CoWoS advanced packaging HBM memory hyperscaler customers",
+    "AI training and inference compute total addressable market size and growth forecast",
+    "NVIDIA vs AMD MI300 vs hyperscaler custom ASIC TPU competitive landscape",
+    "NVIDIA Rubin next generation GPU roadmap NVLink and rack scale interconnect",
+    "data center GPU average selling price and unit volume PxQ trends",
+    "NVIDIA supply chain TSMC foundry CoWoS capacity and HBM supply constraints",
+    "NVIDIA gross margin drivers and pricing power",
+    "hyperscaler AI data center capital expenditure demand drivers",
+    "bear case for NVIDIA custom silicon competition export controls and demand digestion"
+  ],
+  "deck_topic_slugs": [
+    "nvidia-gpu-architecture-blackwell-tensor-cores-and-the-cuda-",
+    "ai-accelerator-value-chain-tsmc-cowos-advanced-packaging-hbm",
+    "ai-training-and-inference-compute-total-addressable-market-s",
+    "nvidia-vs-amd-mi300-vs-hyperscaler-custom-asic-tpu-competiti",
+    "nvidia-rubin-next-generation-gpu-roadmap-nvlink-and-rack-sca",
+    "data-center-gpu-average-selling-price-and-unit-volume-pxq-tr",
+    "nvidia-supply-chain-tsmc-foundry-cowos-capacity-and-hbm-supp",
+    "nvidia-gross-margin-drivers-and-pricing-power",
+    "hyperscaler-ai-data-center-capital-expenditure-demand-driver",
+    "bear-case-for-nvidia-custom-silicon-competition-export-contr"
+  ]
+}

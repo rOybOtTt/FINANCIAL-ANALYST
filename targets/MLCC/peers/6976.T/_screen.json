@@ -1,0 +1,27 @@
+{
+ "ticker": "6976",
+ "name": "Taiyo Yuden (6976.T)",
+ "price": "¥10,095",
+ "verdict": "WORTH A LOOK",
+ "stance": "Long tactical, high beta",
+ "thesis": "Purest Japanese MLCC lever: -55% from its high while backlog rose 78% QoQ",
+ "bull": [
+  "Capacitors 69% of sales: most MLCC-levered Japanese name [ATTRIBUTED]",
+  "Capacitor book-to-bill 1.72; backlog +78% QoQ [FACT]",
+  "OP guide raised to ¥45bn from ¥30bn (+125%) [FACT]",
+  "Price hikes April and September 2026 [ATTRIBUTED]",
+  "Exploring alliance with TDK (29 Sep) [ATTRIBUTED]"
+ ],
+ "bear": [
+  "AI-server exposure under 4% [ATTRIBUTED]",
+  "EV / 4y-mean EBITDA ~22x on thin historical margins [EST]",
+  "Net debt ~¥50bn; capex ¥42bn [ATTRIBUTED]",
+  "Fell 84-89% in 2000 and 2007 busts [FACT]"
+ ],
+ "driver": "Whether low-cap consumer/auto price hikes stick into 1Q27.",
+ "valuation": "Fwd P/E 36.4x; EV/EBITDA 19.2x; consensus TP ¥14,356 (+42%, pre-1Q mix).",
+ "entry": "Trade, sized small: add on any revisit of the 14 Sep low; stop if capacitor book-to-bill < 1.1.",
+ "risk": "Consumer demand rolls over before the Japanese price leg; it falls hardest in every bust.",
+ "asof": "2026-10-02",
+ "footnote": "Prices Yahoo, consensus stockanalysis.com, 2-Oct-2026. Ops data mostly [ATTRIBUTED]. Not advice."
+}

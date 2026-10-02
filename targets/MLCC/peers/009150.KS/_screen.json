@@ -1,0 +1,26 @@
+{
+ "ticker": "009150",
+ "name": "Samsung Electro-Mechanics (009150.KS)",
+ "price": "₩1,581,000",
+ "verdict": "PASS",
+ "stance": "Most expensive; short on a turn",
+ "thesis": "#2 in AI-server MLCC with real pricing power, but valued at ~65x mean EBITDA",
+ "bull": [
+  "~40% of AI-server MLCC; +30% price hike from 1 Aug [ATTRIBUTED]",
+  "₩3.3tn of hyperscaler LTAs incl. ₩1.07tn for 2027 [ATTRIBUTED]",
+  "2Q26 OP ₩440bn (+107%); 3Q cons. ₩605bn [ATTRIBUTED]",
+  "FC-BGA / glass substrates add a second AI leg [ATTRIBUTED]"
+ ],
+ "bear": [
+  "EV / 4y-mean EBITDA ~65x; fwd P/E 47.6x [EST]",
+  "Capex ~₩3tn (2026) to ~₩6tn (2027): the supply response [ATTRIBUTED]",
+  "Stock +660% in 12 months even after -30% [FACT]",
+  "Philippines plant 3 adds capacity 1Q27 [ATTRIBUTED]"
+ ],
+ "driver": "2027 capex step-up vs AI-server MLCC order slope.",
+ "valuation": "EV/4y-mean EBITDA ~65x; fwd P/E 47.6x; consensus TP ₩2.41m (+52%).",
+ "entry": "No long entry on the house method; revisit below ~25x mean EBITDA.",
+ "risk": "LTA pricing proves sticky through 2028 and substrates double; then 30x+ holds.",
+ "asof": "2026-10-02",
+ "footnote": "Prices Yahoo, consensus stockanalysis.com, 2-Oct-2026. Ops data mostly [ATTRIBUTED]. Not advice."
+}

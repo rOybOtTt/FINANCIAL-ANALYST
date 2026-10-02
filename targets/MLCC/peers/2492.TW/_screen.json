@@ -1,0 +1,26 @@
+{
+ "ticker": "2492",
+ "name": "Walsin Technology (2492.TW)",
+ "price": "NT$361.5",
+ "verdict": "WORTH A LOOK",
+ "stance": "Long tactical, thin coverage",
+ "thesis": "Cheapest pure-ish MLCC name: revenue +45% YoY, 21.7x forward, -41% from high",
+ "bull": [
+  "MLCC 46% of sales; book-to-bill >1.8 [ATTRIBUTED]",
+  "Aug revenue +45.5% YoY, best since Nov-2018 [ATTRIBUTED]",
+  "CEO: tightness may last into 2028 [ATTRIBUTED]",
+  "Fwd P/E 21.7x, lowest of the pure plays [FACT]"
+ ],
+ "bear": [
+  "Commodity mix; fell 68-83% in past busts [FACT]",
+  "Thin coverage (one broker TP NT$480) [ATTRIBUTED]",
+  "Net debt ~NT$13bn [ATTRIBUTED]",
+  "Capacity +10-15% a year: adds into the peak [ATTRIBUTED]"
+ ],
+ "driver": "Monthly revenue MoM through 4Q (seasonally weak).",
+ "valuation": "Fwd P/E 21.7x; EV/EBITDA 27.3x; Masterlink TP NT$480 [ATTRIBUTED].",
+ "entry": "Pair with Yageo: same signal, cheaper; exit on 3 straight MoM declines.",
+ "risk": "Price hikes fail to reach direct customers; consumer slump.",
+ "asof": "2026-10-02",
+ "footnote": "Prices Yahoo, consensus stockanalysis.com, 2-Oct-2026. Ops data mostly [ATTRIBUTED]. Not advice."
+}

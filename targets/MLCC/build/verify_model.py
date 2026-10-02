@@ -13,3 +13,12 @@ for r in G.iter_rows(min_row=5, max_row=11, values_only=True): print([round(x, 2
 for r in G.iter_rows(min_row=16, max_row=24, values_only=True): print([round(x) if isinstance(x, float) else x for x in r[:8]])
 print('band', [round(wb['Band'].cell(i, 6).value, 2) for i in range(5, 10)])
 print('errors', err[:10], 'empty', none[:5]); print('PASS' if not err and not none else 'FAIL')
+# export the recalculated outputs for the decks/PDFs
+import json
+out = {}
+for j, sc in enumerate(['Bear', 'Base', 'Bull', 'PW'], start=2):
+    col = [V.cell(r, j).value for r in range(5, 14)]
+    out[sc] = dict(p=col[0], mult=col[1], mean5=col[2], ebitda30=col[3], cash=col[4], vps=col[5], pv=col[6], irr=col[7], entry=col[8])
+out['entry20'] = out['PW']['entry']; out['price'] = V['B16'].value; out['ev_mult_today'] = V['B18'].value; out['band_median'] = V['B19'].value
+out['rev_mult_0irr'] = V['B20'].value; out['rev_mult_20irr'] = V['B21'].value; out['pb_vs_median'] = V['B22'].value; out['verdict'] = V['B24'].value
+if 'murata' in src: json.dump(out, open('data/murata_valuation.json', 'w'), indent=1, default=float)

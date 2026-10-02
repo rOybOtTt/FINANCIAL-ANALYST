@@ -1,0 +1,390 @@
+fiscal_year,metric,value,unit,source_url,page_table,basis
+FY3/2012,net_sales,584662,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1/2 Main performance figures,US GAAP
+FY3/2013,net_sales,681021,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1/2 Main performance figures,US GAAP
+FY3/2014,net_sales,846716,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1/2 Main performance figures,US GAAP
+FY3/2015,net_sales,1043542,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1/2 Main performance figures,US GAAP
+FY3/2016,net_sales,1210841,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 Main performance figures / p7 income stmt,US GAAP
+FY3/2017,net_sales,1135524,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 Main performance figures / p7 income stmt,US GAAP
+FY3/2018,net_sales,1371842,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 Main performance figures / p7 income stmt,US GAAP
+FY3/2019,net_sales,1575026,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 Main performance figures / p7 income stmt,US GAAP
+FY3/2020,net_sales,1534045,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 Main performance figures / p7 income stmt,US GAAP
+FY3/2021,net_sales,1630193,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 Main performance figures / p7 income stmt,US GAAP
+FY3/2022,net_sales,1812521,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 Main performance figures / p7 income stmt,US GAAP
+FY3/2023,net_sales,1686796,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 Main performance figures / p7 income stmt,US GAAP
+FY3/2024,net_sales,1640158,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 Main performance figures / p7 income stmt,IFRS
+FY3/2025,net_sales,1743352,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 Main performance figures / p7 income stmt,IFRS
+FY3/2026,net_sales,1830856,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 Main performance figures / p7 income stmt,IFRS
+FY3/2012,operating_income,44973,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2013,operating_income,58636,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2014,operating_income,125891,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2015,operating_income,214535,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2016,operating_income,275406,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; FY3/24-26 IFRS operating profit,US GAAP
+FY3/2017,operating_income,201215,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; FY3/24-26 IFRS operating profit,US GAAP
+FY3/2018,operating_income,163254,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; FY3/24-26 IFRS operating profit,US GAAP
+FY3/2019,operating_income,266807,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; FY3/24-26 IFRS operating profit,US GAAP
+FY3/2020,operating_income,253247,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; FY3/24-26 IFRS operating profit,US GAAP
+FY3/2021,operating_income,313240,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; FY3/24-26 IFRS operating profit,US GAAP
+FY3/2022,operating_income,424060,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; FY3/24-26 IFRS operating profit,US GAAP
+FY3/2023,operating_income,297887,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; FY3/24-26 IFRS operating profit,US GAAP
+FY3/2024,operating_income,215447,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; FY3/24-26 IFRS operating profit,IFRS
+FY3/2025,operating_income,279702,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; FY3/24-26 IFRS operating profit,IFRS
+FY3/2026,operating_income,281835,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; FY3/24-26 IFRS operating profit,IFRS
+FY3/2012,net_income_attrib_parent,30807,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2013,net_income_attrib_parent,42386,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2014,net_income_attrib_parent,93191,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2015,net_income_attrib_parent,167711,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2016,net_income_attrib_parent,203776,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2017,net_income_attrib_parent,156060,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2018,net_income_attrib_parent,146086,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2019,net_income_attrib_parent,206930,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2020,net_income_attrib_parent,183012,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2021,net_income_attrib_parent,237057,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2022,net_income_attrib_parent,314124,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2023,net_income_attrib_parent,253690,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2024,net_income_attrib_parent,180838,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,IFRS
+FY3/2025,net_income_attrib_parent,233818,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,IFRS
+FY3/2026,net_income_attrib_parent,233920,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,IFRS
+FY3/2012,depreciation_amortization,61008,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2013,depreciation_amortization,72323,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2014,depreciation_amortization,76884,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2015,depreciation_amortization,84935,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2016,depreciation_amortization,99105,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2017,depreciation_amortization,113523,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2018,depreciation_amortization,141625,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2019,depreciation_amortization,124419,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2020,depreciation_amortization,140267,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2021,depreciation_amortization,143074,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2022,depreciation_amortization,155583,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2023,depreciation_amortization,161276,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2024,depreciation_amortization,175873,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,IFRS
+FY3/2025,depreciation_amortization,173335,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,IFRS
+FY3/2026,depreciation_amortization,178212,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,IFRS
+FY3/2012,capex,68445,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2013,capex,77662,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2014,capex,68197,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2015,capex,101184,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2016,capex,172540,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2017,capex,158579,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2018,capex,306608,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2019,capex,291581,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2020,capex,281599,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2021,capex,196660,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2022,capex,152786,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2023,capex,208111,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2024,capex,219531,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,IFRS
+FY3/2025,capex,180471,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,IFRS
+FY3/2026,capex,247778,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,IFRS
+FY3/2012,rnd_expense,40978,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2013,rnd_expense,48766,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2014,rnd_expense,54649,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2015,rnd_expense,64990,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2016,rnd_expense,77982,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2017,rnd_expense,81809,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2018,rnd_expense,94181,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2019,rnd_expense,101589,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2020,rnd_expense,102486,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2021,rnd_expense,101727,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2022,rnd_expense,111297,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2023,rnd_expense,124239,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2024,rnd_expense,132502,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,IFRS
+FY3/2025,rnd_expense,149274,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,IFRS
+FY3/2026,rnd_expense,158870,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,IFRS
+FY3/2012,total_equity_incl_nci,808542,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p3 BS,US GAAP
+FY3/2013,total_equity_incl_nci,860963,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p3 BS,US GAAP
+FY3/2014,total_equity_incl_nci,971632,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p3 BS,US GAAP
+FY3/2015,total_equity_incl_nci,1138931,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p3 BS,US GAAP
+FY3/2016,total_equity_incl_nci,1243979,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2017,total_equity_incl_nci,1355334,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2018,total_equity_incl_nci,1457216,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2019,total_equity_incl_nci,1604540,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2020,total_equity_incl_nci,1694807,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2021,total_equity_incl_nci,1921645,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2022,total_equity_incl_nci,2263912,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2023,total_equity_incl_nci,2402476,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2024,total_equity_incl_nci,2555609,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,IFRS
+FY3/2025,total_equity_incl_nci,2579975,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,IFRS
+FY3/2026,total_equity_incl_nci,2717810,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,IFRS
+FY3/2012,equity_attrib_parent,808542,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p3 BS,US GAAP
+FY3/2013,equity_attrib_parent,860963,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p3 BS,US GAAP
+FY3/2014,equity_attrib_parent,955760,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p3 BS,US GAAP
+FY3/2015,equity_attrib_parent,1123090,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p3 BS,US GAAP
+FY3/2016,equity_attrib_parent,1229159,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2017,equity_attrib_parent,1354819,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2018,equity_attrib_parent,1456600,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2019,equity_attrib_parent,1603976,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2020,equity_attrib_parent,1694104,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2021,equity_attrib_parent,1920805,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2022,equity_attrib_parent,2263596,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2023,equity_attrib_parent,2402511,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,US GAAP
+FY3/2024,equity_attrib_parent,2556147,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,IFRS
+FY3/2025,equity_attrib_parent,2580805,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,IFRS
+FY3/2026,equity_attrib_parent,2718743,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p5/p6 BS,IFRS
+FY3/2012,cash_and_cash_equivalents_headline,65302,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1 (row 'Cash and cash equivalents'),US GAAP
+FY3/2013,cash_and_cash_equivalents_headline,90068,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1 (row 'Cash and cash equivalents'),US GAAP
+FY3/2014,cash_and_cash_equivalents_headline,118884,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1 (row 'Cash and cash equivalents'),US GAAP
+FY3/2015,cash_and_cash_equivalents_headline,212936,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1 (row 'Cash and cash equivalents'),US GAAP
+FY3/2016,cash_and_cash_equivalents_headline,212570,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; p4 BS (IFRS),US GAAP
+FY3/2017,cash_and_cash_equivalents_headline,239184,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; p4 BS (IFRS),US GAAP
+FY3/2018,cash_and_cash_equivalents_headline,187910,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; p4 BS (IFRS),US GAAP
+FY3/2019,cash_and_cash_equivalents_headline,217805,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; p4 BS (IFRS),US GAAP
+FY3/2020,cash_and_cash_equivalents_headline,302320,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; p4 BS (IFRS),US GAAP
+FY3/2021,cash_and_cash_equivalents_headline,407699,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; p4 BS (IFRS),US GAAP
+FY3/2022,cash_and_cash_equivalents_headline,512072,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; p4 BS (IFRS),US GAAP
+FY3/2023,cash_and_cash_equivalents_headline,469406,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; p4 BS (IFRS),US GAAP
+FY3/2024,cash_and_cash_equivalents_headline,622007,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; p4 BS (IFRS),IFRS
+FY3/2025,cash_and_cash_equivalents_headline,625148,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; p4 BS (IFRS),IFRS
+FY3/2026,cash_and_cash_equivalents_headline,653701,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3; p4 BS (IFRS),IFRS
+FY3/2012,bs_cash_and_deposits,54460,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p2 BS,US GAAP
+FY3/2013,bs_cash_and_deposits,77444,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p2 BS,US GAAP
+FY3/2014,bs_cash_and_deposits,104467,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p2 BS,US GAAP
+FY3/2015,bs_cash_and_deposits,139685,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p2 BS,US GAAP
+FY3/2016,bs_cash_and_deposits,150627,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2017,bs_cash_and_deposits,170929,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2018,bs_cash_and_deposits,168902,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2019,bs_cash_and_deposits,181956,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2020,bs_cash_and_deposits,239656,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2021,bs_cash_and_deposits,363979,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2022,bs_cash_and_deposits,370388,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2023,bs_cash_and_deposits,318557,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2012,bs_short_term_investments,25391,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p2 BS,US GAAP
+FY3/2013,bs_short_term_investments,46521,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p2 BS,US GAAP
+FY3/2014,bs_short_term_investments,77531,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p2 BS,US GAAP
+FY3/2015,bs_short_term_investments,146413,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p2 BS,US GAAP
+FY3/2016,bs_short_term_investments,174228,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2017,bs_short_term_investments,173401,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2018,bs_short_term_investments,30747,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2019,bs_short_term_investments,69781,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2020,bs_short_term_investments,106950,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2021,bs_short_term_investments,64218,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2022,bs_short_term_investments,174074,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2023,bs_short_term_investments,162456,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2012,bs_marketable_securities,64215,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p2 BS,US GAAP
+FY3/2013,bs_marketable_securities,60752,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p2 BS,US GAAP
+FY3/2014,bs_marketable_securities,100403,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p2 BS,US GAAP
+FY3/2015,bs_marketable_securities,72199,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p2 BS,US GAAP
+FY3/2016,bs_marketable_securities,45188,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2017,bs_marketable_securities,53043,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2018,bs_marketable_securities,20790,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2019,bs_marketable_securities,27364,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2020,bs_marketable_securities,29554,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2021,bs_marketable_securities,22599,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2022,bs_marketable_securities,23979,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2023,bs_marketable_securities,12240,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (US GAAP),US GAAP
+FY3/2024,other_financial_assets_current_IFRS,19532,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,"2026FB p4 BS (IFRS) - includes time deposits etc, not split out",IFRS
+FY3/2025,other_financial_assets_current_IFRS,50685,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,"2026FB p4 BS (IFRS) - includes time deposits etc, not split out",IFRS
+FY3/2026,other_financial_assets_current_IFRS,24185,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,"2026FB p4 BS (IFRS) - includes time deposits etc, not split out",IFRS
+FY3/2023,other_financial_assets_current_IFRS,43014,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p4 BS (IFRS restated FY3/23),IFRS-restated
+FY3/2012,interest_bearing_debt,37196,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2013,interest_bearing_debt,55605,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2014,interest_bearing_debt,57129,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2015,interest_bearing_debt,25868,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p1,US GAAP
+FY3/2016,interest_bearing_debt,9747,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2017,interest_bearing_debt,46663,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2018,interest_bearing_debt,14487,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2019,interest_bearing_debt,123614,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2020,interest_bearing_debt,201474,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2021,interest_bearing_debt,150757,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2022,interest_bearing_debt,111078,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2023,interest_bearing_debt,111999,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,US GAAP
+FY3/2024,interest_bearing_debt,52836,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,IFRS
+FY3/2025,interest_bearing_debt,2437,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,IFRS
+FY3/2026,interest_bearing_debt,3260,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3,IFRS
+FY3/2023,IFRS_restated_FY3/23_operating_income,298231,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2 IFRS block,IFRS-restated
+FY3/2023,net_income_attrib_parent,243946,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 IFRS block (restated),IFRS-restated
+FY3/2023,depreciation_amortization,169618,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 IFRS block (restated),IFRS-restated
+FY3/2023,capex,207985,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 IFRS block (restated),IFRS-restated
+FY3/2023,total_equity_incl_nci,2359942,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 IFRS block (restated),IFRS-restated
+FY3/2023,interest_bearing_debt,111998,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 IFRS block (restated),IFRS-restated
+FY3/2023,net_sales,1686796,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p2-3 IFRS block (restated),IFRS-restated
+FY3/2012,"shares_issued_yearend_factbook_basis(post-Apr2019 split, pre-Oct2023 split)",675.790776,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index,as printed
+FY3/2012,shares_issued_yearend_split_adj_current,2027.372328,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index x3 for Oct-2023 split,computed
+FY3/2012,treasury_shares_yearend_split_adj_current,127.676772,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index x3,computed
+FY3/2012,shares_outstanding_ex_treasury_split_adj_current,1899.695556,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index x3,computed
+FY3/2013,"shares_issued_yearend_factbook_basis(post-Apr2019 split, pre-Oct2023 split)",675.790776,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index,as printed
+FY3/2013,shares_issued_yearend_split_adj_current,2027.372328,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index x3 for Oct-2023 split,computed
+FY3/2013,treasury_shares_yearend_split_adj_current,127.696761,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index x3,computed
+FY3/2013,shares_outstanding_ex_treasury_split_adj_current,1899.675567,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index x3,computed
+FY3/2014,"shares_issued_yearend_factbook_basis(post-Apr2019 split, pre-Oct2023 split)",675.790776,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index,as printed
+FY3/2014,shares_issued_yearend_split_adj_current,2027.372328,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index x3 for Oct-2023 split,computed
+FY3/2014,treasury_shares_yearend_split_adj_current,122.00283,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index x3,computed
+FY3/2014,shares_outstanding_ex_treasury_split_adj_current,1905.369498,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index x3,computed
+FY3/2015,"shares_issued_yearend_factbook_basis(post-Apr2019 split, pre-Oct2023 split)",675.790776,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index,as printed
+FY3/2015,shares_issued_yearend_split_adj_current,2027.372328,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index x3 for Oct-2023 split,computed
+FY3/2015,treasury_shares_yearend_split_adj_current,122.027994,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index x3,computed
+FY3/2015,shares_outstanding_ex_treasury_split_adj_current,1905.344334,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p15 Stock index x3,computed
+FY3/2016,"shares_issued_yearend_factbook_basis(post-Apr2019 split, pre-Oct2023 split)",675.790776,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index,as printed
+FY3/2016,shares_issued_yearend_split_adj_current,2027.372328,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3 for Oct-2023 split,computed
+FY3/2016,treasury_shares_yearend_split_adj_current,122.039856,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2016,shares_outstanding_ex_treasury_split_adj_current,1905.332472,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2017,"shares_issued_yearend_factbook_basis(post-Apr2019 split, pre-Oct2023 split)",675.790776,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index,as printed
+FY3/2017,shares_issued_yearend_split_adj_current,2027.372328,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3 for Oct-2023 split,computed
+FY3/2017,treasury_shares_yearend_split_adj_current,112.727754,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2017,shares_outstanding_ex_treasury_split_adj_current,1914.644574,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2018,"shares_issued_yearend_factbook_basis(post-Apr2019 split, pre-Oct2023 split)",675.814278,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index,as printed
+FY3/2018,shares_issued_yearend_split_adj_current,2027.442834,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3 for Oct-2023 split,computed
+FY3/2018,treasury_shares_yearend_split_adj_current,108.183366,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2018,shares_outstanding_ex_treasury_split_adj_current,1919.259468,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2019,"shares_issued_yearend_factbook_basis(post-Apr2019 split, pre-Oct2023 split)",675.814278,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index,as printed
+FY3/2019,shares_issued_yearend_split_adj_current,2027.442834,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3 for Oct-2023 split,computed
+FY3/2019,treasury_shares_yearend_split_adj_current,108.132768,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2019,shares_outstanding_ex_treasury_split_adj_current,1919.310066,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2020,"shares_issued_yearend_factbook_basis(post-Apr2019 split, pre-Oct2023 split)",675.814281,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index,as printed
+FY3/2020,shares_issued_yearend_split_adj_current,2027.442843,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3 for Oct-2023 split,computed
+FY3/2020,treasury_shares_yearend_split_adj_current,108.053547,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2020,shares_outstanding_ex_treasury_split_adj_current,1919.389296,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2021,"shares_issued_yearend_factbook_basis(post-Apr2019 split, pre-Oct2023 split)",675.814281,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index,as printed
+FY3/2021,shares_issued_yearend_split_adj_current,2027.442843,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3 for Oct-2023 split,computed
+FY3/2021,treasury_shares_yearend_split_adj_current,107.996454,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2021,shares_outstanding_ex_treasury_split_adj_current,1919.446389,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2022,"shares_issued_yearend_factbook_basis(post-Apr2019 split, pre-Oct2023 split)",675.814281,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index,as printed
+FY3/2022,shares_issued_yearend_split_adj_current,2027.442843,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3 for Oct-2023 split,computed
+FY3/2022,treasury_shares_yearend_split_adj_current,107.947599,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2022,shares_outstanding_ex_treasury_split_adj_current,1919.495244,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2023,"shares_issued_yearend_factbook_basis(post-Apr2019 split, pre-Oct2023 split)",675.814281,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index,as printed
+FY3/2023,shares_issued_yearend_split_adj_current,2027.442843,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3 for Oct-2023 split,computed
+FY3/2023,treasury_shares_yearend_split_adj_current,138.272181,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2023,shares_outstanding_ex_treasury_split_adj_current,1889.170662,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p25 Stock index x3,computed
+FY3/2024,shares_issued_yearend_split_adj_current,2027.442843,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p26 Stock index,as printed
+FY3/2024,treasury_shares_yearend_split_adj_current,138.209482,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p26 Stock index,as printed
+FY3/2024,shares_outstanding_ex_treasury_split_adj_current,1889.233361,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p26 Stock index,computed
+FY3/2025,shares_issued_yearend_split_adj_current,1963.001843,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p26 Stock index,as printed
+FY3/2025,treasury_shares_yearend_split_adj_current,100.640793,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p26 Stock index,as printed
+FY3/2025,shares_outstanding_ex_treasury_split_adj_current,1862.36105,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p26 Stock index,computed
+FY3/2026,shares_issued_yearend_split_adj_current,1963.001843,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p26 Stock index,as printed
+FY3/2026,treasury_shares_yearend_split_adj_current,142.709692,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p26 Stock index,as printed
+FY3/2026,shares_outstanding_ex_treasury_split_adj_current,1820.292151,shares mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p26 Stock index,computed
+FY3/2012,"dps_factbook_basis(post-Apr2019 split, pre-Oct2023)",33.33,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p14 Return to Shareholders,as printed
+FY3/2012,dps_split_adj_current,11.11,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p14 Return to Shareholders /3,computed
+FY3/2013,"dps_factbook_basis(post-Apr2019 split, pre-Oct2023)",33.33,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p14 Return to Shareholders,as printed
+FY3/2013,dps_split_adj_current,11.11,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p14 Return to Shareholders /3,computed
+FY3/2014,"dps_factbook_basis(post-Apr2019 split, pre-Oct2023)",43.33,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p14 Return to Shareholders,as printed
+FY3/2014,dps_split_adj_current,14.44,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p14 Return to Shareholders /3,computed
+FY3/2015,"dps_factbook_basis(post-Apr2019 split, pre-Oct2023)",60.0,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p14 Return to Shareholders,as printed
+FY3/2015,dps_split_adj_current,20.0,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p14 Return to Shareholders /3,computed
+FY3/2016,"dps_factbook_basis(post-Apr2019 split, pre-Oct2023)",70.0,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders,as printed
+FY3/2016,dps_split_adj_current,23.33,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders /3,computed
+FY3/2017,"dps_factbook_basis(post-Apr2019 split, pre-Oct2023)",73.33,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders,as printed
+FY3/2017,dps_split_adj_current,24.44,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders /3,computed
+FY3/2018,"dps_factbook_basis(post-Apr2019 split, pre-Oct2023)",86.67,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders,as printed
+FY3/2018,dps_split_adj_current,28.89,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders /3,computed
+FY3/2019,"dps_factbook_basis(post-Apr2019 split, pre-Oct2023)",93.33,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders,as printed
+FY3/2019,dps_split_adj_current,31.11,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders /3,computed
+FY3/2020,"dps_factbook_basis(post-Apr2019 split, pre-Oct2023)",97.0,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders,as printed
+FY3/2020,dps_split_adj_current,32.33,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders /3,computed
+FY3/2021,"dps_factbook_basis(post-Apr2019 split, pre-Oct2023)",115.0,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders,as printed
+FY3/2021,dps_split_adj_current,38.33,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders /3,computed
+FY3/2022,"dps_factbook_basis(post-Apr2019 split, pre-Oct2023)",130.0,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders,as printed
+FY3/2022,dps_split_adj_current,43.33,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders /3,computed
+FY3/2023,"dps_factbook_basis(post-Apr2019 split, pre-Oct2023)",150.0,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders,as printed
+FY3/2023,dps_split_adj_current,50.0,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p23 Return to Shareholders /3,computed
+FY3/2024,dps_split_adj_current,52.0,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,"2026FB p24: interim JPY75 pre-split (=25) + year-end 27; total dividends 98,240 mn; table cell for annual DPS blank in text extraction",derived
+FY3/2025,dps_split_adj_current,57.0,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p24,as printed
+FY3/2026,dps_split_adj_current,65.0,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p24 (EPS cell printed 177.77 vs 127.7 on p26 - factbook typo),as printed
+FY3/2012,total_dividends_paid,21286,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,Return to Shareholders,as printed
+FY3/2013,total_dividends_paid,21108,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,Return to Shareholders,as printed
+FY3/2014,total_dividends_paid,27522,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,Return to Shareholders,as printed
+FY3/2015,total_dividends_paid,38107,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,Return to Shareholders,as printed
+FY3/2016,total_dividends_paid,44458,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,Return to Shareholders,as printed
+FY3/2017,total_dividends_paid,46802,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,Return to Shareholders,as printed
+FY3/2018,total_dividends_paid,55445,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,Return to Shareholders,as printed
+FY3/2019,total_dividends_paid,59712,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,Return to Shareholders,as printed
+FY3/2020,total_dividends_paid,62060,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,Return to Shareholders,as printed
+FY3/2021,total_dividends_paid,73579,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,Return to Shareholders,as printed
+FY3/2022,total_dividends_paid,83178,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,Return to Shareholders,as printed
+FY3/2023,total_dividends_paid,94459,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,Return to Shareholders,as printed
+FY3/2024,total_dividends_paid,98240,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,Return to Shareholders,as printed
+FY3/2025,total_dividends_paid,106443,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,Return to Shareholders,as printed
+FY3/2026,total_dividends_paid,118559,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,Return to Shareholders,as printed
+FY3/2024,share_buyback,0,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,Return to Shareholders,as printed
+FY3/2025,share_buyback,80006,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,Return to Shareholders,as printed
+FY3/2026,share_buyback,100008,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,Return to Shareholders,as printed
+FY3/2023,share_buyback,79999,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,Return to Shareholders,as printed
+FY3/2012,share_buyback,15005,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,Return to Shareholders,as printed
+FY3/2012,capacitor_sales_product_basis,208386,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p7 Sales by Product,old product basis
+FY3/2013,capacitor_sales_product_basis,228719,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p7 Sales by Product,old product basis
+FY3/2014,capacitor_sales_product_basis,276574,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p7 Sales by Product,old product basis
+FY3/2015,capacitor_sales_product_basis,334272,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p7 Sales by Product,old product basis
+FY3/2016,capacitor_sales_product_basis,367319,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p11 Revenue by Product,old product basis
+FY3/2017,capacitor_sales_product_basis,369488,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p11 Revenue by Product,old product basis
+FY3/2018,capacitor_sales_product_basis,449801,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p11 Revenue by Product,old product basis
+FY3/2019,capacitor_sales_product_basis,574230,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p11 Revenue by Product,old product basis
+FY3/2020,capacitor_sales_product_basis,559438,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p11 Revenue by Product,old product basis
+FY3/2021,capacitor_sales_product_basis,626546,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p11 Revenue by Product,old product basis
+FY3/2022,capacitor_sales_product_basis,785254,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p11 Revenue by Product,old product basis
+FY3/2022,capacitor_revenue_segment_basis,788539,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p10 Revenue by Operating Segment,new segment basis (IFRS)
+FY3/2023,capacitor_revenue_segment_basis,738841,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p10 Revenue by Operating Segment,new segment basis (IFRS)
+FY3/2024,capacitor_revenue_segment_basis,753520,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p10 Revenue by Operating Segment,new segment basis (IFRS)
+FY3/2025,capacitor_revenue_segment_basis,831845,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p10 Revenue by Operating Segment,new segment basis (IFRS)
+FY3/2026,capacitor_revenue_segment_basis,936418,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p10 Revenue by Operating Segment,new segment basis (IFRS)
+FY3/2020,capacitor_orders_Q1,110322,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p8 Orders by Product,as printed
+FY3/2020,capacitor_orders_Q2,117486,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p8 Orders by Product,as printed
+FY3/2020,capacitor_orders_Q3,156238,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p8 Orders by Product,as printed
+FY3/2020,capacitor_orders_Q4,154483,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p8 Orders by Product,as printed
+FY3/2020,capacitor_orders_FY,538529,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p8 Orders by Product,as printed
+FY3/2021,capacitor_orders_Q1,117519,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p8,as printed
+FY3/2021,capacitor_orders_Q2,166974,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p8,as printed
+FY3/2021,capacitor_orders_Q3,199821,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p8,as printed
+FY3/2021,capacitor_orders_Q4,222587,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p8,as printed
+FY3/2021,capacitor_orders_FY,706901,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p8,as printed
+FY3/2022,capacitor_orders_Q1,223848,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p8 (old product basis),as printed
+FY3/2022,capacitor_orders_Q2,198148,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p8 (old product basis),as printed
+FY3/2022,capacitor_orders_Q3,189879,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p8 (old product basis),as printed
+FY3/2022,capacitor_orders_Q4,211603,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p8 (old product basis),as printed
+FY3/2022,capacitor_orders_FY,823478,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2022/0713/factbook2022.ashx,2022FB p8 (old product basis),as printed
+FY3/2023,capacitor_orders_Q1,197479,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2024/0628b/factbook2024.ashx,2024FB p14 Orders by Segment,as printed
+FY3/2023,capacitor_orders_Q2,164870,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2024/0628b/factbook2024.ashx,2024FB p14 Orders by Segment,as printed
+FY3/2023,capacitor_orders_Q3,144316,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2024/0628b/factbook2024.ashx,2024FB p14 Orders by Segment,as printed
+FY3/2023,capacitor_orders_Q4,139334,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2024/0628b/factbook2024.ashx,2024FB p14 Orders by Segment,as printed
+FY3/2023,capacitor_orders_FY,645999,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2024/0628b/factbook2024.ashx,2024FB p14 Orders by Segment,as printed
+FY3/2024,capacitor_orders_Q1,164314,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p14,as printed
+FY3/2024,capacitor_orders_Q2,190321,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p14,as printed
+FY3/2024,capacitor_orders_Q3,203716,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p14,as printed
+FY3/2024,capacitor_orders_Q4,200469,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p14,as printed
+FY3/2024,capacitor_orders_FY,758820,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p14,as printed
+FY3/2025,capacitor_orders_Q1,213226,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p14,as printed
+FY3/2025,capacitor_orders_Q2,204681,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p14,as printed
+FY3/2025,capacitor_orders_Q3,207210,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p14,as printed
+FY3/2025,capacitor_orders_Q4,207567,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p14,as printed
+FY3/2025,capacitor_orders_FY,832684,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p14,as printed
+FY3/2025,capacitor_backlog_Q1_end,151081,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p15 Backlogs,as printed
+FY3/2025,capacitor_backlog_Q2_end,141763,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p15 Backlogs,as printed
+FY3/2025,capacitor_backlog_Q3_end,135884,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p15 Backlogs,as printed
+FY3/2025,capacitor_backlog_Q4_end,142007,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p15 Backlogs,as printed
+FY3/2026,capacitor_backlog_Q1_end,148672,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p15 Backlogs,as printed
+FY3/2026,capacitor_backlog_Q2_end,152907,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p15 Backlogs,as printed
+FY3/2026,capacitor_backlog_Q3_end,181848,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p15 Backlogs,as printed
+FY3/2026,capacitor_backlog_Q4_end,269158,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0626/factbook2026.ashx,2026FB p15 Backlogs,as printed
+FY3/2026,capacitor_orders_Q1,223965,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,"DERIVED = quarterly capacitor revenue (Q1FY27 slides p38, JPY bn 1dp) + change in backlog (2026FB p15); Murata's own order definition",ESTIMATE
+FY3/2026,capacitor_orders_Q2,241835,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,"DERIVED = quarterly capacitor revenue (Q1FY27 slides p38, JPY bn 1dp) + change in backlog (2026FB p15); Murata's own order definition",ESTIMATE
+FY3/2026,capacitor_orders_Q3,268041,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,"DERIVED = quarterly capacitor revenue (Q1FY27 slides p38, JPY bn 1dp) + change in backlog (2026FB p15); Murata's own order definition",ESTIMATE
+FY3/2026,capacitor_orders_Q4,329710,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,"DERIVED = quarterly capacitor revenue (Q1FY27 slides p38, JPY bn 1dp) + change in backlog (2026FB p15); Murata's own order definition",ESTIMATE
+FY3/2026,capacitor_orders_FY,1063551,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,DERIVED sum of quarters,ESTIMATE
+FY3/2026,capacitor_revenue_Q1,217300.0,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,Q1 FY3/27 slides p38,as printed
+FY3/2026,capacitor_revenue_Q2,237600.0,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,Q1 FY3/27 slides p38,as printed
+FY3/2026,capacitor_revenue_Q3,239100.0,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,Q1 FY3/27 slides p38,as printed
+FY3/2026,capacitor_revenue_Q4,242400.0,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,Q1 FY3/27 slides p38,as printed
+FY3/2027E (guidance 31-Jul-2026),net_sales,2110000,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,slide 17,guidance
+FY3/2027E (guidance 31-Jul-2026),operating_income,430000,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,slide 17,guidance
+FY3/2027E (guidance 31-Jul-2026),profit_before_tax,451000,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,slide 17,guidance
+FY3/2027E (guidance 31-Jul-2026),net_income_attrib_parent,338000,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,slide 17,guidance
+FY3/2027E (guidance 31-Jul-2026),capex,255000,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,speech p3 (raised +5bn from 250bn),guidance
+FY3/2027E (guidance 31-Jul-2026),capacitor_revenue,1157500,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,slide 19 (1H 569.6 / 2H 587.9),guidance
+FY3/2027E (guidance 31-Jul-2026),inductor_emi_revenue,254800,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,slide 19,guidance
+FY3/2027E (guidance 31-Jul-2026),dps,70,JPY,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0430b/25q4-e-speach.ashx,Q4 FY3/26 speech p~: 70 yen (35+35); July: dividend unchanged,guidance
+FY3/2027E (guidance 31-Jul-2026),avg_fx_usdjpy,156.12,JPY/USD,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,slide 17 (155 from Q2; 150 in April),guidance
+FY3/2027E (guidance 31-Jul-2026),rnd_expense_APRIL_guidance_not_revised,167000,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0430b/25q4-e-speach.ashx,25Q4 speech slide: April guidance,guidance
+FY3/2027E (guidance 31-Jul-2026),depreciation_amortization_APRIL_guidance_not_revised,178000,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0430b/25q4-e-speach.ashx,25Q4 speech slide: April guidance,guidance
+"FY3/2027E (guidance 30-Apr-2026, prior)",net_sales,1960000,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,slide 17 / Q4 speech p23,prior guidance
+"FY3/2027E (guidance 30-Apr-2026, prior)",operating_income,380000,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,slide 17 / Q4 speech p23,prior guidance
+"FY3/2027E (guidance 30-Apr-2026, prior)",profit_before_tax,390000,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,slide 17 / Q4 speech p23,prior guidance
+"FY3/2027E (guidance 30-Apr-2026, prior)",net_income_attrib_parent,293000,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,slide 17 / Q4 speech p23,prior guidance
+"FY3/2027E (guidance 30-Apr-2026, prior)",capacitor_revenue,1061700,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0430b/25q4-e-speach.ashx,slide 17 / Q4 speech p23,prior guidance
+FY3/2027 Q1 actual (Apr-Jun 2026),net_sales,502300,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,"slides 5,7,8; speech p7",actual
+FY3/2027 Q1 actual (Apr-Jun 2026),operating_income,98500,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,"slides 5,7,8; speech p7",actual
+FY3/2027 Q1 actual (Apr-Jun 2026),net_income_attrib_parent,81400,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,"slides 5,7,8; speech p7",actual
+FY3/2027 Q1 actual (Apr-Jun 2026),capacitor_revenue,282500,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,"slides 5,7,8; speech p7",actual
+FY3/2027 Q1 actual (Apr-Jun 2026),total_orders,673900,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,"slides 5,7,8; speech p7",actual
+FY3/2027 Q1 actual (Apr-Jun 2026),total_backlog_end,617800,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,"slides 5,7,8; speech p7",actual
+FY3/2027 Q1 actual (Apr-Jun 2026),total_book_to_bill,1.34,x,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,"slides 5,7,8; speech p7",actual
+FY3/2027 Q1 actual (Apr-Jun 2026),MLCC_book_to_bill,1.47,x,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,"slides 5,7,8; speech p7",actual
+FY3/2027 Q1 actual (Apr-Jun 2026),capacitor_orders_derived_from_BBR(282.5bn x1.47),415275,JPY mn,https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0731d/26q1-e-speach.ashx,"slides 5,7,8; speech p7",ESTIMATE

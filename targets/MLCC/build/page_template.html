@@ -1,0 +1,455 @@
+<title>MLCC Cycle Watch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a cycle instrument panel. Score + basket history up top, then the evidence, supply, demand, stocks, history. */
+:root {
+  --ground:#F3F5F8; --surface:#FFFFFF; --sunk:#E9EDF3; --ink:#131A26; --ink-2:#3F4A5C; --ink-3:#687386;
+  --rule:#D7DDE6; --rule-2:#C2CAD6;
+  --accent:#2a78d6; --accent-soft:#E3EDFB; --warm:#eb6834;
+  --good:#0F7A3D; --good-soft:#E0F2E7; --warn:#946200; --warn-soft:#FBF0D6; --bad:#B8322F; --bad-soft:#F9E2E1;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --s6:#008300; --s7:#4a3aa7; --grey:#9AA3B2;
+  --shadow:0 1px 2px rgba(19,26,38,.05),0 6px 18px rgba(19,26,38,.05);
+  --display:"Schibsted Grotesk","Arial Narrow",Arial,sans-serif;
+  --body:"Public Sans","Segoe UI",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  color-scheme:dark; --ground:#0E1218; --surface:#151B24; --sunk:#1C2430; --ink:#E6EBF2; --ink-2:#B4BECC; --ink-3:#8793A5;
+  --rule:#253041; --rule-2:#33405386; --accent:#3987e5; --accent-soft:#16253C; --warm:#d95926;
+  --good:#4CC27E; --good-soft:#132A1D; --warn:#E3B04A; --warn-soft:#2C2412; --bad:#EE7B73; --bad-soft:#331A19;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#2f9a2f; --s7:#9085e9; --grey:#6E7889; --shadow:0 1px 2px rgba(0,0,0,.4); } }
+:root[data-theme="dark"] {
+  color-scheme:dark; --ground:#0E1218; --surface:#151B24; --sunk:#1C2430; --ink:#E6EBF2; --ink-2:#B4BECC; --ink-3:#8793A5;
+  --rule:#253041; --rule-2:#334053; --accent:#3987e5; --accent-soft:#16253C; --warm:#d95926;
+  --good:#4CC27E; --good-soft:#132A1D; --warn:#E3B04A; --warn-soft:#2C2412; --bad:#EE7B73; --bad-soft:#331A19;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#2f9a2f; --s7:#9085e9; --grey:#6E7889; --shadow:0 1px 2px rgba(0,0,0,.4); }
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font:15px/1.55 var(--body);padding-inline:16px;margin:0}
+a{color:var(--accent);text-underline-offset:2px}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:1.5rem;font-weight:800} h3{font-size:1.02rem;font-weight:700}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-block:0 64px}
+.label{font:600 .7rem/1.2 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.mono,.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--ink-3)} .small{font-size:.84rem}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--ground) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);margin-inline:-16px;padding:10px 16px}
+.bar-inner{max-width:1180px;margin:0 auto;display:flex;gap:16px;align-items:center}
+.brand{font-family:var(--display);font-weight:800;font-size:1.1rem;white-space:nowrap;display:flex;gap:8px;align-items:center}
+.brand .bscore{font-family:var(--mono);font-weight:500;font-size:.85rem;padding:3px 7px;border-radius:6px;background:var(--sunk)}
+.nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.nav a{color:var(--ink-2);text-decoration:none;font-size:.84rem;padding:6px 9px;border-radius:6px;white-space:nowrap}
+.nav a:hover{background:var(--sunk);color:var(--ink)}
+section{padding-top:44px;scroll-margin-top:64px}
+.sec-head{display:grid;gap:6px;margin-bottom:16px;max-width:75ch}
+.sec-head p{color:var(--ink-2)}
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:18px;box-shadow:var(--shadow);min-width:0}
+.hero{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:16px;padding-top:24px}
+.hero-score{display:grid;gap:14px;align-content:start}
+.hero-num{display:flex;align-items:baseline;gap:8px}
+.hero-num .num{font-size:clamp(3.2rem,8vw,4.4rem);font-weight:500;line-height:.95;letter-spacing:-.03em}
+.hero-num .of{color:var(--ink-3);font-family:var(--mono)}
+.bscale{display:grid;gap:4px}
+.bscale-track{position:relative;display:flex;gap:2px;height:12px}
+.bscale-track span{display:block;height:100%;border-radius:3px}
+.bscale-mark{position:absolute;top:-5px;width:3px;height:22px;margin-left:-1.5px;background:var(--ink);border-radius:2px;box-shadow:0 0 0 2px var(--surface)}
+.bscale-ticks{position:relative;height:14px;font:10.5px var(--mono);color:var(--ink-3)}
+.bscale-ticks span{position:absolute;transform:translateX(-50%)}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.tile{background:var(--sunk);border-radius:8px;padding:8px 10px;display:grid;gap:2px}
+.tile .num{font-size:1.05rem}
+.chartbox{position:relative;width:100%;min-width:0}
+.hc-head{display:flex;justify-content:space-between;align-items:center;gap:8px 12px;flex-wrap:wrap;margin-bottom:8px}
+.seg{display:inline-flex;border:1px solid var(--rule-2);border-radius:7px;overflow:hidden}
+.seg button{border:0;border-radius:0;padding:6px 11px;font:500 .76rem/1 var(--mono);background:var(--surface);color:var(--ink);cursor:pointer}
+.seg button+button{border-left:1px solid var(--rule-2)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--ground)}
+figcaption,.cap{font-size:.76rem;color:var(--ink-3);margin-top:6px}
+.state{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:20px;padding-top:22px}
+.phase{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,3.4vw,2.15rem);line-height:1.08}
+.flip{display:grid;gap:6px;align-content:start} .flip ul{margin:0;padding-left:18px;color:var(--ink-2);font-size:.9rem;display:grid;gap:3px}
+.pill{display:inline-flex;align-items:center;gap:5px;font:600 .74rem/1 var(--body);padding:4px 8px;border-radius:999px;white-space:nowrap}
+.s-green{color:var(--good);background:var(--good-soft)} .s-amber{color:var(--warn);background:var(--warn-soft)} .s-red{color:var(--bad);background:var(--bad-soft)}
+.chip{display:inline-block;font:500 .72rem/1.3 var(--body);padding:3px 7px;border-radius:5px;background:var(--sunk);color:var(--ink-2)}
+.sigs{display:grid;background:var(--surface);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+.sig{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px 26px;padding:16px;border-top:1px solid var(--rule)}
+.sig:first-child{border-top:0}
+.sig>*{min-width:0}
+.sig-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:.76rem;color:var(--ink-3)}
+.sig .read{font-size:.92rem}
+.rules{display:grid;gap:3px;font-size:.82rem}
+.rules div{display:grid;grid-template-columns:62px 1fr;gap:8px}
+.rules b{font-weight:600}
+.rules .g b{color:var(--good)} .rules .a b{color:var(--warn)} .rules .r b{color:var(--bad)}
+.why{font-size:.84rem;color:var(--ink-2)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.table-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--rule);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.85rem}
+th{text-align:left;font:600 .68rem/1.2 var(--body);letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);padding:10px 12px;border-bottom:1px solid var(--rule);white-space:nowrap}
+td{padding:9px 12px;border-top:1px solid var(--rule);vertical-align:top;color:var(--ink-2)}
+td:first-child{color:var(--ink)} td.r,th.r{text-align:right} td.num{white-space:nowrap}
+.pos{color:var(--good)} .neg{color:var(--bad)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px;display:grid;gap:8px;align-content:start;min-width:0}
+.card .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.card .big{font-family:var(--mono);font-size:1.5rem;font-weight:500;line-height:1}
+.kv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.kv div{background:var(--sunk);border-radius:6px;padding:5px 7px;display:grid}
+.kv .num{font-size:.9rem}
+.card ul{margin:0;padding-left:16px;font-size:.84rem;color:var(--ink-2);display:grid;gap:2px}
+.debates{display:grid;gap:12px}
+.debate{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:16px;display:grid;gap:10px}
+.sides{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.side{padding:10px 12px;border-radius:8px;font-size:.87rem}
+.side.bull{background:var(--good-soft)} .side.bear{background:var(--bad-soft)}
+.side .label{margin-bottom:3px} .side.bull .label{color:var(--good)} .side.bear .label{color:var(--bad)}
+.lean{font-size:.84rem;color:var(--ink)}
+.cycle{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px;display:grid;gap:6px;font-size:.86rem;align-content:start}
+.cycle .dates{font-family:var(--mono);font-size:.76rem;color:var(--ink-3)}
+.cycle .lesson{border-left:3px solid var(--accent);padding-left:10px;color:var(--ink)}
+.cal-item{display:grid;grid-template-columns:120px minmax(0,1fr);gap:12px;padding:8px 0;border-top:1px solid var(--rule);font-size:.87rem}
+.cal-item .d{font-family:var(--mono);color:var(--ink-3);font-size:.8rem}
+.callout{background:var(--accent-soft);border-radius:10px;padding:14px 16px;display:grid;gap:6px}
+.callout .big{font-family:var(--display);font-weight:800;font-size:1.25rem}
+details.more{margin-top:10px} details.more summary{cursor:pointer;color:var(--ink-2);font-size:.85rem}
+.foot{margin-top:48px;color:var(--ink-3);font-size:.8rem;border-top:1px solid var(--rule);padding-top:16px;display:grid;gap:6px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+@media (max-width:900px){.hero,.state,.grid2,.grid3,.sig{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.sides{grid-template-columns:minmax(0,1fr)}.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.cal-item{grid-template-columns:minmax(0,1fr);gap:2px}.kv{grid-template-columns:repeat(2,minmax(0,1fr))}.brand .full{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<header class="bar"><div class="bar-inner">
+  <div class="brand"><svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true"><rect x="1" y="1" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 1v14M17 1v14" stroke="currentColor" stroke-width="1.6"/><path d="M8 5h6M8 8h6M8 11h6" stroke="currentColor" stroke-width="1" opacity=".6"/></svg><span class="full">MLCC Cycle Watch</span><span class="bscore" id="bar-score"></span></div>
+  <nav class="nav" aria-label="Sections">
+    <a href="#state">Where we are</a><a href="#buy">Buy now?</a><a href="#signals">Signals</a><a href="#supply">Supply</a><a href="#demand">Demand</a><a href="#stocks">Stocks</a><a href="#debates">Debates</a><a href="#history">History</a><a href="#checklist">Checklist</a><a href="#catalysts">Catalysts</a><a href="#sources">Sources</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+  <div class="panel hero-score">
+    <div class="label">Late-cycle risk score · as of <span id="asof"></span></div>
+    <div class="hero-num"><span class="num" id="score"></span><span class="of">/ 100</span></div>
+    <div><span class="pill s-green" id="band"></span></div>
+    <div class="bscale" aria-hidden="true">
+      <div class="bscale-track" id="bscale"></div>
+      <div class="bscale-ticks"><span style="left:0;transform:none">0</span><span style="left:25%">25</span><span style="left:50%">50</span><span style="left:70%">70</span><span style="left:100%;transform:translateX(-100%)">100</span></div>
+    </div>
+    <div class="tiles">
+      <div class="tile"><span class="label">Green</span><span class="num" id="n-green"></span></div>
+      <div class="tile"><span class="label">Amber</span><span class="num" id="n-amber"></span></div>
+      <div class="tile"><span class="label">Red</span><span class="num" id="n-red"></span></div>
+    </div>
+    <p class="small muted">Twelve signals, each scored green 0 / amber 1 / red 2 and weighted 1-3. Under 25 = upcycle intact; 25-49 late upcycle; 50-69 turn underway; 70+ downturn. Same rule as the Memory Cycle Watch.</p>
+  </div>
+  <div class="panel">
+    <div class="hc-head">
+      <div><h3>Equal-weight MLCC basket since 2000</h3><div class="small muted">Murata, SEMCO, Taiyo Yuden, Yageo, Walsin · local currency, dividend-adjusted · log scale · dots = cycle peaks</div></div>
+      <div class="seg" role="group" aria-label="Range"><button data-r="all" aria-pressed="true">2000-26</button><button data-r="10">10y</button><button data-r="3">3y</button></div>
+    </div>
+    <div class="chartbox" style="height:300px"><canvas id="c-hero" aria-label="MLCC basket index history"></canvas></div>
+    <figcaption>Yahoo Finance monthly adjusted closes, 2 Oct 2026; basket rebalanced monthly. FX not included.</figcaption>
+  </div>
+</div>
+
+<section id="state" style="padding-top:22px">
+  <div class="state">
+    <div class="panel" style="display:grid;gap:12px">
+      <div class="label">Cycle state</div>
+      <div class="phase" id="phase"></div>
+      <p id="summary" style="color:var(--ink-2);max-width:72ch"></p>
+      <div class="grid2">
+        <div class="flip"><div class="label" style="color:var(--bad)">What turns it down</div><ul id="flip-down"></ul></div>
+        <div class="flip"><div class="label" style="color:var(--good)">What extends it</div><ul id="flip-up"></ul></div>
+      </div>
+    </div>
+    <div class="panel" style="display:grid;gap:10px;align-content:start">
+      <h3>Murata capacitor book-to-bill</h3>
+      <div class="chartbox" style="height:220px"><canvas id="c-bbr"></canvas></div>
+      <figcaption>Murata fact books 2022-2026 and 1Q FY2026 speech (FY2025 Q3-Q4 not disclosed for capacitors). Dashed line = 1.0.</figcaption>
+    </div>
+  </div>
+</section>
+
+<section id="buy">
+  <div class="sec-head"><span class="label">The question</span><h2>Did buying the basket here pay off before?</h2>
+  <p>Today the basket is 36% below its peak with orders still at records. We tested every past cycle: buy the first month the basket closes 35% or more below its cycle peak, hold 6, 12, 24 and 36 months.</p></div>
+  <div class="grid2">
+    <div class="panel"><h3>Return after buying 35% below the peak</h3><div class="chartbox" style="height:280px"><canvas id="c-bt"></canvas></div>
+      <figcaption>Equal-weight basket, local currency, total-return proxy. Six completed cycles; 2024's dip never reached -35%.</figcaption></div>
+    <div style="display:grid;gap:12px;align-content:start">
+      <div class="callout"><div class="label">Verdict from history</div>
+        <div class="big" id="bt-verdict"></div>
+        <p class="small" id="bt-detail"></p></div>
+      <div class="table-wrap"><table><thead><tr><th>Peak</th><th>Bought</th><th class="r">12m</th><th class="r">24m</th><th class="r">36m</th><th class="r">Worse first</th></tr></thead><tbody id="bt-rows"></tbody></table></div>
+    </div>
+  </div>
+  <details class="more"><summary>Murata alone: buy 30% below its peak</summary>
+    <div class="table-wrap" style="margin-top:8px"><table><thead><tr><th>Peak</th><th>Bought</th><th class="r">12m</th><th class="r">24m</th><th class="r">36m</th><th class="r">Worse first</th></tr></thead><tbody id="bt-mur"></tbody></table></div>
+    <p class="cap">Same method on Murata's own price. Murata's dips are shallower and its record is weaker in true downturns (2001, 2007), better in mid-cycle pauses (2011, 2019, 2022).</p>
+  </details>
+</section>
+
+<section id="signals">
+  <div class="sec-head"><span class="label">Scorecard</span><h2>The twelve signals behind the score</h2><p>Ordered by weight. Each row states its green/amber/red rule, today's reading and where the reading came from.</p></div>
+  <div class="sigs" id="sig-rows"></div>
+</section>
+
+<section id="supply">
+  <div class="sec-head"><span class="label">Supply</span><h2>Who can make what</h2><p>No maker publishes capacity, so monthly shipments at full load are the best proxy. Murata and SEMCO ship two-thirds of the industry's high-end parts and 80-85% of AI-server MLCCs.</p></div>
+  <div class="grid2">
+    <div class="panel"><h3>MLCC output, bn pcs per month</h3><div class="chartbox" style="height:260px"><canvas id="c-cap"></canvas></div><figcaption>TrendForce, June-2026 shipments (Murata, SEMCO, Taiyo Yuden); Chinese figures are company claims (grey). Others not disclosed.</figcaption></div>
+    <div class="panel"><h3>Share of MLCC value vs AI-server share, %</h3><div class="chartbox" style="height:260px"><canvas id="c-share"></canvas></div><figcaption>passive-components.eu, 30 Jun 2026 (attributed estimates).</figcaption></div>
+  </div>
+  <div class="table-wrap" style="margin-top:16px"><table><thead><tr><th>Maker</th><th>Utilization</th><th>MLCC revenue (latest FY)</th><th>Capacity plan</th><th>Book-to-bill</th></tr></thead><tbody id="cap-rows"></tbody></table></div>
+</section>
+
+<section id="demand">
+  <div class="sec-head"><span class="label">Demand</span><h2>Where the parts go</h2><p>Units still come from phones and PCs, but the increment comes from AI servers and electric cars, which carry ten to a hundred times more MLCCs per box.</p></div>
+  <div class="grid2">
+    <div class="panel"><h3>MLCCs per device (log scale)</h3><div class="chartbox" style="height:280px"><canvas id="c-content"></canvas></div><figcaption>passive-components.eu, TrendForce, Mordor (attributed); ranges shown at midpoint.</figcaption></div>
+    <div class="panel" style="display:grid;gap:12px;align-content:start">
+      <h3>Demand facts that matter</h3>
+      <div class="tiles" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+        <div class="tile"><span class="label">Market 2026</span><span class="num">~$32bn</span><span class="small muted">Mordor; others $15-24bn (2024)</span></div>
+        <div class="tile"><span class="label">AI-server MLCC CAGR</span><span class="num">~30%</span><span class="small muted">Murata, 2025-30 (3.3x)</span></div>
+        <div class="tile"><span class="label">Murata data-center sales</span><span class="num">¥371bn</span><span class="small muted">FY3/27 guide, +80% YoY</span></div>
+        <div class="tile"><span class="label">Rubin vs GB200 board</span><span class="num">12k vs 6.5k</span><span class="small muted">TrendForce, 18 May 2026</span></div>
+      </div>
+      <ul class="small" style="margin:0;padding-left:18px;color:var(--ink-2);display:grid;gap:3px">
+        <li>Consumer electronics ~51% of value and automotive ~26%, growing fastest outside AI (Mordor, Persistence; attributed).</li>
+        <li>An AI server uses about 8x a conventional server (Murata); one GB200 NVL72 rack carries ~440,000 MLCCs.</li>
+        <li>Consumer demand is soft: Murata calls it subdued, TrendForce flags a weaker 2H26 peak season.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="stocks">
+  <div class="sec-head"><span class="label">Stocks</span><h2>Seven names, one cycle, very different exposure</h2><p>Price, distance from the 2026 high, consensus multiple and target. The pure plays (Taiyo Yuden, Yageo, Walsin) fell hardest; Kyocera and TDK barely moved because MLCC is a small part of them.</p></div>
+  <div class="panel" style="margin-bottom:16px"><h3>Distance from the 2026 high</h3><div class="chartbox" style="height:260px"><canvas id="c-dd"></canvas></div><figcaption>Yahoo daily closes, 2 Oct 2026.</figcaption></div>
+  <div class="cards" id="stock-cards"></div>
+</section>
+
+<section id="debates">
+  <div class="sec-head"><span class="label">Debates</span><h2>What decides the next turn</h2></div>
+  <div class="debates" id="debate-list"></div>
+</section>
+
+<section id="history">
+  <div class="sec-head"><span class="label">History</span><h2>Twenty-six years of MLCC booms and busts</h2><p>Shortages have lasted 10-14 months before new capacity arrived. Stocks peaked before orders every time, and every bust began with double-ordering.</p></div>
+  <div class="grid3" id="cycle-cards"></div>
+</section>
+
+<section id="checklist">
+  <div class="sec-head"><span class="label">Checklist</span><h2>What to read, and when</h2></div>
+  <div class="table-wrap"><table><thead><tr><th>Cadence</th><th>Data</th><th>Signal</th><th>Where</th></tr></thead><tbody id="check-rows"></tbody></table></div>
+</section>
+
+<section id="catalysts">
+  <div class="sec-head"><span class="label">Calendar</span><h2>Next five months</h2><p>Dates marked est. are inferred from last year's timing.</p></div>
+  <div class="panel" id="cal"></div>
+</section>
+
+<section id="sources">
+  <div class="sec-head"><span class="label">Method and gaps</span><h2>Sources, tags and what we could not find</h2></div>
+  <div class="grid2">
+    <div class="panel small" style="display:grid;gap:8px">
+      <p><b>Tags.</b> F = company document or exchange price data. A = attributed to press, aggregators or brokers, not independently verified. E = our arithmetic. Most 2026 operating readings are A; Murata's book-to-bill, utilization and fact-book series are F.</p>
+      <p><b>Score.</b> Twelve signals, weights 1-3 (total 27). Score = sum of (status × weight) ÷ (2 × total weight). Re-score after each release in the checklist.</p>
+      <p><b>Backtest.</b> Equal-weight, monthly-rebalanced basket of Murata, SEMCO, Taiyo Yuden, Yageo and Walsin, from Yahoo adjusted closes in local currency; peaks from a 25-month centred window. Six completed cycles is a small sample.</p>
+      <p><b>Files.</b> Research memos, CSVs and build scripts live in the repo under targets/MLCC.</p>
+    </div>
+    <div class="panel small"><b>Gaps</b><ul style="padding-left:18px;margin:6px 0 0;color:var(--ink-2);display:grid;gap:3px">
+      <li>No primary capacity data in bn pcs/month for any maker; shipments are a proxy.</li>
+      <li>Paumanok and TrendForce MLCC price tables are paywalled; price actions come from press reports.</li>
+      <li>Murata's MLCC price-hike letter is not confirmed from a primary source.</li>
+      <li>No 2004-2010 MLCC price, utilization or inventory data; those cycles rely on stock prices.</li>
+      <li>Channel inventory definitions conflict (TrendForce under 30 days vs Yageo 2-6 months).</li>
+      <li>Three-Circle's 100bn pcs/month claim rests on a single unverified source.</li>
+    </ul></div>
+  </div>
+  <div class="foot"><span>Built 2 Oct 2026 from targets/MLCC research memos 01-06 and company files. Not investment advice.</span></div>
+</section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const $ = s => document.querySelector(s);
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const pct = (v, d=0) => v==null ? '—' : (v>0?'+':'') + (v*100).toFixed(d) + '%';
+const esc = s => String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const SER = ['--s1','--s2','--s3','--s4','--s5','--s6','--s7'];
+const TCOL = {'6981.T':'--s1','009150.KS':'--s2','6976.T':'--s3','6762.T':'--s4','2327.TW':'--s5','6971.T':'--s6','2492.TW':'--s7'};
+
+// ---------- static content ----------
+const CAP = [
+ ['Murata','~95%','Capacitors ¥936bn (FY3/26), ¥1,158bn guided','New Izumo building done; +¥80bn building, first output 4Q27; capex ¥225bn','1.47 MLCC'],
+ ['Samsung Electro-Mechanics','91% (Jun)','Component Solutions ₩5.2tn (2025, incl. inductors)','Philippines plant 3 in 1Q27; capex ~₩3tn 2026 to ~₩6tn 2027; ₩3.3tn AI LTAs','1.31 (Jun)'],
+ ['Taiyo Yuden','~85%','Capacitors ¥233bn (FY3/25), 69% of sales','Capex ¥42bn; Malaysia plant pulled forward; +10-15%/yr','1.72 capacitors'],
+ ['Yageo (incl. KEMET)','80-85%, >90% 3Q guide','Not split; group Q2 NT$44.5bn','Kaohsiung, Vietnam, Suzhou, Mexico; +50% list price 1 Jul','2.2'],
+ ['TDK','not disclosed','Passive components ¥593bn guide (MLCC not split)','Exploring alliance with Taiyo Yuden (29 Sep 2026)','—'],
+ ['Walsin Technology','80-85%','MLCC 46% of sales (~NT$4.4bn in Q1)','+10-15% capacity 2026, +10% 2027; capex ~NT$3-4bn','>1.8'],
+ ['Kyocera (AVX)','not disclosed','Not split','No disclosed MLCC expansion','—'],
+ ['Fenghua / Three-Circle (China)','not disclosed','Not found','Claims 50bn and 55→100bn pcs/month; high-cap project May-2027','—']];
+const DEB = [
+ ['Is this 2018 again?', 'Book-to-bill is above the 2018 peak, but channel inventory is a fraction of 2018 (1-1.5 months vs 6-7) and the buyer is a hyperscaler under contract, not a distributor hoarding commodity parts.',
+  'Yageo talked of book-to-bill of 3 in June 2018, six months before prices fell 15%. Today Yageo is at 2.2 and Murata sees "large quantity" distributor orders. Double-ordering looks the same at the start.',
+  'Lean bull for fundamentals into 1H27; watch SC04 every month.'],
+ ['Will Murata raise MLCC prices?', 'Murata still absorbs a ¥15bn price headwind. If the Japanese join SEMCO and Yageo for 1Q27, that is pure margin the stocks have not priced.',
+  'Murata has historically chosen share and long-term contracts over price; it may only "adjust" selectively, and pruning part numbers suggests mix over price.',
+  'Open. The 30 Oct call is the read.'],
+ ['When does supply catch up?', 'High-end lines take 18-24 months; 4Q26 additions slipped to 2027; distributors and Walsin see tightness into 2H27-2028.',
+  'SEMCO doubles capex in 2027, Murata adds a building in 4Q27, and China claims to nearly double high-cap output. A 2028 glut is the base case if AI orders flatten.',
+  'Supply is not the risk before 2H27; demand double-counting is.'],
+ ['Is AI demand real or pulled forward?', 'MLCC content per board doubles from GB200 to Rubin; SEMCO has ₩3.3tn of LTAs with hyperscalers, including a ₩1.07tn single-customer deal for 2027.',
+  'Hyperscaler capex already exceeds $700bn and is funded increasingly with debt; any 2027 framework cut hits the high-cap parts that are the whole margin story.',
+  'Real for 2027; the 2028 slope is the question.'],
+ ['Are the stocks cheap after the fall?', 'On forward earnings the pure plays trade at 22-36x with earnings still being raised; in past cycles, buying 35% below the peak was positive over 24 months every time.',
+  'After an 8x run the basket is still 4x its 2025 low. On EV to mid-cycle EBITDA Murata sits near 30x against a long-run band in the low-to-mid teens.',
+  'Cheap versus 2026 earnings, expensive versus the cycle. Size for a second leg down.'],
+];
+const HIST = [
+ ['2000 dot-com','Peak Mar-2000 · trough Mar-2003','Telecom build-out plus 3-4x double-ordering; bust in 2001.','Taiyo Yuden -89%, Walsin -83%, Yageo -80%, Murata -60%.','Buying 35% off the peak (Aug-2001) made +19% over 2 years, but Murata took 13 years to regain its high.'],
+ ['2004 wobble','Peak Mar-2004 · trough Mar-2005','Mid-cycle inventory pause, no MLCC data found.','Basket -42%.','A pause, not a bust: +63% over 24 months from the -35% entry.'],
+ ['2007-09 GFC','Peak Jun-2007 · trough Oct-2008','Recession on top of a late cycle.','Taiyo Yuden -84%, Walsin -82%, Yageo -74%, Murata -64%.','The one entry that lost money over 12 months (-42%); still +50% over 24.'],
+ ['2010 boom / 2011 bust','Peak Mar-2010 · trough Nov-2011','Restocking boom then capacity and destock.','Walsin -67%, Taiyo Yuden -61%, Murata -36%.','Flat for a year after the entry; +28% over 24 months.'],
+ ['2024 air pocket','Peak Jun-2024 · trough Mar-2025','AI hope ran ahead of a slow phone and PC recovery.','Basket -34%, Murata -21%.','Never reached -35%. Murata bought 30% off its high made +138% in 12 months.'],
+ ['2017-18 super-cycle','Peak May-2018 · trough Apr-2019','Japanese shifted capacity to high-end; standard parts went 5-10x; trade war plus 6-7 months of distributor inventory ended it.','Yageo -72%, Walsin -68%, Taiyo Yuden -51%, Murata -30%.','Best analog for today. Buying Sep-2018 at -41%: +23% at 12m, +49% at 24m, with only 7.5% further downside.'],
+ ['2020-21 COVID boom','Peak Dec-2020 · trough Aug-2022','Work-from-home electronics and chip-shortage over-ordering. Murata orders fell 37% over 7 quarters.','Walsin -68%, Yageo -52%, Taiyo Yuden -43%, Murata -33%.','Took 17 months to fall 35%; from there +40% over 24 months.'],
+];
+const CHECK = [
+ ['Daily','Basket and single-name prices vs 2026 high','SC10','Exchange closes'],
+ ['Weekly','Distributor lead times and spot quotes (DigiKey, Fusion, Astute)','SC03','Distributor notes'],
+ ['Monthly ~8-10th','Yageo and Walsin revenue, YoY and MoM','SC06','TWSE MOPS'],
+ ['Monthly','TrendForce MLCC bulletin: price, inventory, lead time','SC02-SC04','trendforce.com'],
+ ['Monthly ~30th','JEITA passive-component shipments','SC06','JEITA'],
+ ['Quarterly','Murata orders, book-to-bill, backlog, utilization, price stance','SC01, SC02, SC11','Murata IR'],
+ ['Quarterly','Taiyo Yuden and SEMCO book-to-bill and utilization; Yageo channel inventory','SC04, SC05','Company IR'],
+ ['Quarterly','Hyperscaler capex guides','SC08','10-Q calls'],
+ ['Annual','Capex guides and new plants (SEMCO, Murata, China)','SC07, SC12','Company IR'],
+];
+const CAL = [
+ ['~8-9 Oct','Yageo and Walsin September revenue (est.)'],['Mid-Oct','TrendForce MLCC bulletin; 4Q contract read-through (est.)'],
+ ['27 Oct','Yageo 3Q26 results: channel inventory, 4Q pricing'],['29 Oct','Kyocera 2Q FY3/27'],['~29-30 Oct','SEMCO 3Q26 (consensus OP ₩605bn) (est.)'],
+ ['30 Oct','Murata 2Q FY3/27: book-to-bill, MLCC price stance, guidance'],['30 Oct','TDK 2Q FY3/27'],['5 Nov','Taiyo Yuden 2Q FY3/27'],
+ ['~9-10 Nov','Yageo and Walsin October revenue (est.)'],['Nov-Dec','Supplier replenishment: SEMCO Nov, Yageo Dec; Japanese 1Q27 price decisions'],
+ ['1 Jan 2027','SEMCO ₩1.07tn single-customer AI LTA starts'],['Late Jan','SEMCO 4Q26, TDK and Kyocera 3Q (est.)'],['~2-5 Feb','Murata and Taiyo Yuden 3Q (est.)']];
+
+// ---------- header ----------
+$('#asof').textContent = D.as_of; $('#score').textContent = D.score.toFixed(1);
+$('#bar-score').textContent = D.score.toFixed(0);
+$('#band').textContent = '● ' + D.band;
+['green','amber','red'].forEach(k => $('#n-'+k).textContent = D.counts[k]);
+const bands = [[25,'--good'],[25,'--warn'],[20,'--warm'],[30,'--bad']];
+$('#bscale').innerHTML = bands.map(([w,c]) => `<span style="flex:${w};background:var(${c});opacity:.55"></span>`).join('') + `<i class="bscale-mark" style="left:${D.score}%"></i>`;
+$('#phase').textContent = D.phase; $('#summary').textContent = D.summary;
+$('#flip-down').innerHTML = D.flip_down.map(x => `<li>${esc(x)}</li>`).join('');
+$('#flip-up').innerHTML = D.flip_up.map(x => `<li>${esc(x)}</li>`).join('');
+
+// ---------- signals ----------
+const order = [...D.scorecard].sort((a,b) => b.weight - a.weight);
+$('#sig-rows').innerHTML = order.map(s => `<div class="sig">
+  <div style="display:grid;gap:7px;align-content:start">
+    <div class="sig-meta"><span class="mono">${s.id}</span><span>weight ${s.weight}</span><span class="pill s-${s.status}">${s.status==='green'?'●':s.status==='amber'?'▲':'■'} ${s.status}</span></div>
+    <h3>${esc(s.name)}</h3><p class="read">${esc(s.read)}</p>
+    <div class="small muted">${esc(s.src)} · next: ${esc(s.next)}</div></div>
+  <div style="display:grid;gap:8px;align-content:start">
+    <div class="rules"><div class="g"><b>Green</b><span>${esc(s.green)}</span></div><div class="a"><b>Amber</b><span>${esc(s.amber)}</span></div><div class="r"><b>Red</b><span>${esc(s.red)}</span></div></div>
+    <p class="why">${esc(s.why)}</p></div></div>`).join('');
+
+// ---------- backtest ----------
+const ep = D.backtest.entry_minus35_basket.filter(e => e.entry);
+const row = e => `<tr><td>${e.peak}</td><td class="num">${e.entry}</td><td class="r num ${e.fwd12<0?'neg':'pos'}">${pct(e.fwd12)}</td><td class="r num ${e.fwd24<0?'neg':'pos'}">${pct(e.fwd24)}</td><td class="r num ${e.fwd36==null?'':e.fwd36<0?'neg':'pos'}">${pct(e.fwd36)}</td><td class="r num">${pct(e.further_dd)}</td></tr>`;
+$('#bt-rows').innerHTML = ep.map(row).join('');
+$('#bt-mur').innerHTML = D.backtest.entry_minus30_murata.filter(e=>e.entry).map(row).join('');
+const med = a => { const s=[...a].filter(x=>x!=null).sort((x,y)=>x-y); const m=Math.floor(s.length/2); return s.length%2?s[m]:(s[m-1]+s[m])/2; };
+const m12 = med(ep.map(e=>e.fwd12)), m24 = med(ep.map(e=>e.fwd24)), pos24 = ep.filter(e=>e.fwd24>0).length, pos12 = ep.filter(e=>e.fwd12>0).length;
+$('#bt-verdict').textContent = `Good over 2 years (${pos24} of ${ep.length}), a coin toss over 1`;
+$('#bt-detail').textContent = `Median return ${pct(m12)} at 12 months and ${pct(m24)} at 24 months; ${pos12} of ${ep.length} were up after 12 months. Median further fall after entry ${pct(med(ep.map(e=>e.further_dd)))}, worst ${pct(Math.min(...ep.map(e=>e.further_dd)))} (2007). Caveat: this run-up (8x in two years) is bigger than any before it; the closest in size, 2018 (4.7x), returned +23% / +49%.`;
+
+// ---------- charts ----------
+const charts = [];
+function mk(id, cfg){ const c = new Chart(document.getElementById(id), cfg); charts.push([c, cfg._build]); return c; }
+function base(){ return {responsive:true, maintainAspectRatio:false, animation:false,
+  plugins:{legend:{labels:{color:css('--ink-2'), boxWidth:10, font:{size:11}}}, tooltip:{backgroundColor:css('--ink'), titleColor:css('--ground'), bodyColor:css('--ground')}},
+  scales:{x:{ticks:{color:css('--ink-3'), font:{size:10.5}}, grid:{color:css('--rule')}}, y:{ticks:{color:css('--ink-3'), font:{size:10.5}}, grid:{color:css('--rule')}}}}; }
+const refLine = (val, axis='y') => ({id:'ref'+val, afterDatasetsDraw(ch){ const s=ch.scales[axis], a=ch.chartArea, x=ch.ctx; x.save(); x.setLineDash([4,4]); x.strokeStyle=css('--ink-3'); x.beginPath();
+  if(axis==='y'){ const p=s.getPixelForValue(val); x.moveTo(a.left,p); x.lineTo(a.right,p);} else { const p=s.getPixelForValue(val); x.moveTo(p,a.top); x.lineTo(p,a.bottom);} x.stroke(); x.restore(); }});
+
+let heroRange='all';
+function heroCfg(){
+  const all = Object.entries(D.backtest.basket_core);
+  const cut = heroRange==='all' ? all : all.slice(-12*+heroRange);
+  const peaks = new Set(D.backtest.peaks);
+  const o = base(); o.scales.y.type='logarithmic'; o.plugins.legend.display=false;
+  o.scales.x.ticks.maxTicksLimit = 10; o.scales.y.ticks.callback = v => [50,100,200,500,1000,2000,5000].includes(v)?v:'';
+  return {type:'line', data:{labels:cut.map(e=>e[0]), datasets:[{data:cut.map(e=>e[1]), borderColor:css('--s1'), borderWidth:2, fill:{target:'origin'}, backgroundColor:css('--accent-soft'),
+    pointRadius:cut.map(e=>peaks.has(e[0])?4:0), pointBackgroundColor:css('--warm'), pointBorderColor:css('--surface'), pointBorderWidth:2, tension:.1}]}, options:o};
+}
+let hero = new Chart($('#c-hero'), heroCfg());
+document.querySelectorAll('.seg button').forEach(b => b.onclick = () => { document.querySelectorAll('.seg button').forEach(x=>x.setAttribute('aria-pressed', x===b)); heroRange=b.dataset.r; hero.destroy(); hero=new Chart($('#c-hero'), heroCfg()); });
+
+function drawAll(){
+  charts.forEach(([c]) => c.destroy()); charts.length=0;
+  // BBR
+  { const o=base(); o.plugins.legend.display=false; o.scales.y.min=0.7; o.scales.y.max=1.55; o.scales.x.ticks.maxTicksLimit=8;
+    mk('c-bbr',{type:'line',data:{labels:D.murata_bbr.map(x=>x[0]),datasets:[{data:D.murata_bbr.map(x=>x[1]),borderColor:css('--s1'),borderWidth:2,pointRadius:D.murata_bbr.map((x,i)=>i===D.murata_bbr.length-1?5:0),pointBackgroundColor:css('--s1'),tension:.15}]},options:o,plugins:[refLine(1)]}); }
+  // backtest
+  { const o=base(); o.scales.y.ticks.callback=v=>(v*100).toFixed(0)+'%';
+    mk('c-bt',{type:'bar',data:{labels:ep.map(e=>e.peak.slice(0,4)+' cycle'),datasets:[
+      {label:'12 months',data:ep.map(e=>e.fwd12),backgroundColor:css('--s4'),borderRadius:4,borderSkipped:'start'},
+      {label:'24 months',data:ep.map(e=>e.fwd24),backgroundColor:css('--s1'),borderRadius:4,borderSkipped:'start'},
+      {label:'36 months',data:ep.map(e=>e.fwd36),backgroundColor:css('--s3'),borderRadius:4,borderSkipped:'start'}]},options:o,plugins:[refLine(0)]}); }
+  // capacity
+  { const o=base(); o.indexAxis='y'; o.plugins.legend.display=false; o.scales.x.title={display:true,text:'bn pcs / month',color:css('--ink-3')};
+    const L=['Murata','SEMCO','Three-Circle (claim)','Fenghua (claim)','Taiyo Yuden'], V=[140,98,55,50,40];
+    mk('c-cap',{type:'bar',data:{labels:L,datasets:[{data:V,backgroundColor:[css('--s1'),css('--s2'),css('--grey'),css('--grey'),css('--s3')],borderRadius:4}]},options:o}); }
+  // share
+  { const o=base(); o.indexAxis='y'; o.scales.x.ticks.callback=v=>v+'%';
+    const L=['Murata','SEMCO','TDK','Taiyo Yuden','Yageo','Kyocera AVX'];
+    mk('c-share',{type:'bar',data:{labels:L,datasets:[{label:'Value share',data:[40,18,12,10,10,5],backgroundColor:css('--s1'),borderRadius:4},{label:'AI-server share',data:[45,40,5,4,3,null],backgroundColor:css('--s2'),borderRadius:4}]},options:o}); }
+  // content
+  { const o=base(); o.indexAxis='y'; o.plugins.legend.display=false; o.scales.x.type='logarithmic'; o.scales.x.ticks.callback=v=>[1000,10000,100000,1000000].includes(v)?v.toLocaleString():'';
+    const L=['Smartphone','Enterprise server','ICE car','GB200 board','Electric car','8-GPU AI server','GB200 NVL72 rack'], V=[1100,2500,3000,6500,14000,20000,440000];
+    mk('c-content',{type:'bar',data:{labels:L,datasets:[{data:V,backgroundColor:L.map((l,i)=>i>=3&&l!=='Electric car'?css('--s1'):l==='Electric car'?css('--s3'):css('--grey')),borderRadius:4}]},options:o}); }
+  // drawdown
+  { const o=base(); o.indexAxis='y'; o.plugins.legend.display=false; o.scales.x.ticks.callback=v=>(v*100).toFixed(0)+'%'; o.scales.x.max=0;
+    o.plugins.tooltip.callbacks={label:c=>{const s=S[c.dataIndex]; return ` ${pct(s.dd)} from high · 12m ${pct(s.r12)}`;}};
+    const S=[...D.stocks].sort((a,b)=>a.dd-b.dd); mk('c-dd',{type:'bar',data:{labels:S.map(s=>s.short),datasets:[{data:S.map(s=>s.dd),backgroundColor:S.map(s=>css(TCOL[s.t])),borderRadius:4}]},options:o}); }
+}
+drawAll();
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { drawAll(); hero.destroy(); hero=new Chart($('#c-hero'), heroCfg()); });
+new MutationObserver(() => { drawAll(); hero.destroy(); hero=new Chart($('#c-hero'), heroCfg()); }).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+
+// ---------- tables & cards ----------
+$('#cap-rows').innerHTML = CAP.map(r => `<tr>${r.map((c,i)=>`<td${i===4?' class="num"':''}>${esc(c)}</td>`).join('')}</tr>`).join('');
+const DRV = {
+ '6981.T':['~40% value share, ~45% AI-server; in-house powder and thinnest layers','Book-to-bill 1.47, guide raised; data-center sales +80%','Risk: still cutting price; 37.8x forward; RF modules and batteries dilute'],
+ '009150.KS':['#2 in AI-server MLCC plus FC-BGA substrates','+30% price hike, ₩3.3tn of hyperscaler LTAs','Risk: capex doubling to ~₩6tn in 2027; 47.6x forward'],
+ '6976.T':['High-cap MLCC specialist, 69% capacitors','Book-to-bill 1.72, OP guide raised to ¥45bn','Risk: AI exposure under 4%; most volatile name (-55% from high)'],
+ '6762.T':['MLCC is a minor line; batteries (ATL) are 55% of sales','Exploring MLCC alliance with Taiyo Yuden','Risk: guide unchanged despite beat; cycle exposure diluted'],
+ '2327.TW':['#1 non-Japanese passives group (KEMET, Pulse)','+50% list price, book-to-bill 2.2, six record months','Risk: commodity-heavy mix; 2018 analog is direct'],
+ '6971.T':['AVX MLCC is small; packaging and ceramics drive it','KDDI stake sale and up to ¥500bn buyback','Risk: barely an MLCC play; consensus target below price'],
+ '2492.TW':['Taiwan #2-3 in MLCC (46% of sales) plus resistors','Revenue +45% YoY, best since 2018; book-to-bill >1.8','Risk: commodity mix; thin coverage'],
+};
+$('#stock-cards').innerHTML = D.stocks.map(s => { const f=v=>v==null?'—':(+v).toFixed(1)+'x'; const d=DRV[s.t];
+  const up = s.tp ? (s.tp/s.last-1) : null;
+  return `<article class="card"><div class="top"><h3><span style="display:inline-block;width:9px;height:9px;border-radius:2px;background:var(${TCOL[s.t]});margin-right:6px"></span>${esc(s.name)}</h3><span class="mono small muted">${s.t}</span></div>
+  <div class="top"><span class="big">${s.last.toLocaleString()}</span><span class="pill ${s.dd<-.35?'s-red':s.dd<-.2?'s-amber':'s-green'}">${pct(s.dd)} from high</span></div>
+  <div class="kv"><div><span class="label">Fwd P/E</span><span class="num">${f(s.fpe)}</span></div><div><span class="label">EV/EBITDA</span><span class="num">${f(s.evebitda)}</span></div><div><span class="label">Avg target</span><span class="num">${s.tp?pct(up):'—'}</span></div></div>
+  <ul><li>${esc(d[0])}</li><li>${esc(d[1])}</li><li>${esc(d[2])}</li></ul>
+  <div class="small muted">${s.ccy} · high ${s.peak.toLocaleString()} on ${s.peak_date} · consensus stockanalysis.com</div></article>`; }).join('');
+$('#debate-list').innerHTML = DEB.map(d => `<div class="debate"><h3>${esc(d[0])}</h3><div class="sides"><div class="side bull"><div class="label">Bull</div>${esc(d[1])}</div><div class="side bear"><div class="label">Bear</div>${esc(d[2])}</div></div><p class="lean"><b>Our lean:</b> ${esc(d[3])}</p></div>`).join('');
+$('#cycle-cards').innerHTML = HIST.map(h => `<div class="cycle"><h3>${esc(h[0])}</h3><div class="dates">${esc(h[1])}</div><p>${esc(h[2])}</p><p class="muted">${esc(h[3])}</p><p class="lesson">${esc(h[4])}</p></div>`).join('')
+  + `<div class="cycle" style="border-color:var(--accent)"><h3>2025-26 AI-server cycle</h3><div class="dates">Stocks peaked 19 Jun-1 Jul 2026 · orders still rising</div><p>AI servers need 8-15x the MLCCs of a normal server; SEMCO and Yageo lifted prices 30-50%; lead times doubled.</p><p class="muted">Basket +8x in two years, then -50% by the June trough; now -36%.</p><p class="lesson">Fundamentals look like mid-2018; the stocks already did what they did in 2H18.</p></div>`
+  + `<div class="cycle"><h3>Patterns that repeat</h3><ul style="margin:0;padding-left:16px;color:var(--ink-2);display:grid;gap:3px"><li>Stocks top 2-4 quarters before orders.</li><li>Shortages last 10-14 months before capacity lands.</li><li>Busts start with distributor double-ordering, not end demand.</li><li>Murata falls least in every bust; Taiyo Yuden and the Taiwanese most.</li></ul></div>`;
+$('#check-rows').innerHTML = CHECK.map(r => `<tr>${r.map(c=>`<td>${esc(c)}</td>`).join('')}</tr>`).join('');
+$('#cal').innerHTML = CAL.map(c => `<div class="cal-item"><span class="d">${esc(c[0])}</span><span>${esc(c[1])}</span></div>`).join('');
+</script>

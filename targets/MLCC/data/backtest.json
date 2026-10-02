@@ -891,5 +891,167 @@
    "p4_fwd12": null,
    "p4_fwd24": null
   }
+ ],
+ "entry_minus35_basket": [
+  {
+   "peak": "2000-03",
+   "entry": "2001-08",
+   "fwd6": 0.811,
+   "fwd12": 0.065,
+   "fwd24": 0.19,
+   "fwd36": 0.032,
+   "further_dd": -0.189,
+   "months_to_low": 19,
+   "back_to_peak": "2010-03"
+  },
+  {
+   "peak": "2004-03",
+   "entry": "2004-09",
+   "fwd6": -0.063,
+   "fwd12": 0.048,
+   "fwd24": 0.629,
+   "fwd36": 0.925,
+   "further_dd": -0.063,
+   "months_to_low": 6,
+   "back_to_peak": "2005-12"
+  },
+  {
+   "peak": "2007-06",
+   "entry": "2007-12",
+   "fwd6": -0.096,
+   "fwd12": -0.422,
+   "fwd24": 0.504,
+   "fwd36": 0.876,
+   "further_dd": -0.431,
+   "months_to_low": 10,
+   "back_to_peak": "2010-02"
+  },
+  {
+   "peak": "2010-03",
+   "entry": "2011-07",
+   "fwd6": 0.155,
+   "fwd12": -0.024,
+   "fwd24": 0.279,
+   "fwd36": 0.693,
+   "further_dd": -0.104,
+   "months_to_low": 4,
+   "back_to_peak": "2014-07"
+  },
+  {
+   "peak": "2018-05",
+   "entry": "2018-09",
+   "fwd6": 0.126,
+   "fwd12": 0.232,
+   "fwd24": 0.489,
+   "fwd36": 0.852,
+   "further_dd": -0.075,
+   "months_to_low": 7,
+   "back_to_peak": "2020-10"
+  },
+  {
+   "peak": "2020-12",
+   "entry": "2022-05",
+   "fwd6": -0.023,
+   "fwd12": 0.126,
+   "fwd24": 0.4,
+   "fwd36": 0.045,
+   "further_dd": -0.127,
+   "months_to_low": 3,
+   "back_to_peak": "2025-09"
+  },
+  {
+   "peak": "2024-06",
+   "entry": null
+  }
+ ],
+ "entry_minus30_murata": [
+  {
+   "peak": "2001-02",
+   "entry": "2001-07",
+   "fwd6": 0.163,
+   "fwd12": -0.048,
+   "fwd24": -0.076,
+   "fwd36": -0.232,
+   "further_dd": -0.412,
+   "months_to_low": 20,
+   "back_to_peak": "2013-10"
+  },
+  {
+   "peak": "2004-03",
+   "entry": "2004-09",
+   "fwd6": 0.028,
+   "fwd12": 0.159,
+   "fwd24": 0.639,
+   "fwd36": 0.422,
+   "further_dd": 0.0,
+   "months_to_low": 0,
+   "back_to_peak": "2005-11"
+  },
+  {
+   "peak": "2007-05",
+   "entry": "2007-11",
+   "fwd6": -0.215,
+   "fwd12": -0.443,
+   "fwd24": -0.251,
+   "fwd36": -0.054,
+   "further_dd": -0.474,
+   "months_to_low": 11,
+   "back_to_peak": "2013-10"
+  },
+  {
+   "peak": "2010-12",
+   "entry": "2011-08",
+   "fwd6": 0.173,
+   "fwd12": 0.012,
+   "fwd24": 0.854,
+   "fwd36": 2.13,
+   "further_dd": -0.066,
+   "months_to_low": 11,
+   "back_to_peak": "2013-01"
+  },
+  {
+   "peak": "2015-05",
+   "entry": "2015-12",
+   "fwd6": -0.056,
+   "fwd12": 0.132,
+   "fwd24": 0.214,
+   "fwd36": 0.182,
+   "further_dd": -0.163,
+   "months_to_low": 5,
+   "back_to_peak": "2019-11"
+  },
+  {
+   "peak": "2018-06",
+   "entry": "2019-07",
+   "fwd6": 0.295,
+   "fwd12": 0.434,
+   "fwd24": 1.114,
+   "fwd36": 0.777,
+   "further_dd": 0.0,
+   "months_to_low": 0,
+   "back_to_peak": "2019-10"
+  },
+  {
+   "peak": "2020-12",
+   "entry": "2022-08",
+   "fwd6": 0.224,
+   "fwd12": 0.26,
+   "fwd24": 0.318,
+   "fwd36": 0.353,
+   "further_dd": -0.007,
+   "months_to_low": 3,
+   "back_to_peak": "2024-05"
+  },
+  {
+   "peak": "2024-06",
+   "entry": "2025-03",
+   "fwd6": 0.549,
+   "fwd12": 1.376,
+   "fwd24": null,
+   "fwd36": null,
+   "further_dd": -0.037,
+   "months_to_low": 1,
+   "back_to_peak": "2025-09"
+  }
  ]
 }

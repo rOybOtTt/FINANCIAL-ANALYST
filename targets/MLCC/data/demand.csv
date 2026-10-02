@@ -1,0 +1,36 @@
+metric,period,value,unit,tag,source_url,source_date,note
+global_market_value,2024,14.5-23.9,USD bn,ESTIMATE,https://www.cognitivemarketresearch.com/mlcc-capacitors-market-report,2026-10 (search snippet),wide range across vendors (14.5/14.8/22.0/23.9)
+global_market_value,2025,27.26,USD bn,ESTIMATE,https://www.mordorintelligence.com/industry-reports/multi-layer-ceramic-capacitor-mlcc-market,2026,Mordor
+global_market_value,2026,31.87,USD bn,ESTIMATE,https://www.mordorintelligence.com/industry-reports/multi-layer-ceramic-capacitor-mlcc-market,2026,Mordor
+global_market_value,2031,64.19,USD bn,ESTIMATE,https://www.mordorintelligence.com/industry-reports/multi-layer-ceramic-capacitor-mlcc-market,2026,Mordor; CAGR 15.03% 2026-31
+global_market_value,2030,teens-low-20s,USD bn,ATTRIBUTED,https://passive-components.eu/mlccs-in-the-age-of-ai-q2-2026-market-tightness/,2026-06-30,conflicts with Mordor; definitional
+global_units,2024,3.6,trillion pcs,ESTIMATE,https://www.eetasia.com/trendforce-mlcc-shipments-projected-to-slide-by-3-6-in-4q-2024/,2024,search-summary figure; verify (snippet may conflate 3.6% QoQ)
+murata_monthly_shipments,2026-06,140,bn pcs/month,ATTRIBUTED,https://finance.biggo.com/news/ee0262b6-4f7d-4c7e-aad0-9af6e9394b16,2026,secondary
+share_global,2026,Murata 40; SEMCO 18; TDK 12; Taiyo Yuden 10; Yageo 10; AVX 5; other 5,%,ESTIMATE,https://passive-components.eu/mlccs-in-the-age-of-ai-q2-2026-market-tightness/,2026-06-30,top5 ~77%
+share_ai_server,2026,Murata 45; SEMCO 39-40; TDK <5; Taiyo <4,%,ESTIMATE,https://passive-components.eu/mlccs-in-the-age-of-ai-q2-2026-market-tightness/,2026-06-30,
+share_auto_murata,2026,50,%,ESTIMATE,https://m.theblockbeats.info/en/news/61594,2026,secondary
+end_market_consumer_electronics,2025,51.46,% revenue,ESTIMATE,https://www.mordorintelligence.com/industry-reports/multi-layer-ceramic-capacitor-mlcc-market,2026,
+end_market_automotive,2025,26,% demand,ESTIMATE,https://www.persistencemarketresearch.com/market-research/multilayer-ceramic-capacitor-market.asp,2026,snippet only
+content_smartphone,2025,>1000,pcs,ATTRIBUTED,https://www.persistencemarketresearch.com/market-research/multilayer-ceramic-capacitor-market.asp,2026,
+content_ICE_car,2025,3000,pcs,ATTRIBUTED,https://www.mordorintelligence.com/industry-reports/multi-layer-ceramic-capacitor-mlcc-market,2026,
+content_BEV,2025,10000-18000,pcs,ATTRIBUTED,https://www.mordorintelligence.com/industry-reports/multi-layer-ceramic-capacitor-mlcc-market,2026,
+content_enterprise_server,2026,2500,pcs,ATTRIBUTED,https://passive-components.eu/mlccs-in-the-age-of-ai-q2-2026-market-tightness/,2026-06-30,
+content_8GPU_AI_server,2026,15000-25000,pcs,ATTRIBUTED,https://passive-components.eu/mlccs-in-the-age-of-ai-q2-2026-market-tightness/,2026-06-30,
+content_GB200_NVL72_rack,2026,440000,pcs,ESTIMATE,https://passive-components.eu/mlccs-in-the-age-of-ai-q2-2026-market-tightness/,2026-06-30,other estimates 600000 (note.com)
+content_GB200_board,2026,6500,pcs,ATTRIBUTED,https://www.trendforce.com/presscenter/news/20260518-13046.html,2026-05-18,TrendForce
+content_Rubin_board,2026,12000,pcs,ATTRIBUTED,https://www.trendforce.com/presscenter/news/20260518-13046.html,2026-05-18,TrendForce
+ai_vs_traditional_server,2025-02,8,x,ATTRIBUTED,https://www.trendforce.com/news/2025/02/06/news-murata-predicts-ai-server-related-mlcc-demand-to-double-sparking-market-rebound-in-2025/,2025-02-06,Murata
+ai_server_mlcc_demand,FY2025,>2x,yoy,ATTRIBUTED,https://www.trendforce.com/news/2025/02/06/news-murata-predicts-ai-server-related-mlcc-demand-to-double-sparking-market-rebound-in-2025/,2025-02-06,Murata
+ai_server_mlcc_cagr,2025-2030,30,% CAGR,ATTRIBUTED,https://passive-components.eu/mlccs-in-the-age-of-ai-q2-2026-market-tightness/,2026-06-30,3.3x by 2030
+price_murata_increase,2026-04-01,15-35,% AI/auto grade,ATTRIBUTED,https://www.trendforce.com/news/2025/02/06/news-murata-predicts-ai-server-related-mlcc-demand-to-double-sparking-market-rebound-in-2025/,2026,via search summaries (TheBlockBeats/SmBom)
+price_taiyo_increase,2026-04,6-13,% low-cap consumer/auto,FACT,https://www.trendforce.com/presscenter/news/20260518-13046.html,2026-05-18,
+price_decline_rate,2026-Q1/Q2,<0.5,% avg decline,FACT,https://www.trendforce.com/presscenter/news/20260518-13046.html,2026-05-18,smallest in ~3 yrs
+price_spot_specialty,2026-Q2,50-60,% ,ATTRIBUTED,https://passive-components.eu/mlccs-in-the-age-of-ai-q2-2026-market-tightness/,2026-06-30,
+price_china_distributor_X5R,2026-06,15-25,% markup,ATTRIBUTED,https://www.astutegroup.com/news/general/mlcc-order-books-hit-2018-levels-as-ai-servers-swallow-high-end-capacitor-capacity/,2026-06,
+price_2020_2021,2020-21,23,% avg rise,ATTRIBUTED,https://www.thelec.net/news/articleView.html?idxno=6507,2026-04-13,
+price_2017_18,2017-2018,5-10,x standard parts,ATTRIBUTED,https://news.futunn.com/en/post/74315114/an-unprecedented-price-surge-hits-mlccs,2026,secondary; likely high-end of range
+lead_time_normal,baseline,8-10,weeks,ATTRIBUTED,https://www.astutegroup.com/news/general/mlcc-order-books-hit-2018-levels-as-ai-servers-swallow-high-end-capacitor-capacity/,2026-06,
+lead_time_AI_auto,2026-Q2,20-26,weeks,ATTRIBUTED,https://passive-components.eu/mlccs-in-the-age-of-ai-q2-2026-market-tightness/,2026-06-30,critical codes 26-40
+book_to_bill,2026-06,Murata 1.30; SEMCO 1.31; Taiyo 1.25; industry 1.04,ratio,ATTRIBUTED,https://www.astutegroup.com/news/general/mlcc-order-books-hit-2018-levels-as-ai-servers-swallow-high-end-capacitor-capacity/,2026-06,2018 peak 1.25
+utilization,Q1 2026,Murata 95; SEMCO 92; Yageo 80,%,ESTIMATE,https://www.digitaltoday.co.kr/en/view/49429/mlcc-shortage-lead-times-stretch-to-24-weeks,2026,iM Securities
+channel_inventory,2026,1-1.5,months,ATTRIBUTED,https://finance.biggo.com/news/75572009-ff5b-4a49-b737-3c0b1556cd4b,2026,vs 6-7 mo 2018; 4.5 mo 2019-22

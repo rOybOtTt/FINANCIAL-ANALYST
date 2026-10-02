@@ -87,7 +87,7 @@ save(fig, 'murata_history.png', 'Murata fact books 2022 and 2026; capacitor sale
 
 # 8 peers drawdown + fwd PE
 st = D['stocks']
-fig, ax = plt.subplots(1, 2, figsize=(11, 3.8))
+fig, ax = plt.subplots(1, 2, figsize=(11, 3.8), gridspec_kw={'wspace': .45})
 o = sorted(st, key=lambda s: s['dd']); ax[0].barh([s['short'] for s in o], [s['dd'] for s in o], color=[RED if s['dd'] < -.35 else AMBER if s['dd'] < -.2 else GOOD for s in o])
 ax[0].xaxis.set_major_formatter(pctf); ax[0].set_title('Distance from 2026 high')
 o = sorted(st, key=lambda s: s['fpe'] or 0); ax[1].barh([s['short'] for s in o], [s['fpe'] or 0 for s in o], color=[BLUE if s['short'] == 'Murata' else CAT[0] for s in o])
@@ -105,3 +105,18 @@ ax.axvline(sc['entry20'], color=RED, ls='--', lw=1); ax.text(sc['entry20'] + 60,
 ax.grid(axis='y', visible=False); ax.set_title('Murata value per share today (PV at 8% cost of equity), JPY')
 save(fig, 'murata_ladder.png', 'House model 6981.T_model_v1_2.10.26.xlsx; EV / 5-yr-mean EBITDA own band exit at Mar-2030')
 print('charts ok')
+
+# 10 2x2 positioning: x = AI-server MLCC share, y = MLCC/capacitor share of revenue, bubble = market cap (USD bn, approx)
+P = [('Murata', 45, 55, 103), ('SEMCO', 40, 46, 83), ('Taiyo Yuden', 4, 69, 9), ('TDK', 5, 10, 40), ('Yageo', 3, 45, 42), ('Kyocera', 1, 5, 32), ('Walsin', 1, 46, 6)]  # USD bn at JPY150, KRW1400, TWD31
+fig, ax = plt.subplots(figsize=(9, 5.2))
+for i, (n, x, y, m) in enumerate(P):
+    ax.scatter(x, y, s=m * 18, color=CAT[i], alpha=.85, edgecolor='white', lw=2, zorder=3)
+    off = {'Walsin': (-48, -14), 'Yageo': (12, 4)}.get(n, (10, 6))
+    ax.annotate(n, (x, y), xytext=off, textcoords='offset points', fontsize=11, color=NAVY, weight='bold')
+ax.axvline(20, color=GREY, ls='--', lw=1); ax.axhline(30, color=GREY, ls='--', lw=1)
+ax.set_xlim(-3, 55); ax.set_ylim(0, 80); ax.set_xlabel('AI-server MLCC share, %'); ax.set_ylabel('MLCC / capacitors, % of revenue')
+for (tx, ty, t) in ((40, 76, 'AI leaders'), (1, 76, 'Cycle levers'), (40, 3, '(empty)'), (1, 3, 'Diversified')):
+    ax.text(tx, ty, t, fontsize=10, color=GREY, style='italic')
+ax.set_title('Positioning: AI exposure vs MLCC purity (bubble = market cap)')
+save(fig, 'twobytwo.png', 'Shares: passive-components.eu 30 Jun 2026 [A]; revenue mix: company filings; market caps stockanalysis.com 2 Oct 2026, USD at ¥150, ₩1,400, NT$31.')
+print('2x2 ok')

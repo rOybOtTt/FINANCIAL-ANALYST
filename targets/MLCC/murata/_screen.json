@@ -1,0 +1,28 @@
+{
+ "ticker": "6981",
+ "name": "Murata Manufacturing (6981.T)",
+ "price": "¥8,467",
+ "verdict": "WATCH",
+ "stance": "Long-biased, below ¥6,200",
+ "thesis": "Best MLCC franchise, priced at 31x mid-cycle EBITDA vs an 11.6x own median",
+ "bull": [
+  "~40% MLCC value share, ~45% AI-server [ATTRIBUTED]",
+  "MLCC book-to-bill 1.47, record; utilization ~95% [FACT]",
+  "FY3/27 OP guide raised to ¥430bn (+53% YoY) [FACT]",
+  "Has not raised MLCC prices yet: next leg is pure margin [FACT/EST]",
+  "¥150bn buyback; net cash ~¥650bn [FACT]"
+ ],
+ "bear": [
+  "EV/5y-mean EBITDA 31.4x vs own band 10.4-13.5x [EST]",
+  "House PW value ¥4,140; -12% IRR to Mar-2030 [EST]",
+  "Trailing P/E 66x vs 23x own median [EST]",
+  "Modules segment loss-making (-¥12.9bn 1Q) [FACT]",
+  "Consumer half of units is 'subdued' [FACT]"
+ ],
+ "driver": "Capacitor price: whether Murata joins the 30-50% industry hikes for 1Q27.",
+ "valuation": "EV/5y-mean EBITDA 31.4x (band 10.4/11.6/13.5x); fwd P/E 37.8x; consensus TP ¥10,414 (+23%).",
+ "entry": "Stage in at ¥6,200 / ¥5,000 / ¥4,100 if book-to-bill stays >1.0; 20%-IRR entry ¥2,844.",
+ "risk": "Upgrade if trough EBITDA margin proves 5+ pts higher (re-rates band to 15-20x); short if book-to-bill <1.0 while still >20x.",
+ "asof": "2026-10-02",
+ "footnote": "Prices Yahoo, consensus stockanalysis.com, 2-Oct-2026. Ops data mostly [ATTRIBUTED]. Not advice."
+}

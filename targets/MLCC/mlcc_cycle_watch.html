@@ -1,0 +1,2699 @@
+<title>MLCC Cycle Watch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a cycle instrument panel. Score + basket history up top, then the evidence, supply, demand, stocks, history. */
+:root {
+  --ground:#F3F5F8; --surface:#FFFFFF; --sunk:#E9EDF3; --ink:#131A26; --ink-2:#3F4A5C; --ink-3:#687386;
+  --rule:#D7DDE6; --rule-2:#C2CAD6;
+  --accent:#2a78d6; --accent-soft:#E3EDFB; --warm:#eb6834;
+  --good:#0F7A3D; --good-soft:#E0F2E7; --warn:#946200; --warn-soft:#FBF0D6; --bad:#B8322F; --bad-soft:#F9E2E1;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --s6:#008300; --s7:#4a3aa7; --grey:#9AA3B2;
+  --shadow:0 1px 2px rgba(19,26,38,.05),0 6px 18px rgba(19,26,38,.05);
+  --display:"Schibsted Grotesk","Arial Narrow",Arial,sans-serif;
+  --body:"Public Sans","Segoe UI",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  color-scheme:dark; --ground:#0E1218; --surface:#151B24; --sunk:#1C2430; --ink:#E6EBF2; --ink-2:#B4BECC; --ink-3:#8793A5;
+  --rule:#253041; --rule-2:#33405386; --accent:#3987e5; --accent-soft:#16253C; --warm:#d95926;
+  --good:#4CC27E; --good-soft:#132A1D; --warn:#E3B04A; --warn-soft:#2C2412; --bad:#EE7B73; --bad-soft:#331A19;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#2f9a2f; --s7:#9085e9; --grey:#6E7889; --shadow:0 1px 2px rgba(0,0,0,.4); } }
+:root[data-theme="dark"] {
+  color-scheme:dark; --ground:#0E1218; --surface:#151B24; --sunk:#1C2430; --ink:#E6EBF2; --ink-2:#B4BECC; --ink-3:#8793A5;
+  --rule:#253041; --rule-2:#334053; --accent:#3987e5; --accent-soft:#16253C; --warm:#d95926;
+  --good:#4CC27E; --good-soft:#132A1D; --warn:#E3B04A; --warn-soft:#2C2412; --bad:#EE7B73; --bad-soft:#331A19;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#2f9a2f; --s7:#9085e9; --grey:#6E7889; --shadow:0 1px 2px rgba(0,0,0,.4); }
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font:15px/1.55 var(--body);padding-inline:16px;margin:0}
+a{color:var(--accent);text-underline-offset:2px}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:1.5rem;font-weight:800} h3{font-size:1.02rem;font-weight:700}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-block:0 64px}
+.label{font:600 .7rem/1.2 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.mono,.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--ink-3)} .small{font-size:.84rem}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--ground) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);margin-inline:-16px;padding:10px 16px}
+.bar-inner{max-width:1180px;margin:0 auto;display:flex;gap:16px;align-items:center}
+.brand{font-family:var(--display);font-weight:800;font-size:1.1rem;white-space:nowrap;display:flex;gap:8px;align-items:center}
+.brand .bscore{font-family:var(--mono);font-weight:500;font-size:.85rem;padding:3px 7px;border-radius:6px;background:var(--sunk)}
+.nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.nav a{color:var(--ink-2);text-decoration:none;font-size:.84rem;padding:6px 9px;border-radius:6px;white-space:nowrap}
+.nav a:hover{background:var(--sunk);color:var(--ink)}
+section{padding-top:44px;scroll-margin-top:64px}
+.sec-head{display:grid;gap:6px;margin-bottom:16px;max-width:75ch}
+.sec-head p{color:var(--ink-2)}
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:18px;box-shadow:var(--shadow);min-width:0}
+.hero{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:16px;padding-top:24px}
+.hero-score{display:grid;gap:14px;align-content:start}
+.hero-num{display:flex;align-items:baseline;gap:8px}
+.hero-num .num{font-size:clamp(3.2rem,8vw,4.4rem);font-weight:500;line-height:.95;letter-spacing:-.03em}
+.hero-num .of{color:var(--ink-3);font-family:var(--mono)}
+.bscale{display:grid;gap:4px}
+.bscale-track{position:relative;display:flex;gap:2px;height:12px}
+.bscale-track span{display:block;height:100%;border-radius:3px}
+.bscale-mark{position:absolute;top:-5px;width:3px;height:22px;margin-left:-1.5px;background:var(--ink);border-radius:2px;box-shadow:0 0 0 2px var(--surface)}
+.bscale-ticks{position:relative;height:14px;font:10.5px var(--mono);color:var(--ink-3)}
+.bscale-ticks span{position:absolute;transform:translateX(-50%)}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.tile{background:var(--sunk);border-radius:8px;padding:8px 10px;display:grid;gap:2px}
+.tile .num{font-size:1.05rem}
+.chartbox{position:relative;width:100%;min-width:0}
+.hc-head{display:flex;justify-content:space-between;align-items:center;gap:8px 12px;flex-wrap:wrap;margin-bottom:8px}
+.seg{display:inline-flex;border:1px solid var(--rule-2);border-radius:7px;overflow:hidden}
+.seg button{border:0;border-radius:0;padding:6px 11px;font:500 .76rem/1 var(--mono);background:var(--surface);color:var(--ink);cursor:pointer}
+.seg button+button{border-left:1px solid var(--rule-2)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--ground)}
+figcaption,.cap{font-size:.76rem;color:var(--ink-3);margin-top:6px}
+.state{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:20px;padding-top:22px}
+.phase{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,3.4vw,2.15rem);line-height:1.08}
+.flip{display:grid;gap:6px;align-content:start} .flip ul{margin:0;padding-left:18px;color:var(--ink-2);font-size:.9rem;display:grid;gap:3px}
+.pill{display:inline-flex;align-items:center;gap:5px;font:600 .74rem/1 var(--body);padding:4px 8px;border-radius:999px;white-space:nowrap}
+.s-green{color:var(--good);background:var(--good-soft)} .s-amber{color:var(--warn);background:var(--warn-soft)} .s-red{color:var(--bad);background:var(--bad-soft)}
+.chip{display:inline-block;font:500 .72rem/1.3 var(--body);padding:3px 7px;border-radius:5px;background:var(--sunk);color:var(--ink-2)}
+.sigs{display:grid;background:var(--surface);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+.sig{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px 26px;padding:16px;border-top:1px solid var(--rule)}
+.sig:first-child{border-top:0}
+.sig>*{min-width:0}
+.sig-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:.76rem;color:var(--ink-3)}
+.sig .read{font-size:.92rem}
+.rules{display:grid;gap:3px;font-size:.82rem}
+.rules div{display:grid;grid-template-columns:62px 1fr;gap:8px}
+.rules b{font-weight:600}
+.rules .g b{color:var(--good)} .rules .a b{color:var(--warn)} .rules .r b{color:var(--bad)}
+.why{font-size:.84rem;color:var(--ink-2)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.table-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--rule);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.85rem}
+th{text-align:left;font:600 .68rem/1.2 var(--body);letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);padding:10px 12px;border-bottom:1px solid var(--rule);white-space:nowrap}
+td{padding:9px 12px;border-top:1px solid var(--rule);vertical-align:top;color:var(--ink-2)}
+td:first-child{color:var(--ink)} td.r,th.r{text-align:right} td.num{white-space:nowrap}
+.pos{color:var(--good)} .neg{color:var(--bad)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px;display:grid;gap:8px;align-content:start;min-width:0}
+.card .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.card .big{font-family:var(--mono);font-size:1.5rem;font-weight:500;line-height:1}
+.kv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.kv div{background:var(--sunk);border-radius:6px;padding:5px 7px;display:grid}
+.kv .num{font-size:.9rem}
+.card ul{margin:0;padding-left:16px;font-size:.84rem;color:var(--ink-2);display:grid;gap:2px}
+.debates{display:grid;gap:12px}
+.debate{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:16px;display:grid;gap:10px}
+.sides{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.side{padding:10px 12px;border-radius:8px;font-size:.87rem}
+.side.bull{background:var(--good-soft)} .side.bear{background:var(--bad-soft)}
+.side .label{margin-bottom:3px} .side.bull .label{color:var(--good)} .side.bear .label{color:var(--bad)}
+.lean{font-size:.84rem;color:var(--ink)}
+.cycle{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px;display:grid;gap:6px;font-size:.86rem;align-content:start}
+.cycle .dates{font-family:var(--mono);font-size:.76rem;color:var(--ink-3)}
+.cycle .lesson{border-left:3px solid var(--accent);padding-left:10px;color:var(--ink)}
+.cal-item{display:grid;grid-template-columns:120px minmax(0,1fr);gap:12px;padding:8px 0;border-top:1px solid var(--rule);font-size:.87rem}
+.cal-item .d{font-family:var(--mono);color:var(--ink-3);font-size:.8rem}
+.callout{background:var(--accent-soft);border-radius:10px;padding:14px 16px;display:grid;gap:6px}
+.callout .big{font-family:var(--display);font-weight:800;font-size:1.25rem}
+details.more{margin-top:10px} details.more summary{cursor:pointer;color:var(--ink-2);font-size:.85rem}
+.foot{margin-top:48px;color:var(--ink-3);font-size:.8rem;border-top:1px solid var(--rule);padding-top:16px;display:grid;gap:6px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+@media (max-width:900px){.hero,.state,.grid2,.grid3,.sig{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.sides{grid-template-columns:minmax(0,1fr)}.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.cal-item{grid-template-columns:minmax(0,1fr);gap:2px}.kv{grid-template-columns:repeat(2,minmax(0,1fr))}.brand .full{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<header class="bar"><div class="bar-inner">
+  <div class="brand"><svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true"><rect x="1" y="1" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 1v14M17 1v14" stroke="currentColor" stroke-width="1.6"/><path d="M8 5h6M8 8h6M8 11h6" stroke="currentColor" stroke-width="1" opacity=".6"/></svg><span class="full">MLCC Cycle Watch</span><span class="bscore" id="bar-score"></span></div>
+  <nav class="nav" aria-label="Sections">
+    <a href="#state">Where we are</a><a href="#buy">Buy now?</a><a href="#signals">Signals</a><a href="#supply">Supply</a><a href="#demand">Demand</a><a href="#stocks">Stocks</a><a href="#debates">Debates</a><a href="#history">History</a><a href="#checklist">Checklist</a><a href="#catalysts">Catalysts</a><a href="#sources">Sources</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+  <div class="panel hero-score">
+    <div class="label">Late-cycle risk score · as of <span id="asof"></span></div>
+    <div class="hero-num"><span class="num" id="score"></span><span class="of">/ 100</span></div>
+    <div><span class="pill s-green" id="band"></span></div>
+    <div class="bscale" aria-hidden="true">
+      <div class="bscale-track" id="bscale"></div>
+      <div class="bscale-ticks"><span style="left:0;transform:none">0</span><span style="left:25%">25</span><span style="left:50%">50</span><span style="left:70%">70</span><span style="left:100%;transform:translateX(-100%)">100</span></div>
+    </div>
+    <div class="tiles">
+      <div class="tile"><span class="label">Green</span><span class="num" id="n-green"></span></div>
+      <div class="tile"><span class="label">Amber</span><span class="num" id="n-amber"></span></div>
+      <div class="tile"><span class="label">Red</span><span class="num" id="n-red"></span></div>
+    </div>
+    <p class="small muted">Twelve signals, each scored green 0 / amber 1 / red 2 and weighted 1-3. Under 25 = upcycle intact; 25-49 late upcycle; 50-69 turn underway; 70+ downturn. Same rule as the Memory Cycle Watch.</p>
+  </div>
+  <div class="panel">
+    <div class="hc-head">
+      <div><h3>Equal-weight MLCC basket since 2000</h3><div class="small muted">Murata, SEMCO, Taiyo Yuden, Yageo, Walsin · local currency, dividend-adjusted · log scale · dots = cycle peaks</div></div>
+      <div class="seg" role="group" aria-label="Range"><button data-r="all" aria-pressed="true">2000-26</button><button data-r="10">10y</button><button data-r="3">3y</button></div>
+    </div>
+    <div class="chartbox" style="height:300px"><canvas id="c-hero" aria-label="MLCC basket index history"></canvas></div>
+    <figcaption>Yahoo Finance monthly adjusted closes, 2 Oct 2026; basket rebalanced monthly. FX not included.</figcaption>
+  </div>
+</div>
+
+<section id="state" style="padding-top:22px">
+  <div class="state">
+    <div class="panel" style="display:grid;gap:12px">
+      <div class="label">Cycle state</div>
+      <div class="phase" id="phase"></div>
+      <p id="summary" style="color:var(--ink-2);max-width:72ch"></p>
+      <div class="grid2">
+        <div class="flip"><div class="label" style="color:var(--bad)">What turns it down</div><ul id="flip-down"></ul></div>
+        <div class="flip"><div class="label" style="color:var(--good)">What extends it</div><ul id="flip-up"></ul></div>
+      </div>
+    </div>
+    <div class="panel" style="display:grid;gap:10px;align-content:start">
+      <h3>Murata capacitor book-to-bill</h3>
+      <div class="chartbox" style="height:220px"><canvas id="c-bbr"></canvas></div>
+      <figcaption>Murata fact books 2022-2026 and 1Q FY2026 speech (FY2025 Q3-Q4 not disclosed for capacitors). Dashed line = 1.0.</figcaption>
+    </div>
+  </div>
+</section>
+
+<section id="buy">
+  <div class="sec-head"><span class="label">The question</span><h2>Did buying the basket here pay off before?</h2>
+  <p>Today the basket is 36% below its peak with orders still at records. We tested every past cycle: buy the first month the basket closes 35% or more below its cycle peak, hold 6, 12, 24 and 36 months.</p></div>
+  <div class="grid2">
+    <div class="panel"><h3>Return after buying 35% below the peak</h3><div class="chartbox" style="height:280px"><canvas id="c-bt"></canvas></div>
+      <figcaption>Equal-weight basket, local currency, total-return proxy. Six completed cycles; 2024's dip never reached -35%.</figcaption></div>
+    <div style="display:grid;gap:12px;align-content:start">
+      <div class="callout"><div class="label">Verdict from history</div>
+        <div class="big" id="bt-verdict"></div>
+        <p class="small" id="bt-detail"></p></div>
+      <div class="table-wrap"><table><thead><tr><th>Peak</th><th>Bought</th><th class="r">12m</th><th class="r">24m</th><th class="r">36m</th><th class="r">Worse first</th></tr></thead><tbody id="bt-rows"></tbody></table></div>
+    </div>
+  </div>
+  <details class="more"><summary>Murata alone: buy 30% below its peak</summary>
+    <div class="table-wrap" style="margin-top:8px"><table><thead><tr><th>Peak</th><th>Bought</th><th class="r">12m</th><th class="r">24m</th><th class="r">36m</th><th class="r">Worse first</th></tr></thead><tbody id="bt-mur"></tbody></table></div>
+    <p class="cap">Same method on Murata's own price. Murata's dips are shallower and its record is weaker in true downturns (2001, 2007), better in mid-cycle pauses (2011, 2019, 2022).</p>
+  </details>
+</section>
+
+<section id="signals">
+  <div class="sec-head"><span class="label">Scorecard</span><h2>The twelve signals behind the score</h2><p>Ordered by weight. Each row states its green/amber/red rule, today's reading and where the reading came from.</p></div>
+  <div class="sigs" id="sig-rows"></div>
+</section>
+
+<section id="supply">
+  <div class="sec-head"><span class="label">Supply</span><h2>Who can make what</h2><p>No maker publishes capacity, so monthly shipments at full load are the best proxy. Murata and SEMCO ship two-thirds of the industry's high-end parts and 80-85% of AI-server MLCCs.</p></div>
+  <div class="grid2">
+    <div class="panel"><h3>MLCC output, bn pcs per month</h3><div class="chartbox" style="height:260px"><canvas id="c-cap"></canvas></div><figcaption>TrendForce, June-2026 shipments (Murata, SEMCO, Taiyo Yuden); Chinese figures are company claims (grey). Others not disclosed.</figcaption></div>
+    <div class="panel"><h3>Share of MLCC value vs AI-server share, %</h3><div class="chartbox" style="height:260px"><canvas id="c-share"></canvas></div><figcaption>passive-components.eu, 30 Jun 2026 (attributed estimates).</figcaption></div>
+  </div>
+  <div class="table-wrap" style="margin-top:16px"><table><thead><tr><th>Maker</th><th>Utilization</th><th>MLCC revenue (latest FY)</th><th>Capacity plan</th><th>Book-to-bill</th></tr></thead><tbody id="cap-rows"></tbody></table></div>
+</section>
+
+<section id="demand">
+  <div class="sec-head"><span class="label">Demand</span><h2>Where the parts go</h2><p>Units still come from phones and PCs, but the increment comes from AI servers and electric cars, which carry ten to a hundred times more MLCCs per box.</p></div>
+  <div class="grid2">
+    <div class="panel"><h3>MLCCs per device (log scale)</h3><div class="chartbox" style="height:280px"><canvas id="c-content"></canvas></div><figcaption>passive-components.eu, TrendForce, Mordor (attributed); ranges shown at midpoint.</figcaption></div>
+    <div class="panel" style="display:grid;gap:12px;align-content:start">
+      <h3>Demand facts that matter</h3>
+      <div class="tiles" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+        <div class="tile"><span class="label">Market 2026</span><span class="num">~$32bn</span><span class="small muted">Mordor; others $15-24bn (2024)</span></div>
+        <div class="tile"><span class="label">AI-server MLCC CAGR</span><span class="num">~30%</span><span class="small muted">Murata, 2025-30 (3.3x)</span></div>
+        <div class="tile"><span class="label">Murata data-center sales</span><span class="num">¥371bn</span><span class="small muted">FY3/27 guide, +80% YoY</span></div>
+        <div class="tile"><span class="label">Rubin vs GB200 board</span><span class="num">12k vs 6.5k</span><span class="small muted">TrendForce, 18 May 2026</span></div>
+      </div>
+      <ul class="small" style="margin:0;padding-left:18px;color:var(--ink-2);display:grid;gap:3px">
+        <li>Consumer electronics ~51% of value and automotive ~26%, growing fastest outside AI (Mordor, Persistence; attributed).</li>
+        <li>An AI server uses about 8x a conventional server (Murata); one GB200 NVL72 rack carries ~440,000 MLCCs.</li>
+        <li>Consumer demand is soft: Murata calls it subdued, TrendForce flags a weaker 2H26 peak season.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="stocks">
+  <div class="sec-head"><span class="label">Stocks</span><h2>Seven names, one cycle, very different exposure</h2><p>Price, distance from the 2026 high, consensus multiple and target. The pure plays (Taiyo Yuden, Yageo, Walsin) fell hardest; Kyocera and TDK barely moved because MLCC is a small part of them.</p></div>
+  <div class="panel" style="margin-bottom:16px"><h3>Distance from the 2026 high</h3><div class="chartbox" style="height:260px"><canvas id="c-dd"></canvas></div><figcaption>Yahoo daily closes, 2 Oct 2026.</figcaption></div>
+  <div class="cards" id="stock-cards"></div>
+</section>
+
+<section id="debates">
+  <div class="sec-head"><span class="label">Debates</span><h2>What decides the next turn</h2></div>
+  <div class="debates" id="debate-list"></div>
+</section>
+
+<section id="history">
+  <div class="sec-head"><span class="label">History</span><h2>Twenty-six years of MLCC booms and busts</h2><p>Shortages have lasted 10-14 months before new capacity arrived. Stocks peaked before orders every time, and every bust began with double-ordering.</p></div>
+  <div class="grid3" id="cycle-cards"></div>
+</section>
+
+<section id="checklist">
+  <div class="sec-head"><span class="label">Checklist</span><h2>What to read, and when</h2></div>
+  <div class="table-wrap"><table><thead><tr><th>Cadence</th><th>Data</th><th>Signal</th><th>Where</th></tr></thead><tbody id="check-rows"></tbody></table></div>
+</section>
+
+<section id="catalysts">
+  <div class="sec-head"><span class="label">Calendar</span><h2>Next five months</h2><p>Dates marked est. are inferred from last year's timing.</p></div>
+  <div class="panel" id="cal"></div>
+</section>
+
+<section id="sources">
+  <div class="sec-head"><span class="label">Method and gaps</span><h2>Sources, tags and what we could not find</h2></div>
+  <div class="grid2">
+    <div class="panel small" style="display:grid;gap:8px">
+      <p><b>Tags.</b> F = company document or exchange price data. A = attributed to press, aggregators or brokers, not independently verified. E = our arithmetic. Most 2026 operating readings are A; Murata's book-to-bill, utilization and fact-book series are F.</p>
+      <p><b>Score.</b> Twelve signals, weights 1-3 (total 27). Score = sum of (status × weight) ÷ (2 × total weight). Re-score after each release in the checklist.</p>
+      <p><b>Backtest.</b> Equal-weight, monthly-rebalanced basket of Murata, SEMCO, Taiyo Yuden, Yageo and Walsin, from Yahoo adjusted closes in local currency; peaks from a 25-month centred window. Six completed cycles is a small sample.</p>
+      <p><b>Files.</b> Research memos, CSVs and build scripts live in the repo under targets/MLCC.</p>
+    </div>
+    <div class="panel small"><b>Gaps</b><ul style="padding-left:18px;margin:6px 0 0;color:var(--ink-2);display:grid;gap:3px">
+      <li>No primary capacity data in bn pcs/month for any maker; shipments are a proxy.</li>
+      <li>Paumanok and TrendForce MLCC price tables are paywalled; price actions come from press reports.</li>
+      <li>Murata's MLCC price-hike letter is not confirmed from a primary source.</li>
+      <li>No 2004-2010 MLCC price, utilization or inventory data; those cycles rely on stock prices.</li>
+      <li>Channel inventory definitions conflict (TrendForce under 30 days vs Yageo 2-6 months).</li>
+      <li>Three-Circle's 100bn pcs/month claim rests on a single unverified source.</li>
+    </ul></div>
+  </div>
+  <div class="foot"><span>Built 2 Oct 2026 from targets/MLCC research memos 01-06 and company files. Not investment advice.</span></div>
+</section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script id="data" type="application/json">{
+ "as_of": "2026-10-02",
+ "score": 18.5,
+ "band": "upcycle intact",
+ "counts": {
+  "green": 7,
+  "amber": 5,
+  "red": 0,
+  "unknown": 0
+ },
+ "weights_total": 27,
+ "scorecard": [
+  {
+   "id": "SC01",
+   "name": "Murata capacitor book-to-bill",
+   "weight": 3,
+   "status": "green",
+   "why": "Orders over sales turns before price and earnings. In 2018 the capacitor ratio fell from above 1 to 0.80 two quarters before the order trough; in 2021 it peaked one quarter before the stocks bottomed out of the boom.",
+   "green": "Capacitor book-to-bill at or above 1.10 and backlog rising",
+   "amber": "0.95 to 1.10, or falling two quarters in a row from a peak",
+   "red": "Below 0.95 (2019 read 0.80; 2022 read 0.79)",
+   "read": "1.47 MLCC / 1.34 total in Apr-Jun 2026, the highest in the series; capacitor backlog \u00a5402bn, 1.8x the 2021 peak.",
+   "src": "Murata 1Q FY2026 speech, 31 Jul 2026 [F]; backlog [A]",
+   "next": "Murata 2Q, 30 Oct 2026"
+  },
+  {
+   "id": "SC02",
+   "name": "Price actions and ASP direction",
+   "weight": 3,
+   "status": "green",
+   "why": "MLCC prices normally fall a few percent a year. A broad hike that reaches OEM contracts, not only distributors, has marked every true shortage (2010, 2017-18, 2020-21).",
+   "green": "Hikes broadening to OEM contracts and to the Japanese makers",
+   "amber": "Hikes confined to distributors or to Taiwan/China makers; Japanese still cutting",
+   "red": "Hikes withdrawn, or spot below list for 4+ weeks",
+   "read": "SEMCO +30% (1 Aug) and a 4Q OEM hike; Yageo +50% list (1 Jul); Taiyo Yuden Apr and Sep; Walsin +5-15%. Murata still reports a \u00a515bn YoY price headwind and no general MLCC hike.",
+   "src": "TrendForce 4 & 27 Aug 2026; passive-components.eu 1 Jul 2026 [A]; Murata speech [F]",
+   "next": "Murata/Taiyo/Kyocera 4Q-1Q price stance"
+  },
+  {
+   "id": "SC03",
+   "name": "Lead times",
+   "weight": 2,
+   "status": "green",
+   "why": "Lead times stretch while customers still trust the shortage; they shorten first when buffers are full (2018: 30+ weeks fell back within two quarters).",
+   "green": "Stretching or stable above 14 weeks",
+   "amber": "Shortening for 2 consecutive reports",
+   "red": "Back below 10 weeks on high-end parts",
+   "read": "Standard 14-18 weeks, high-cap/high-voltage 15-20, some SEMCO high-cap ~40 weeks; capacity planned for 4Q26 pushed into 2027.",
+   "src": "TrendForce 18 Aug 2026; Fusion Worldwide [A]",
+   "next": "TrendForce mid-Oct bulletin"
+  },
+  {
+   "id": "SC04",
+   "name": "Channel and customer inventory",
+   "weight": 3,
+   "status": "amber",
+   "why": "Double-ordering is how MLCC shortages end. In Dec-2018 distributors sat on 6-7 months against 2-3 normal, and prices fell 15% the next quarter.",
+   "green": "Below ~1.5 months and no double-order talk",
+   "amber": "Sources disagree, or any maker flags unusually large distributor orders",
+   "red": "Above 4 months in distribution, or order cancellations",
+   "read": "TrendForce: mainstream channel under 30 days. Yageo: China distribution ~2 months, global 4, high-service 5-6. Murata notes some distributor orders in 'large quantities'.",
+   "src": "TrendForce 28 Jul 2026; Yageo 2Q call via BigGo 29 Jul [A]; Murata speech [F]",
+   "next": "Yageo 3Q call, 27 Oct"
+  },
+  {
+   "id": "SC05",
+   "name": "Utilization",
+   "weight": 2,
+   "status": "green",
+   "why": "When the leaders run full, volume spills to Taiwan/China and pricing power spreads; the turn starts when the spillover makers fill up and add capacity.",
+   "green": "Japan/Korea above 90% and Taiwan rising",
+   "amber": "Taiwan/China also above 90% while capex accelerates",
+   "red": "Leaders falling below 85%",
+   "read": "Murata ~95%, SEMCO 91%, Taiyo Yuden ~85%, Yageo 80-85% guided above 90% for 3Q, Walsin 80-85%.",
+   "src": "Murata speech [F]; sedaily 28 Sep; BigGo [A]",
+   "next": "3Q calls, late Oct"
+  },
+  {
+   "id": "SC06",
+   "name": "Taiwan monthly revenue (Yageo, Walsin)",
+   "weight": 2,
+   "status": "green",
+   "why": "The only monthly hard number in passives; released by the 10th, a quarter ahead of Japanese results.",
+   "green": "YoY above +20% with the 3-month average rising",
+   "amber": "YoY positive but MoM falling 2 months in a row",
+   "red": "YoY negative, or 3 straight MoM declines",
+   "read": "Aug: Yageo NT$16.3bn +51.8% YoY (+1.2% MoM, sixth record); Walsin NT$4.57bn +45.5% (best since Nov 2018).",
+   "src": "cnyes 8-9 Sep 2026 [A]",
+   "next": "Sep revenue ~8-9 Oct"
+  },
+  {
+   "id": "SC07",
+   "name": "Capacity and capex response",
+   "weight": 2,
+   "status": "amber",
+   "why": "High-end MLCC capacity takes 18-24 months; shortages have historically lasted 10-14 months before new lines arrived. Capex announced now lands in 2H27-2028.",
+   "green": "Capex flat and aimed at high-end; no greenfield pull-ins",
+   "amber": "One leader steps capex up sharply, or Chinese makers add >20% capacity",
+   "red": "Two leaders plus China all add in the same year as orders slow",
+   "read": "SEMCO capex ~\u20a93tn (2026) to ~\u20a96tn (2027) and Philippines plant 3 in 1Q27; Murata +\u00a580bn new building, first output 4Q27; Taiyo Yuden Malaysia pulled forward; Three-Circle claims 55 to 100bn pcs/month.",
+   "src": "02_capacity memo [A]",
+   "next": "FY27 capex guides, Jan-May 2027"
+  },
+  {
+   "id": "SC08",
+   "name": "AI-server and hyperscaler demand",
+   "weight": 3,
+   "status": "green",
+   "why": "AI servers carry 8-15x the MLCCs of a normal server and are the marginal buyer of high-cap parts; hyperscaler capex leads MLCC orders by 1-3 quarters.",
+   "green": "Hyperscaler capex raised or held; next-year growth double-digit",
+   "amber": "Next-year growth guided below ~15% or a top-4 pause",
+   "red": "Any top-4 cut",
+   "read": "2026 hyperscaler capex >$700bn, raised through the year; Murata data-center sales guide \u00a5371bn (from \u00a5325bn), +80% YoY.",
+   "src": "Memory Cycle Watch SC08; BigGo 31 Jul [A]",
+   "next": "Hyperscaler 3Q calls, late Oct"
+  },
+  {
+   "id": "SC09",
+   "name": "Consumer end-demand (phones, PCs)",
+   "weight": 2,
+   "status": "amber",
+   "why": "Phones and PCs are still half of MLCC units. In 2018 and 2022 the consumer slump started the destock even while auto and industrial held.",
+   "green": "Phone and PC units growing",
+   "amber": "Flat or soft units while AI carries the cycle",
+   "red": "Units falling >5% YoY with rising OEM inventory",
+   "read": "Murata and TrendForce call consumer demand subdued; TrendForce warns China/US slowdown may weaken the 2H26 peak season.",
+   "src": "Murata speech [F]; TrendForce [A]",
+   "next": "Apple/Android builds, Oct-Nov"
+  },
+  {
+   "id": "SC10",
+   "name": "Stocks vs fundamentals",
+   "weight": 2,
+   "status": "amber",
+   "why": "MLCC stocks peaked 2-4 quarters before orders in 2000, 2007, 2010 and 2018. A big drawdown with orders still rising is the classic mid-cycle wobble, or the first warning.",
+   "green": "Basket within 10% of its high",
+   "amber": "Basket 20%+ below its high while orders still rise",
+   "red": "Basket 20%+ below AND SC01 or SC04 red",
+   "read": "Equal-weight basket 36% below its June high; Taiyo Yuden -55%, Yageo -45%, Walsin -41%, Murata -31%, SEMCO -30%, all while book-to-bill sits at records.",
+   "src": "Yahoo daily closes 2 Oct 2026 [F]",
+   "next": "daily"
+  },
+  {
+   "id": "SC11",
+   "name": "Murata guidance slope",
+   "weight": 2,
+   "status": "green",
+   "why": "Murata reports first among the Japanese and guides conservatively; an upward revision with price still a headwind means volume is doing the work.",
+   "green": "Full-year OP guide raised",
+   "amber": "Held while orders rise",
+   "red": "Cut",
+   "read": "FY3/27 raised on 31 Jul: revenue \u00a52.11tn (from 1.96), OP \u00a5430bn (from 380), capex \u00a5225bn.",
+   "src": "BigGo 31 Jul 2026 [A]",
+   "next": "30 Oct 2026"
+  },
+  {
+   "id": "SC12",
+   "name": "Chinese supply and pricing",
+   "weight": 1,
+   "status": "amber",
+   "why": "State-backed Chinese makers flooded commodity MLCCs in 2019 and 2023; they now push into high-cap parts.",
+   "green": "China capacity growth below 10% and no high-cap qualification at top OEMs",
+   "amber": "Claimed capacity growth above 20%, or high-end qualification news",
+   "red": "China discounting high-cap parts >20% vs Japanese",
+   "read": "Fenghua claims 50bn pcs/month; Three-Circle claims 55 to 100bn by end-2026 (single source) with a \u00a51.86bn high-cap project due May-2027.",
+   "src": "02_capacity memo [A]",
+   "next": "Quarterly"
+  }
+ ],
+ "phase": "Mid upcycle in fundamentals, late-cycle wobble in the stocks",
+ "summary": "Orders, lead times and prices all say the MLCC shortage is still building: Murata's MLCC book-to-bill hit 1.47 in Apr-Jun 2026 (2021 peak 1.32), lead times run 14-20 weeks against 8-10 normal, and SEMCO and Yageo pushed 30-50% hikes into OEM contracts. Supply cannot answer before 2H27: new high-end lines take 18-24 months and planned 4Q26 capacity slipped into 2027. The stocks disagree: after an 8x run in the equal-weight basket, they peaked 19 Jun to 1 Jul and are still 36% below the high. That gap, fundamentals rising while prices fall, has preceded both a second leg (2010, 2021) and a top (2000, 2018).",
+ "flip_down": [
+  "Murata capacitor book-to-bill falls below 1.10 at the 30 Oct results, or backlog shrinks QoQ (SC01).",
+  "Yageo or Walsin monthly revenue falls MoM for three months, or Yageo reports distribution above 4 months (SC04/SC06).",
+  "Lead times shorten in two consecutive TrendForce bulletins (SC03).",
+  "SEMCO's 2027 capex step-up is matched by Murata and the Chinese makers while price hikes stall (SC07).",
+  "A top-4 hyperscaler cuts its 2027 capex framework (SC08)."
+ ],
+ "flip_up": [
+  "Murata, Taiyo Yuden and Kyocera join the price hikes for 1Q27; that is the leg the stocks have not priced.",
+  "Murata raises FY3/27 guidance again on 30 Oct with book-to-bill above 1.3.",
+  "Monthly Taiwan revenue keeps setting records through 4Q, the seasonally weak quarter."
+ ],
+ "backtest": {
+  "basket_core": {
+   "2000-01": 100.0,
+   "2000-02": 109.1,
+   "2000-03": 113.45,
+   "2000-04": 112.33,
+   "2000-05": 101.36,
+   "2000-06": 98.63,
+   "2000-07": 101.26,
+   "2000-08": 85.35,
+   "2000-09": 79.25,
+   "2000-10": 82.7,
+   "2000-11": 78.65,
+   "2000-12": 99.4,
+   "2001-01": 94.86,
+   "2001-02": 96.92,
+   "2001-03": 96.85,
+   "2001-04": 98.15,
+   "2001-05": 92.23,
+   "2001-06": 82.85,
+   "2001-07": 76.66,
+   "2001-08": 50.77,
+   "2001-09": 56.31,
+   "2001-10": 68.24,
+   "2001-11": 78.38,
+   "2001-12": 74.52,
+   "2002-01": 80.6,
+   "2002-02": 91.92,
+   "2002-03": 93.63,
+   "2002-04": 85.13,
+   "2002-05": 67.55,
+   "2002-06": 61.92,
+   "2002-07": 63.46,
+   "2002-08": 54.05,
+   "2002-09": 55.55,
+   "2002-10": 56.98,
+   "2002-11": 48.35,
+   "2002-12": 48.24,
+   "2003-01": 46.88,
+   "2003-02": 44.23,
+   "2003-03": 41.17,
+   "2003-04": 45.33,
+   "2003-05": 51.25,
+   "2003-06": 56.27,
+   "2003-07": 62.69,
+   "2003-08": 60.44,
+   "2003-09": 68.03,
+   "2003-10": 60.92,
+   "2003-11": 63.3,
+   "2003-12": 69.58,
+   "2004-01": 71.97,
+   "2004-02": 73.0,
+   "2004-03": 76.55,
+   "2004-04": 67.49,
+   "2004-05": 64.36,
+   "2004-06": 55.03,
+   "2004-07": 56.68,
+   "2004-08": 52.41,
+   "2004-09": 47.56,
+   "2004-10": 48.65,
+   "2004-11": 51.06,
+   "2004-12": 47.21,
+   "2005-01": 51.62,
+   "2005-02": 50.37,
+   "2005-03": 44.55,
+   "2005-04": 50.47,
+   "2005-05": 51.97,
+   "2005-06": 52.07,
+   "2005-07": 49.2,
+   "2005-08": 54.74,
+   "2005-09": 49.82,
+   "2005-10": 60.24,
+   "2005-11": 74.69,
+   "2005-12": 78.0,
+   "2006-01": 74.25,
+   "2006-02": 77.98,
+   "2006-03": 81.18,
+   "2006-04": 68.5,
+   "2006-05": 66.33,
+   "2006-06": 68.07,
+   "2006-07": 71.19,
+   "2006-08": 75.47,
+   "2006-09": 77.48,
+   "2006-10": 83.52,
+   "2006-11": 87.49,
+   "2006-12": 83.83,
+   "2007-01": 88.54,
+   "2007-02": 85.65,
+   "2007-03": 87.83,
+   "2007-04": 92.72,
+   "2007-05": 103.59,
+   "2007-06": 106.58,
+   "2007-07": 95.91,
+   "2007-08": 101.11,
+   "2007-09": 91.56,
+   "2007-10": 83.25,
+   "2007-11": 79.21,
+   "2007-12": 63.5,
+   "2008-01": 67.08,
+   "2008-02": 68.36,
+   "2008-03": 72.69,
+   "2008-04": 69.01,
+   "2008-05": 59.52,
+   "2008-06": 57.41,
+   "2008-07": 59.75,
+   "2008-08": 51.43,
+   "2008-09": 40.92,
+   "2008-10": 36.15,
+   "2008-11": 37.13,
+   "2008-12": 36.7,
+   "2009-01": 44.35,
+   "2009-02": 51.9,
+   "2009-03": 56.69,
+   "2009-04": 65.34,
+   "2009-05": 62.93,
+   "2009-06": 74.94,
+   "2009-07": 76.76,
+   "2009-08": 80.51,
+   "2009-09": 80.02,
+   "2009-10": 75.85,
+   "2009-11": 97.36,
+   "2009-12": 95.49,
+   "2010-01": 94.84,
+   "2010-02": 108.12,
+   "2010-03": 119.71,
+   "2010-04": 105.69,
+   "2010-05": 104.73,
+   "2010-06": 104.25,
+   "2010-07": 90.98,
+   "2010-08": 99.9,
+   "2010-09": 99.99,
+   "2010-10": 104.88,
+   "2010-11": 113.93,
+   "2010-12": 119.14,
+   "2011-01": 117.15,
+   "2011-02": 110.18,
+   "2011-03": 108.17,
+   "2011-04": 101.73,
+   "2011-05": 94.65,
+   "2011-06": 88.6,
+   "2011-07": 71.58,
+   "2011-08": 67.2,
+   "2011-09": 71.92,
+   "2011-10": 67.68,
+   "2011-11": 64.12,
+   "2011-12": 72.97,
+   "2012-01": 82.64,
+   "2012-02": 81.02,
+   "2012-03": 78.4,
+   "2012-04": 73.19,
+   "2012-05": 74.72,
+   "2012-06": 69.16,
+   "2012-07": 69.86,
+   "2012-08": 72.37,
+   "2012-09": 68.44,
+   "2012-10": 75.1,
+   "2012-11": 77.65,
+   "2012-12": 78.5,
+   "2013-01": 84.96,
+   "2013-02": 92.29,
+   "2013-03": 98.87,
+   "2013-04": 105.44,
+   "2013-05": 98.65,
+   "2013-06": 92.78,
+   "2013-07": 91.54,
+   "2013-08": 97.33,
+   "2013-09": 95.74,
+   "2013-10": 98.86,
+   "2013-11": 101.02,
+   "2013-12": 102.83,
+   "2014-01": 108.03,
+   "2014-02": 107.62,
+   "2014-03": 104.74,
+   "2014-04": 108.7,
+   "2014-05": 118.24,
+   "2014-06": 118.88,
+   "2014-07": 121.16,
+   "2014-08": 125.91,
+   "2014-09": 122.22,
+   "2014-10": 139.07,
+   "2014-11": 140.42,
+   "2014-12": 150.61,
+   "2015-01": 164.66,
+   "2015-02": 179.73,
+   "2015-03": 175.76,
+   "2015-04": 176.22,
+   "2015-05": 164.32,
+   "2015-06": 152.98,
+   "2015-07": 155.71,
+   "2015-08": 162.79,
+   "2015-09": 175.81,
+   "2015-10": 185.31,
+   "2015-11": 181.18,
+   "2015-12": 159.07,
+   "2016-01": 158.31,
+   "2016-02": 167.01,
+   "2016-03": 167.52,
+   "2016-04": 173.41,
+   "2016-05": 156.44,
+   "2016-06": 171.81,
+   "2016-07": 177.93,
+   "2016-08": 171.77,
+   "2016-09": 178.42,
+   "2016-10": 179.03,
+   "2016-11": 186.88,
+   "2016-12": 204.17,
+   "2017-01": 215.93,
+   "2017-02": 226.84,
+   "2017-03": 251.41,
+   "2017-04": 258.6,
+   "2017-05": 290.43,
+   "2017-06": 294.95,
+   "2017-07": 318.87,
+   "2017-08": 326.44,
+   "2017-09": 354.82,
+   "2017-10": 398.78,
+   "2017-11": 393.11,
+   "2017-12": 409.6,
+   "2018-01": 373.76,
+   "2018-02": 452.01,
+   "2018-03": 535.03,
+   "2018-04": 764.12,
+   "2018-05": 883.32,
+   "2018-06": 853.63,
+   "2018-07": 824.48,
+   "2018-08": 642.84,
+   "2018-09": 517.37,
+   "2018-10": 577.81,
+   "2018-11": 482.45,
+   "2018-12": 516.86,
+   "2019-01": 558.23,
+   "2019-02": 555.57,
+   "2019-03": 582.4,
+   "2019-04": 478.51,
+   "2019-05": 488.42,
+   "2019-06": 500.13,
+   "2019-07": 482.35,
+   "2019-08": 563.43,
+   "2019-09": 637.43,
+   "2019-10": 641.21,
+   "2019-11": 782.33,
+   "2019-12": 731.0,
+   "2020-01": 718.43,
+   "2020-02": 591.76,
+   "2020-03": 718.17,
+   "2020-04": 706.14,
+   "2020-05": 736.78,
+   "2020-06": 755.86,
+   "2020-07": 679.12,
+   "2020-08": 731.01,
+   "2020-09": 770.51,
+   "2020-10": 938.6,
+   "2020-11": 1041.79,
+   "2020-12": 1158.38,
+   "2021-01": 1129.13,
+   "2021-02": 1101.09,
+   "2021-03": 1069.86,
+   "2021-04": 1016.28,
+   "2021-05": 1074.56,
+   "2021-06": 1086.79,
+   "2021-07": 1062.89,
+   "2021-08": 1040.94,
+   "2021-09": 958.12,
+   "2021-10": 1016.6,
+   "2021-11": 1090.26,
+   "2021-12": 985.6,
+   "2022-01": 930.51,
+   "2022-02": 946.11,
+   "2022-03": 888.26,
+   "2022-04": 882.74,
+   "2022-05": 730.5,
+   "2022-06": 794.78,
+   "2022-07": 764.27,
+   "2022-08": 638.05,
+   "2022-09": 691.97,
+   "2022-10": 779.28,
+   "2022-11": 713.74,
+   "2022-12": 812.72,
+   "2023-01": 821.85,
+   "2023-02": 855.17,
+   "2023-03": 817.38,
+   "2023-04": 854.88,
+   "2023-05": 822.33,
+   "2023-06": 826.84,
+   "2023-07": 821.39,
+   "2023-08": 847.28,
+   "2023-09": 789.01,
+   "2023-10": 936.42,
+   "2023-11": 929.84,
+   "2023-12": 871.82,
+   "2024-01": 864.89,
+   "2024-02": 898.99,
+   "2024-03": 925.9,
+   "2024-04": 923.7,
+   "2024-05": 1023.04,
+   "2024-06": 1064.05,
+   "2024-07": 968.57,
+   "2024-08": 893.05,
+   "2024-09": 826.65,
+   "2024-10": 739.23,
+   "2024-11": 780.94,
+   "2024-12": 782.52,
+   "2025-01": 822.58,
+   "2025-02": 762.95,
+   "2025-03": 702.45,
+   "2025-04": 736.42,
+   "2025-05": 763.33,
+   "2025-06": 832.48,
+   "2025-07": 872.1,
+   "2025-08": 1040.9,
+   "2025-09": 1343.14,
+   "2025-10": 1240.99,
+   "2025-11": 1261.79,
+   "2025-12": 1348.53,
+   "2026-01": 1783.83,
+   "2026-02": 1459.92,
+   "2026-03": 2251.3,
+   "2026-04": 4887.25,
+   "2026-05": 6412.67,
+   "2026-06": 3218.38,
+   "2026-07": 3593.91,
+   "2026-08": 3719.95,
+   "2026-09": 4014.8,
+   "2026-10": 4131.69
+  },
+  "basket_broad": {
+   "2001-01": 100.0,
+   "2001-02": 102.95,
+   "2001-03": 101.52,
+   "2001-04": 100.91,
+   "2001-05": 94.29,
+   "2001-06": 85.96,
+   "2001-07": 79.96,
+   "2001-08": 58.37,
+   "2001-09": 64.07,
+   "2001-10": 76.1,
+   "2001-11": 83.26,
+   "2001-12": 78.67,
+   "2002-01": 84.01,
+   "2002-02": 95.26,
+   "2002-03": 96.67,
+   "2002-04": 92.51,
+   "2002-05": 74.59,
+   "2002-06": 68.85,
+   "2002-07": 70.29,
+   "2002-08": 61.55,
+   "2002-09": 61.92,
+   "2002-10": 65.3,
+   "2002-11": 55.72,
+   "2002-12": 55.59,
+   "2003-01": 54.1,
+   "2003-02": 50.81,
+   "2003-03": 47.61,
+   "2003-04": 53.66,
+   "2003-05": 60.1,
+   "2003-06": 65.25,
+   "2003-07": 72.87,
+   "2003-08": 68.49,
+   "2003-09": 75.51,
+   "2003-10": 69.83,
+   "2003-11": 73.33,
+   "2003-12": 79.61,
+   "2004-01": 81.64,
+   "2004-02": 84.11,
+   "2004-03": 87.46,
+   "2004-04": 79.88,
+   "2004-05": 78.16,
+   "2004-06": 68.48,
+   "2004-07": 68.72,
+   "2004-08": 64.89,
+   "2004-09": 60.55,
+   "2004-10": 61.08,
+   "2004-11": 64.25,
+   "2004-12": 59.81,
+   "2005-01": 64.66,
+   "2005-02": 63.17,
+   "2005-03": 57.97,
+   "2005-04": 64.84,
+   "2005-05": 65.97,
+   "2005-06": 65.65,
+   "2005-07": 63.33,
+   "2005-08": 68.68,
+   "2005-09": 63.43,
+   "2005-10": 76.34,
+   "2005-11": 87.88,
+   "2005-12": 93.92,
+   "2006-01": 90.11,
+   "2006-02": 94.63,
+   "2006-03": 98.68,
+   "2006-04": 85.21,
+   "2006-05": 82.23,
+   "2006-06": 84.83,
+   "2006-07": 88.74,
+   "2006-08": 93.17,
+   "2006-09": 95.01,
+   "2006-10": 99.81,
+   "2006-11": 105.22,
+   "2006-12": 102.99,
+   "2007-01": 106.31,
+   "2007-02": 105.02,
+   "2007-03": 107.9,
+   "2007-04": 113.58,
+   "2007-05": 125.97,
+   "2007-06": 123.95,
+   "2007-07": 112.85,
+   "2007-08": 118.04,
+   "2007-09": 107.18,
+   "2007-10": 98.22,
+   "2007-11": 95.56,
+   "2007-12": 77.51,
+   "2008-01": 82.14,
+   "2008-02": 80.47,
+   "2008-03": 88.14,
+   "2008-04": 85.93,
+   "2008-05": 75.83,
+   "2008-06": 73.41,
+   "2008-07": 75.28,
+   "2008-08": 64.28,
+   "2008-09": 48.88,
+   "2008-10": 45.2,
+   "2008-11": 46.57,
+   "2008-12": 46.04,
+   "2009-01": 52.55,
+   "2009-02": 60.82,
+   "2009-03": 68.27,
+   "2009-04": 75.09,
+   "2009-05": 73.54,
+   "2009-06": 85.09,
+   "2009-07": 87.82,
+   "2009-08": 91.48,
+   "2009-09": 90.54,
+   "2009-10": 83.72,
+   "2009-11": 105.93,
+   "2009-12": 105.1,
+   "2010-01": 103.09,
+   "2010-02": 117.81,
+   "2010-03": 127.13,
+   "2010-04": 111.2,
+   "2010-05": 107.99,
+   "2010-06": 109.52,
+   "2010-07": 95.97,
+   "2010-08": 105.16,
+   "2010-09": 105.3,
+   "2010-10": 112.53,
+   "2010-11": 119.78,
+   "2010-12": 123.42,
+   "2011-01": 122.15,
+   "2011-02": 115.32,
+   "2011-03": 112.18,
+   "2011-04": 107.19,
+   "2011-05": 101.68,
+   "2011-06": 95.83,
+   "2011-07": 78.37,
+   "2011-08": 72.4,
+   "2011-09": 78.82,
+   "2011-10": 77.01,
+   "2011-11": 71.99,
+   "2011-12": 80.28,
+   "2012-01": 91.01,
+   "2012-02": 92.05,
+   "2012-03": 89.09,
+   "2012-04": 80.16,
+   "2012-05": 81.3,
+   "2012-06": 74.93,
+   "2012-07": 76.56,
+   "2012-08": 78.54,
+   "2012-09": 76.26,
+   "2012-10": 83.29,
+   "2012-11": 85.17,
+   "2012-12": 87.69,
+   "2013-01": 91.84,
+   "2013-02": 99.23,
+   "2013-03": 107.31,
+   "2013-04": 114.34,
+   "2013-05": 106.95,
+   "2013-06": 102.66,
+   "2013-07": 101.97,
+   "2013-08": 108.5,
+   "2013-09": 108.1,
+   "2013-10": 113.95,
+   "2013-11": 116.09,
+   "2013-12": 114.54,
+   "2014-01": 117.42,
+   "2014-02": 117.32,
+   "2014-03": 115.83,
+   "2014-04": 117.94,
+   "2014-05": 127.95,
+   "2014-06": 130.26,
+   "2014-07": 132.1,
+   "2014-08": 140.47,
+   "2014-09": 137.4,
+   "2014-10": 157.07,
+   "2014-11": 157.21,
+   "2014-12": 164.8,
+   "2015-01": 182.67,
+   "2015-02": 197.77,
+   "2015-03": 193.64,
+   "2015-04": 200.41,
+   "2015-05": 187.31,
+   "2015-06": 176.27,
+   "2015-07": 173.48,
+   "2015-08": 174.75,
+   "2015-09": 188.79,
+   "2015-10": 200.83,
+   "2015-11": 194.03,
+   "2015-12": 169.08,
+   "2016-01": 166.25,
+   "2016-02": 174.63,
+   "2016-03": 178.92,
+   "2016-04": 183.34,
+   "2016-05": 163.95,
+   "2016-06": 178.67,
+   "2016-07": 187.38,
+   "2016-08": 180.2,
+   "2016-09": 188.87,
+   "2016-10": 192.64,
+   "2016-11": 201.83,
+   "2016-12": 215.85,
+   "2017-01": 224.41,
+   "2017-02": 230.73,
+   "2017-03": 248.45,
+   "2017-04": 252.84,
+   "2017-05": 279.56,
+   "2017-06": 286.96,
+   "2017-07": 299.91,
+   "2017-08": 309.79,
+   "2017-09": 338.55,
+   "2017-10": 373.6,
+   "2017-11": 365.19,
+   "2017-12": 381.42,
+   "2018-01": 349.32,
+   "2018-02": 398.73,
+   "2018-03": 459.65,
+   "2018-04": 597.43,
+   "2018-05": 674.68,
+   "2018-06": 667.39,
+   "2018-07": 663.26,
+   "2018-08": 556.99,
+   "2018-09": 454.42,
+   "2018-10": 486.88,
+   "2018-11": 412.92,
+   "2018-12": 446.94,
+   "2019-01": 473.74,
+   "2019-02": 477.37,
+   "2019-03": 509.1,
+   "2019-04": 421.32,
+   "2019-05": 438.93,
+   "2019-06": 444.35,
+   "2019-07": 429.44,
+   "2019-08": 495.0,
+   "2019-09": 554.53,
+   "2019-10": 565.24,
+   "2019-11": 660.63,
+   "2019-12": 623.11,
+   "2020-01": 598.95,
+   "2020-02": 503.43,
+   "2020-03": 581.77,
+   "2020-04": 581.76,
+   "2020-05": 605.22,
+   "2020-06": 624.21,
+   "2020-07": 577.53,
+   "2020-08": 612.32,
+   "2020-09": 638.21,
+   "2020-10": 760.09,
+   "2020-11": 832.44,
+   "2020-12": 916.25,
+   "2021-01": 890.12,
+   "2021-02": 880.35,
+   "2021-03": 851.63,
+   "2021-04": 815.27,
+   "2021-05": 847.43,
+   "2021-06": 842.59,
+   "2021-07": 822.88,
+   "2021-08": 821.61,
+   "2021-09": 771.59,
+   "2021-10": 816.36,
+   "2021-11": 866.26,
+   "2021-12": 793.5,
+   "2022-01": 768.29,
+   "2022-02": 781.76,
+   "2022-03": 737.43,
+   "2022-04": 750.72,
+   "2022-05": 651.47,
+   "2022-06": 693.19,
+   "2022-07": 697.66,
+   "2022-08": 602.23,
+   "2022-09": 644.11,
+   "2022-10": 700.91,
+   "2022-11": 641.47,
+   "2022-12": 712.88,
+   "2023-01": 717.63,
+   "2023-02": 747.63,
+   "2023-03": 725.68,
+   "2023-04": 776.85,
+   "2023-05": 758.55,
+   "2023-06": 756.95,
+   "2023-07": 748.59,
+   "2023-08": 774.23,
+   "2023-09": 733.41,
+   "2023-10": 867.61,
+   "2023-11": 861.13,
+   "2023-12": 843.47,
+   "2024-01": 845.46,
+   "2024-02": 857.21,
+   "2024-03": 863.18,
+   "2024-04": 865.72,
+   "2024-05": 968.48,
+   "2024-06": 1009.31,
+   "2024-07": 926.97,
+   "2024-08": 858.42,
+   "2024-09": 807.72,
+   "2024-10": 744.82,
+   "2024-11": 790.12,
+   "2024-12": 784.11,
+   "2025-01": 797.86,
+   "2025-02": 757.57,
+   "2025-03": 714.01,
+   "2025-04": 748.12,
+   "2025-05": 772.34,
+   "2025-06": 837.18,
+   "2025-07": 882.34,
+   "2025-08": 1021.6,
+   "2025-09": 1273.55,
+   "2025-10": 1204.36,
+   "2025-11": 1200.14,
+   "2025-12": 1249.94,
+   "2026-01": 1613.35,
+   "2026-02": 1332.37,
+   "2026-03": 1964.38,
+   "2026-04": 3621.83,
+   "2026-05": 4373.12,
+   "2026-06": 2741.62,
+   "2026-07": 2975.63,
+   "2026-08": 3041.53,
+   "2026-09": 3255.42,
+   "2026-10": 3315.34
+  },
+  "now": {
+   "idx": 4355.4107,
+   "hi36": 6759.903,
+   "dd": -0.3557,
+   "ret12": 2.3293,
+   "run18": 4.4127,
+   "m_since_peak": 5.0,
+   "fwd6": null,
+   "fwd12": null,
+   "fwd24": null
+  },
+  "episodes": [
+   {
+    "peak": "2018-05",
+    "entry": "2018-08",
+    "dd": -0.272,
+    "fwd6": -0.136,
+    "fwd12": -0.124,
+    "fwd24": 0.137
+   },
+   {
+    "peak": "2026-05",
+    "entry": "2026-07",
+    "dd": -0.44,
+    "fwd6": null,
+    "fwd12": null,
+    "fwd24": null
+   }
+  ],
+  "analog_months": 7,
+  "analog_stats": {
+   "fwd6": {
+    "mean": -0.042,
+    "median": -0.062,
+    "hit": 0.29,
+    "n": 4
+   },
+   "fwd12": {
+    "mean": 0.21,
+    "median": 0.171,
+    "hit": 0.43,
+    "n": 4
+   },
+   "fwd24": {
+    "mean": 0.603,
+    "median": 0.557,
+    "hit": 0.57,
+    "n": 4
+   }
+  },
+  "unconditional": {
+   "6": {
+    "mean": 0.134,
+    "50%": 0.076
+   },
+   "12": {
+    "mean": 0.279,
+    "50%": 0.171
+   },
+   "24": {
+    "mean": 0.481,
+    "50%": 0.31
+   }
+  },
+  "dd_buckets": {
+   "(-1.0, -0.5]": {
+    "fwd12_med": 0.859,
+    "fwd24_med": 0.943,
+    "n": 13
+   },
+   "(-0.5, -0.35]": {
+    "fwd12_med": 0.247,
+    "fwd24_med": 0.544,
+    "n": 60
+   },
+   "(-0.35, -0.25]": {
+    "fwd12_med": 0.185,
+    "fwd24_med": 0.229,
+    "n": 49
+   },
+   "(-0.25, -0.15]": {
+    "fwd12_med": 0.199,
+    "fwd24_med": 0.243,
+    "n": 49
+   },
+   "(-0.15, -0.05]": {
+    "fwd12_med": -0.043,
+    "fwd24_med": -0.126,
+    "n": 46
+   },
+   "(-0.05, 0.01]": {
+    "fwd12_med": 0.093,
+    "fwd24_med": 0.327,
+    "n": 70
+   }
+  },
+  "peaks": [
+   "2001-04",
+   "2004-03",
+   "2007-06",
+   "2010-03",
+   "2015-10",
+   "2018-05",
+   "2020-12",
+   "2024-06",
+   "2026-05"
+  ],
+  "troughs": [
+   "2001-08",
+   "2003-03",
+   "2005-03",
+   "2008-10",
+   "2011-11",
+   "2019-04",
+   "2022-08",
+   "2025-03"
+  ],
+  "episodes_v2": [
+   {
+    "peak": "2000-03",
+    "runup_24m": 0.13,
+    "trough": "2003-03",
+    "depth": -0.64,
+    "months_to_trough": 36,
+    "buy_at_minus35": "2001-08",
+    "m35_fwd6": 0.811,
+    "m35_fwd12": 0.065,
+    "m35_fwd24": 0.19,
+    "buy_peak_plus4": "2000-07",
+    "dd_at_plus4": -0.11,
+    "p4_fwd6": -0.063,
+    "p4_fwd12": -0.243,
+    "p4_fwd24": -0.373
+   },
+   {
+    "peak": "2004-03",
+    "runup_24m": 0.86,
+    "trough": "2005-03",
+    "depth": -0.42,
+    "months_to_trough": 12,
+    "buy_at_minus35": "2004-09",
+    "m35_fwd6": -0.063,
+    "m35_fwd12": 0.048,
+    "m35_fwd24": 0.629,
+    "buy_peak_plus4": "2004-07",
+    "dd_at_plus4": -0.26,
+    "p4_fwd6": -0.089,
+    "p4_fwd12": -0.132,
+    "p4_fwd24": 0.256
+   },
+   {
+    "peak": "2007-06",
+    "runup_24m": 1.17,
+    "trough": "2008-10",
+    "depth": -0.66,
+    "months_to_trough": 16,
+    "buy_at_minus35": "2007-12",
+    "m35_fwd6": -0.096,
+    "m35_fwd12": -0.422,
+    "m35_fwd24": 0.504,
+    "buy_peak_plus4": "2007-10",
+    "dd_at_plus4": -0.22,
+    "p4_fwd6": -0.171,
+    "p4_fwd12": -0.566,
+    "p4_fwd24": -0.089
+   },
+   {
+    "peak": "2010-03",
+    "runup_24m": 2.31,
+    "trough": "2011-11",
+    "depth": -0.46,
+    "months_to_trough": 20,
+    "buy_at_minus35": "2011-07",
+    "m35_fwd6": 0.155,
+    "m35_fwd12": -0.024,
+    "m35_fwd24": 0.279,
+    "buy_peak_plus4": "2010-07",
+    "dd_at_plus4": -0.24,
+    "p4_fwd6": 0.288,
+    "p4_fwd12": -0.213,
+    "p4_fwd24": -0.232
+   },
+   {
+    "peak": "2015-10",
+    "runup_24m": 0.87,
+    "trough": "2016-05",
+    "depth": -0.16,
+    "months_to_trough": 7,
+    "buy_at_minus35": null,
+    "buy_peak_plus4": "2016-02",
+    "dd_at_plus4": -0.1,
+    "p4_fwd6": 0.029,
+    "p4_fwd12": 0.358,
+    "p4_fwd24": 1.707
+   },
+   {
+    "peak": "2018-05",
+    "runup_24m": 4.65,
+    "trough": "2019-04",
+    "depth": -0.46,
+    "months_to_trough": 11,
+    "buy_at_minus35": "2018-09",
+    "m35_fwd6": 0.126,
+    "m35_fwd12": 0.232,
+    "m35_fwd24": 0.489,
+    "buy_peak_plus4": "2018-09",
+    "dd_at_plus4": -0.41,
+    "p4_fwd6": 0.126,
+    "p4_fwd12": 0.232,
+    "p4_fwd24": 0.489
+   },
+   {
+    "peak": "2020-12",
+    "runup_24m": 1.42,
+    "trough": "2022-08",
+    "depth": -0.45,
+    "months_to_trough": 20,
+    "buy_at_minus35": "2022-05",
+    "m35_fwd6": -0.023,
+    "m35_fwd12": 0.126,
+    "m35_fwd24": 0.4,
+    "buy_peak_plus4": "2021-04",
+    "dd_at_plus4": -0.12,
+    "p4_fwd6": 0.0,
+    "p4_fwd12": -0.131,
+    "p4_fwd24": -0.159
+   },
+   {
+    "peak": "2024-06",
+    "runup_24m": 0.67,
+    "trough": "2025-03",
+    "depth": -0.34,
+    "months_to_trough": 9,
+    "buy_at_minus35": null,
+    "buy_peak_plus4": "2024-10",
+    "dd_at_plus4": -0.31,
+    "p4_fwd6": -0.004,
+    "p4_fwd12": 0.679,
+    "p4_fwd24": 4.589
+   },
+   {
+    "peak": "2026-05",
+    "runup_24m": 8.13,
+    "trough": "2026-06",
+    "depth": -0.5,
+    "months_to_trough": 1,
+    "buy_at_minus35": "2026-06",
+    "m35_fwd6": null,
+    "m35_fwd12": null,
+    "m35_fwd24": null,
+    "buy_peak_plus4": "2026-09",
+    "dd_at_plus4": -0.37,
+    "p4_fwd6": null,
+    "p4_fwd12": null,
+    "p4_fwd24": null
+   }
+  ],
+  "entry_minus35_basket": [
+   {
+    "peak": "2000-03",
+    "entry": "2001-08",
+    "fwd6": 0.811,
+    "fwd12": 0.065,
+    "fwd24": 0.19,
+    "fwd36": 0.032,
+    "further_dd": -0.189,
+    "months_to_low": 19,
+    "back_to_peak": "2010-03"
+   },
+   {
+    "peak": "2004-03",
+    "entry": "2004-09",
+    "fwd6": -0.063,
+    "fwd12": 0.048,
+    "fwd24": 0.629,
+    "fwd36": 0.925,
+    "further_dd": -0.063,
+    "months_to_low": 6,
+    "back_to_peak": "2005-12"
+   },
+   {
+    "peak": "2007-06",
+    "entry": "2007-12",
+    "fwd6": -0.096,
+    "fwd12": -0.422,
+    "fwd24": 0.504,
+    "fwd36": 0.876,
+    "further_dd": -0.431,
+    "months_to_low": 10,
+    "back_to_peak": "2010-02"
+   },
+   {
+    "peak": "2010-03",
+    "entry": "2011-07",
+    "fwd6": 0.155,
+    "fwd12": -0.024,
+    "fwd24": 0.279,
+    "fwd36": 0.693,
+    "further_dd": -0.104,
+    "months_to_low": 4,
+    "back_to_peak": "2014-07"
+   },
+   {
+    "peak": "2018-05",
+    "entry": "2018-09",
+    "fwd6": 0.126,
+    "fwd12": 0.232,
+    "fwd24": 0.489,
+    "fwd36": 0.852,
+    "further_dd": -0.075,
+    "months_to_low": 7,
+    "back_to_peak": "2020-10"
+   },
+   {
+    "peak": "2020-12",
+    "entry": "2022-05",
+    "fwd6": -0.023,
+    "fwd12": 0.126,
+    "fwd24": 0.4,
+    "fwd36": 0.045,
+    "further_dd": -0.127,
+    "months_to_low": 3,
+    "back_to_peak": "2025-09"
+   },
+   {
+    "peak": "2024-06",
+    "entry": null
+   }
+  ],
+  "entry_minus30_murata": [
+   {
+    "peak": "2001-02",
+    "entry": "2001-07",
+    "fwd6": 0.163,
+    "fwd12": -0.048,
+    "fwd24": -0.076,
+    "fwd36": -0.232,
+    "further_dd": -0.412,
+    "months_to_low": 20,
+    "back_to_peak": "2013-10"
+   },
+   {
+    "peak": "2004-03",
+    "entry": "2004-09",
+    "fwd6": 0.028,
+    "fwd12": 0.159,
+    "fwd24": 0.639,
+    "fwd36": 0.422,
+    "further_dd": 0.0,
+    "months_to_low": 0,
+    "back_to_peak": "2005-11"
+   },
+   {
+    "peak": "2007-05",
+    "entry": "2007-11",
+    "fwd6": -0.215,
+    "fwd12": -0.443,
+    "fwd24": -0.251,
+    "fwd36": -0.054,
+    "further_dd": -0.474,
+    "months_to_low": 11,
+    "back_to_peak": "2013-10"
+   },
+   {
+    "peak": "2010-12",
+    "entry": "2011-08",
+    "fwd6": 0.173,
+    "fwd12": 0.012,
+    "fwd24": 0.854,
+    "fwd36": 2.13,
+    "further_dd": -0.066,
+    "months_to_low": 11,
+    "back_to_peak": "2013-01"
+   },
+   {
+    "peak": "2015-05",
+    "entry": "2015-12",
+    "fwd6": -0.056,
+    "fwd12": 0.132,
+    "fwd24": 0.214,
+    "fwd36": 0.182,
+    "further_dd": -0.163,
+    "months_to_low": 5,
+    "back_to_peak": "2019-11"
+   },
+   {
+    "peak": "2018-06",
+    "entry": "2019-07",
+    "fwd6": 0.295,
+    "fwd12": 0.434,
+    "fwd24": 1.114,
+    "fwd36": 0.777,
+    "further_dd": 0.0,
+    "months_to_low": 0,
+    "back_to_peak": "2019-10"
+   },
+   {
+    "peak": "2020-12",
+    "entry": "2022-08",
+    "fwd6": 0.224,
+    "fwd12": 0.26,
+    "fwd24": 0.318,
+    "fwd36": 0.353,
+    "further_dd": -0.007,
+    "months_to_low": 3,
+    "back_to_peak": "2024-05"
+   },
+   {
+    "peak": "2024-06",
+    "entry": "2025-03",
+    "fwd6": 0.549,
+    "fwd12": 1.376,
+    "fwd24": null,
+    "fwd36": null,
+    "further_dd": -0.037,
+    "months_to_low": 1,
+    "back_to_peak": "2025-09"
+   }
+  ]
+ },
+ "stocks": [
+  {
+   "t": "6981.T",
+   "name": "Murata",
+   "short": "Murata",
+   "ccy": "JPY",
+   "last": 8467.0,
+   "peak": 12250.0,
+   "peak_date": "2026-06-22",
+   "dd": -0.309,
+   "low52": 2722.5,
+   "r12": 2.017,
+   "fpe": 37.83,
+   "evebitda": 27.06,
+   "pb": 5.59,
+   "tp": 10414.0,
+   "spark": [
+    1995.5,
+    2103.5,
+    2220.0,
+    1991.0,
+    2030.0,
+    2025.0,
+    2053.0,
+    2132.0,
+    2081.5,
+    2081.0,
+    2063.5,
+    2163.5,
+    2130.5,
+    2169.0,
+    2165.0,
+    2213.0,
+    2308.5,
+    2408.0,
+    2400.0,
+    2390.0,
+    2432.0,
+    2499.5,
+    2529.0,
+    2606.0,
+    2806.5,
+    2823.5,
+    2842.0,
+    2817.0,
+    3018.0,
+    3392.0,
+    3252.0,
+    3109.0,
+    3033.0,
+    3213.0,
+    3379.0,
+    3400.0,
+    3201.0,
+    3207.0,
+    3246.0,
+    3194.0,
+    3414.0,
+    3332.0,
+    3136.0,
+    3217.0,
+    3259.0,
+    3675.0,
+    4108.0,
+    3783.0,
+    3650.0,
+    3748.0,
+    3745.0,
+    3789.0,
+    4146.0,
+    4600.0,
+    4936.0,
+    5138.0,
+    5850.0,
+    6151.0,
+    7130.0,
+    9625.0,
+    9695.0,
+    8556.0,
+    11750.0,
+    10770.0,
+    11080.0,
+    9860.0,
+    7632.0,
+    8311.0,
+    7416.0,
+    7263.0,
+    8235.0,
+    7091.0,
+    7397.0,
+    7191.0,
+    7352.0,
+    7763.0,
+    8022.0,
+    8467.0
+   ]
+  },
+  {
+   "t": "009150.KS",
+   "name": "Samsung Electro-Mechanics",
+   "short": "SEMCO",
+   "ccy": "KRW",
+   "last": 1581000.0,
+   "peak": 2270000.0,
+   "peak_date": "2026-06-19",
+   "dd": -0.304,
+   "low52": 191700.0,
+   "r12": 6.638,
+   "fpe": 47.61,
+   "evebitda": 54.47,
+   "pb": 11.06,
+   "tp": 2408519.0,
+   "spark": [
+    117800.0,
+    121000.0,
+    123000.0,
+    117600.0,
+    117200.0,
+    122600.0,
+    117300.0,
+    122200.0,
+    132000.0,
+    127400.0,
+    133300.0,
+    135500.0,
+    138600.0,
+    137100.0,
+    138700.0,
+    134900.0,
+    143300.0,
+    160100.0,
+    162600.0,
+    154700.0,
+    160500.0,
+    178200.0,
+    190400.0,
+    195000.0,
+    191700.0,
+    196500.0,
+    210500.0,
+    207000.0,
+    222000.0,
+    245000.0,
+    222500.0,
+    213000.0,
+    217500.0,
+    251000.0,
+    263000.0,
+    272000.0,
+    253000.0,
+    259000.0,
+    270000.0,
+    266000.0,
+    289500.0,
+    272000.0,
+    279000.0,
+    284000.0,
+    309500.0,
+    377000.0,
+    448500.0,
+    404500.0,
+    400500.0,
+    464500.0,
+    457000.0,
+    456000.0,
+    565000.0,
+    679000.0,
+    788000.0,
+    832000.0,
+    914000.0,
+    1010000.0,
+    1340000.0,
+    2127000.0,
+    1757000.0,
+    1714000.0,
+    2270000.0,
+    1993000.0,
+    1989000.0,
+    1584000.0,
+    1277000.0,
+    1326000.0,
+    1142000.0,
+    1278000.0,
+    1558000.0,
+    1316000.0,
+    1421000.0,
+    1401000.0,
+    1400000.0,
+    1388000.0,
+    1507000.0,
+    1581000.0
+   ]
+  },
+  {
+   "t": "6976.T",
+   "name": "Taiyo Yuden",
+   "short": "Taiyo Yuden",
+   "ccy": "JPY",
+   "last": 10095.0,
+   "peak": 22655.0,
+   "peak_date": "2026-07-01",
+   "dd": -0.554,
+   "low52": 3128.0,
+   "r12": 1.928,
+   "fpe": 36.35,
+   "evebitda": 19.22,
+   "pb": 3.57,
+   "tp": 14356.0,
+   "spark": [
+    1996.0,
+    2086.0,
+    2232.0,
+    2185.0,
+    2202.0,
+    2560.0,
+    2348.0,
+    2428.0,
+    2420.0,
+    2331.5,
+    2325.5,
+    2563.0,
+    2573.0,
+    2630.5,
+    2628.5,
+    2715.5,
+    2853.5,
+    2791.0,
+    2812.0,
+    2942.0,
+    3036.0,
+    3085.0,
+    3105.0,
+    3145.0,
+    3335.0,
+    3443.0,
+    3474.0,
+    3547.0,
+    3889.0,
+    4401.0,
+    3645.0,
+    3368.0,
+    3160.0,
+    3259.0,
+    3861.0,
+    3637.0,
+    3370.0,
+    3537.0,
+    3540.0,
+    3405.0,
+    3630.0,
+    3581.0,
+    3241.0,
+    3531.0,
+    4063.0,
+    4634.0,
+    4796.0,
+    4325.0,
+    3936.0,
+    4154.0,
+    4125.0,
+    4360.0,
+    4957.0,
+    6203.0,
+    6508.0,
+    6143.0,
+    6663.0,
+    6762.0,
+    9102.0,
+    14815.0,
+    15850.0,
+    15725.0,
+    19315.0,
+    16780.0,
+    20560.0,
+    14730.0,
+    11035.0,
+    11415.0,
+    10225.0,
+    9699.0,
+    11015.0,
+    9300.0,
+    9244.0,
+    9426.0,
+    9209.0,
+    9375.0,
+    9160.0,
+    10095.0
+   ]
+  },
+  {
+   "t": "6762.T",
+   "name": "TDK",
+   "short": "TDK",
+   "ccy": "JPY",
+   "last": 3198.0,
+   "peak": 4111.0,
+   "peak_date": "2026-06-05",
+   "dd": -0.222,
+   "low52": 1919.0,
+   "r12": 0.47,
+   "fpe": 22.76,
+   "evebitda": 11.59,
+   "pb": 2.62,
+   "tp": 4158.0,
+   "spark": [
+    1326.0,
+    1375.0,
+    1468.0,
+    1547.0,
+    1583.5,
+    1560.0,
+    1537.0,
+    1600.0,
+    1513.5,
+    1493.0,
+    1578.5,
+    1675.5,
+    1619.0,
+    1664.5,
+    1675.0,
+    1815.5,
+    1876.0,
+    1905.0,
+    1917.5,
+    1915.0,
+    1936.0,
+    2033.0,
+    1980.0,
+    2089.0,
+    2130.0,
+    2210.0,
+    2211.5,
+    2255.5,
+    2528.5,
+    2673.0,
+    2493.0,
+    2535.5,
+    2413.5,
+    2559.5,
+    2433.0,
+    2339.5,
+    2197.0,
+    2226.5,
+    2211.0,
+    2141.5,
+    2088.0,
+    2000.0,
+    1981.0,
+    2162.5,
+    2212.0,
+    2380.0,
+    2424.5,
+    2238.0,
+    2154.0,
+    2127.5,
+    2110.5,
+    2011.5,
+    2310.0,
+    2616.0,
+    2689.5,
+    2775.5,
+    2923.5,
+    2993.0,
+    3370.0,
+    4108.0,
+    4111.0,
+    3504.0,
+    3909.0,
+    3575.0,
+    3699.0,
+    3389.0,
+    2968.0,
+    3021.0,
+    3008.0,
+    2988.0,
+    3210.0,
+    3041.0,
+    3112.0,
+    2907.5,
+    2808.5,
+    2845.0,
+    2978.0,
+    3198.0
+   ]
+  },
+  {
+   "t": "2327.TW",
+   "name": "Yageo",
+   "short": "Yageo",
+   "ccy": "TWD",
+   "last": 626.0,
+   "peak": 1140.0,
+   "peak_date": "2026-06-30",
+   "dd": -0.451,
+   "low52": 166.0,
+   "r12": 2.507,
+   "fpe": 24.43,
+   "evebitda": 27.52,
+   "pb": 7.19,
+   "tp": 1009.0,
+   "spark": [
+    130.8,
+    109.5,
+    113.8,
+    114.0,
+    116.0,
+    116.1,
+    124.5,
+    120.2,
+    122.5,
+    123.4,
+    117.9,
+    113.9,
+    122.6,
+    122.0,
+    121.8,
+    128.0,
+    132.5,
+    132.5,
+    136.2,
+    136.5,
+    136.5,
+    139.5,
+    135.0,
+    151.5,
+    173.5,
+    166.0,
+    175.5,
+    183.5,
+    184.5,
+    226.0,
+    249.0,
+    234.5,
+    233.5,
+    229.0,
+    235.0,
+    237.0,
+    237.5,
+    222.0,
+    224.0,
+    241.0,
+    241.5,
+    283.0,
+    291.5,
+    277.5,
+    248.5,
+    256.0,
+    298.0,
+    265.0,
+    258.0,
+    271.0,
+    260.0,
+    246.0,
+    285.0,
+    316.5,
+    297.0,
+    317.0,
+    389.0,
+    455.5,
+    629.0,
+    738.0,
+    769.0,
+    855.0,
+    1080.0,
+    1015.0,
+    1045.0,
+    900.0,
+    699.0,
+    642.0,
+    502.0,
+    540.0,
+    622.0,
+    554.0,
+    597.0,
+    562.0,
+    544.0,
+    550.0,
+    580.0,
+    626.0
+   ]
+  },
+  {
+   "t": "6971.T",
+   "name": "Kyocera",
+   "short": "Kyocera",
+   "ccy": "JPY",
+   "last": 3668.0,
+   "peak": 3916.0,
+   "peak_date": "2026-07-03",
+   "dd": -0.063,
+   "low52": 1952.0,
+   "r12": 0.781,
+   "fpe": 28.89,
+   "evebitda": 16.65,
+   "pb": 1.44,
+   "tp": 3585.0,
+   "spark": [
+    1600.5,
+    1654.0,
+    1678.5,
+    1704.0,
+    1736.0,
+    1796.0,
+    1714.5,
+    1761.5,
+    1710.5,
+    1692.0,
+    1689.0,
+    1725.5,
+    1674.0,
+    1637.5,
+    1611.0,
+    1655.0,
+    1835.5,
+    1900.0,
+    1897.0,
+    1963.5,
+    1977.0,
+    2026.5,
+    2060.0,
+    2020.0,
+    2038.0,
+    1974.5,
+    1992.0,
+    1992.0,
+    2162.5,
+    2050.0,
+    2020.5,
+    2113.5,
+    2079.0,
+    2137.0,
+    2140.0,
+    2247.5,
+    2162.5,
+    2203.0,
+    2196.5,
+    2227.5,
+    2301.5,
+    2335.0,
+    2308.0,
+    2582.5,
+    2633.0,
+    2656.5,
+    2763.5,
+    2641.0,
+    2533.0,
+    2421.0,
+    2434.0,
+    2478.5,
+    2577.0,
+    2688.0,
+    2710.0,
+    2746.5,
+    2814.5,
+    2884.0,
+    2997.0,
+    3483.0,
+    3720.0,
+    3671.0,
+    3680.0,
+    3411.0,
+    3916.0,
+    3720.0,
+    3556.0,
+    3689.0,
+    3691.0,
+    3792.0,
+    3908.0,
+    3608.0,
+    3625.0,
+    3503.0,
+    3551.0,
+    3637.0,
+    3764.0,
+    3668.0
+   ]
+  },
+  {
+   "t": "2492.TW",
+   "name": "Walsin Technology",
+   "short": "Walsin",
+   "ccy": "TWD",
+   "last": 361.5,
+   "peak": 617.0,
+   "peak_date": "2026-06-22",
+   "dd": -0.414,
+   "low52": 94.7,
+   "r12": 2.443,
+   "fpe": 21.73,
+   "evebitda": 27.32,
+   "pb": 2.23,
+   "tp": null,
+   "spark": [
+    91.1,
+    74.0,
+    76.9,
+    77.5,
+    79.3,
+    82.3,
+    84.3,
+    81.9,
+    81.8,
+    81.2,
+    80.7,
+    78.6,
+    82.3,
+    81.6,
+    79.6,
+    83.9,
+    85.1,
+    84.9,
+    81.2,
+    80.8,
+    81.8,
+    82.4,
+    80.5,
+    84.1,
+    95.7,
+    105.5,
+    102.5,
+    103.5,
+    103.5,
+    123.0,
+    124.0,
+    117.5,
+    124.5,
+    118.5,
+    119.5,
+    120.0,
+    120.0,
+    115.0,
+    116.5,
+    124.5,
+    124.0,
+    133.5,
+    153.5,
+    136.5,
+    122.0,
+    123.5,
+    156.0,
+    134.0,
+    129.5,
+    131.5,
+    128.0,
+    114.0,
+    128.5,
+    147.0,
+    130.0,
+    131.5,
+    156.0,
+    206.0,
+    292.5,
+    394.0,
+    416.0,
+    409.0,
+    561.0,
+    540.0,
+    563.0,
+    465.5,
+    307.5,
+    274.0,
+    218.0,
+    251.0,
+    302.5,
+    266.0,
+    313.5,
+    298.5,
+    311.5,
+    309.5,
+    311.5,
+    361.5
+   ]
+  }
+ ],
+ "murata_bbr": [
+  [
+   "2019-06",
+   0.8
+  ],
+  [
+   "2019-09",
+   0.85
+  ],
+  [
+   "2019-12",
+   1.07
+  ],
+  [
+   "2020-03",
+   1.12
+  ],
+  [
+   "2020-06",
+   0.87
+  ],
+  [
+   "2020-09",
+   1.07
+  ],
+  [
+   "2020-12",
+   1.19
+  ],
+  [
+   "2021-03",
+   1.32
+  ],
+  [
+   "2021-06",
+   1.18
+  ],
+  [
+   "2021-09",
+   0.98
+  ],
+  [
+   "2021-12",
+   0.95
+  ],
+  [
+   "2022-03",
+   1.1
+  ],
+  [
+   "2022-06",
+   0.98
+  ],
+  [
+   "2022-09",
+   0.85
+  ],
+  [
+   "2022-12",
+   0.79
+  ],
+  [
+   "2023-03",
+   0.87
+  ],
+  [
+   "2023-06",
+   0.97
+  ],
+  [
+   "2023-09",
+   0.97
+  ],
+  [
+   "2023-12",
+   1.03
+  ],
+  [
+   "2024-03",
+   1.06
+  ],
+  [
+   "2024-06",
+   1.05
+  ],
+  [
+   "2024-09",
+   0.96
+  ],
+  [
+   "2024-12",
+   0.97
+  ],
+  [
+   "2025-03",
+   1.03
+  ],
+  [
+   "2025-06",
+   1.03
+  ],
+  [
+   "2025-09",
+   1.01
+  ],
+  [
+   "2026-06",
+   1.47
+  ]
+ ],
+ "murata_bbr_total": [
+  [
+   "2019-06",
+   0.95
+  ],
+  [
+   "2019-09",
+   0.97
+  ],
+  [
+   "2019-12",
+   1.01
+  ],
+  [
+   "2020-03",
+   1.0
+  ],
+  [
+   "2020-06",
+   0.9
+  ],
+  [
+   "2020-09",
+   1.12
+  ],
+  [
+   "2020-12",
+   1.15
+  ],
+  [
+   "2021-03",
+   1.26
+  ],
+  [
+   "2021-06",
+   1.13
+  ],
+  [
+   "2021-09",
+   1.03
+  ],
+  [
+   "2021-12",
+   0.96
+  ],
+  [
+   "2022-03",
+   1.09
+  ],
+  [
+   "2022-06",
+   0.98
+  ],
+  [
+   "2022-09",
+   0.91
+  ],
+  [
+   "2022-12",
+   0.78
+  ],
+  [
+   "2023-03",
+   0.9
+  ],
+  [
+   "2023-06",
+   0.98
+  ],
+  [
+   "2023-09",
+   0.95
+  ],
+  [
+   "2023-12",
+   0.95
+  ],
+  [
+   "2024-03",
+   1.05
+  ],
+  [
+   "2024-06",
+   1.02
+  ],
+  [
+   "2024-09",
+   0.92
+  ],
+  [
+   "2024-12",
+   1.0
+  ],
+  [
+   "2025-03",
+   1.01
+  ],
+  [
+   "2025-06",
+   1.04
+  ],
+  [
+   "2025-09",
+   1.0
+  ],
+  [
+   "2025-12",
+   1.07
+  ],
+  [
+   "2026-03",
+   1.24
+  ],
+  [
+   "2026-06",
+   1.34
+  ]
+ ],
+ "murata_cap_backlog": [
+  [
+   "2020-06",
+   92.4
+  ],
+  [
+   "2020-09",
+   103.3
+  ],
+  [
+   "2020-12",
+   135.8
+  ],
+  [
+   "2021-03",
+   189.7
+  ],
+  [
+   "2021-06",
+   224.3
+  ],
+  [
+   "2021-09",
+   220.0
+  ],
+  [
+   "2021-12",
+   209.3
+  ],
+  [
+   "2022-03",
+   227.9
+  ],
+  [
+   "2022-06",
+   224.0
+  ],
+  [
+   "2022-09",
+   194.5
+  ],
+  [
+   "2022-12",
+   156.1
+  ],
+  [
+   "2023-03",
+   135.9
+  ],
+  [
+   "2023-06",
+   130.7
+  ],
+  [
+   "2023-09",
+   124.0
+  ],
+  [
+   "2023-12",
+   129.7
+  ],
+  [
+   "2024-03",
+   141.2
+  ],
+  [
+   "2024-06",
+   151.1
+  ],
+  [
+   "2024-09",
+   141.8
+  ],
+  [
+   "2024-12",
+   135.9
+  ],
+  [
+   "2025-03",
+   142.0
+  ],
+  [
+   "2025-06",
+   148.7
+  ],
+  [
+   "2025-09",
+   152.9
+  ],
+  [
+   "2025-12",
+   181.8
+  ],
+  [
+   "2026-03",
+   269.2
+  ],
+  [
+   "2026-06",
+   402.2
+  ]
+ ]
+}</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const $ = s => document.querySelector(s);
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const pct = (v, d=0) => v==null ? '—' : (v>0?'+':'') + (v*100).toFixed(d) + '%';
+const esc = s => String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const SER = ['--s1','--s2','--s3','--s4','--s5','--s6','--s7'];
+const TCOL = {'6981.T':'--s1','009150.KS':'--s2','6976.T':'--s3','6762.T':'--s4','2327.TW':'--s5','6971.T':'--s6','2492.TW':'--s7'};
+
+// ---------- static content ----------
+const CAP = [
+ ['Murata','~95%','Capacitors ¥936bn (FY3/26), ¥1,158bn guided','New Izumo building done; +¥80bn building, first output 4Q27; capex ¥225bn','1.47 MLCC'],
+ ['Samsung Electro-Mechanics','91% (Jun)','Component Solutions ₩5.2tn (2025, incl. inductors)','Philippines plant 3 in 1Q27; capex ~₩3tn 2026 to ~₩6tn 2027; ₩3.3tn AI LTAs','1.31 (Jun)'],
+ ['Taiyo Yuden','~85%','Capacitors ¥233bn (FY3/25), 69% of sales','Capex ¥42bn; Malaysia plant pulled forward; +10-15%/yr','1.72 capacitors'],
+ ['Yageo (incl. KEMET)','80-85%, >90% 3Q guide','Not split; group Q2 NT$44.5bn','Kaohsiung, Vietnam, Suzhou, Mexico; +50% list price 1 Jul','2.2'],
+ ['TDK','not disclosed','Passive components ¥593bn guide (MLCC not split)','Exploring alliance with Taiyo Yuden (29 Sep 2026)','—'],
+ ['Walsin Technology','80-85%','MLCC 46% of sales (~NT$4.4bn in Q1)','+10-15% capacity 2026, +10% 2027; capex ~NT$3-4bn','>1.8'],
+ ['Kyocera (AVX)','not disclosed','Not split','No disclosed MLCC expansion','—'],
+ ['Fenghua / Three-Circle (China)','not disclosed','Not found','Claims 50bn and 55→100bn pcs/month; high-cap project May-2027','—']];
+const DEB = [
+ ['Is this 2018 again?', 'Book-to-bill is above the 2018 peak, but channel inventory is a fraction of 2018 (1-1.5 months vs 6-7) and the buyer is a hyperscaler under contract, not a distributor hoarding commodity parts.',
+  'Yageo talked of book-to-bill of 3 in June 2018, six months before prices fell 15%. Today Yageo is at 2.2 and Murata sees "large quantity" distributor orders. Double-ordering looks the same at the start.',
+  'Lean bull for fundamentals into 1H27; watch SC04 every month.'],
+ ['Will Murata raise MLCC prices?', 'Murata still absorbs a ¥15bn price headwind. If the Japanese join SEMCO and Yageo for 1Q27, that is pure margin the stocks have not priced.',
+  'Murata has historically chosen share and long-term contracts over price; it may only "adjust" selectively, and pruning part numbers suggests mix over price.',
+  'Open. The 30 Oct call is the read.'],
+ ['When does supply catch up?', 'High-end lines take 18-24 months; 4Q26 additions slipped to 2027; distributors and Walsin see tightness into 2H27-2028.',
+  'SEMCO doubles capex in 2027, Murata adds a building in 4Q27, and China claims to nearly double high-cap output. A 2028 glut is the base case if AI orders flatten.',
+  'Supply is not the risk before 2H27; demand double-counting is.'],
+ ['Is AI demand real or pulled forward?', 'MLCC content per board doubles from GB200 to Rubin; SEMCO has ₩3.3tn of LTAs with hyperscalers, including a ₩1.07tn single-customer deal for 2027.',
+  'Hyperscaler capex already exceeds $700bn and is funded increasingly with debt; any 2027 framework cut hits the high-cap parts that are the whole margin story.',
+  'Real for 2027; the 2028 slope is the question.'],
+ ['Are the stocks cheap after the fall?', 'On forward earnings the pure plays trade at 22-36x with earnings still being raised; in past cycles, buying 35% below the peak was positive over 24 months every time.',
+  'After an 8x run the basket is still 4x its 2025 low. On EV to mid-cycle EBITDA Murata sits near 30x against a long-run band in the low-to-mid teens.',
+  'Cheap versus 2026 earnings, expensive versus the cycle. Size for a second leg down.'],
+];
+const HIST = [
+ ['2000 dot-com','Peak Mar-2000 · trough Mar-2003','Telecom build-out plus 3-4x double-ordering; bust in 2001.','Taiyo Yuden -89%, Walsin -83%, Yageo -80%, Murata -60%.','Buying 35% off the peak (Aug-2001) made +19% over 2 years, but Murata took 13 years to regain its high.'],
+ ['2004 wobble','Peak Mar-2004 · trough Mar-2005','Mid-cycle inventory pause, no MLCC data found.','Basket -42%.','A pause, not a bust: +63% over 24 months from the -35% entry.'],
+ ['2007-09 GFC','Peak Jun-2007 · trough Oct-2008','Recession on top of a late cycle.','Taiyo Yuden -84%, Walsin -82%, Yageo -74%, Murata -64%.','The one entry that lost money over 12 months (-42%); still +50% over 24.'],
+ ['2010 boom / 2011 bust','Peak Mar-2010 · trough Nov-2011','Restocking boom then capacity and destock.','Walsin -67%, Taiyo Yuden -61%, Murata -36%.','Flat for a year after the entry; +28% over 24 months.'],
+ ['2024 air pocket','Peak Jun-2024 · trough Mar-2025','AI hope ran ahead of a slow phone and PC recovery.','Basket -34%, Murata -21%.','Never reached -35%. Murata bought 30% off its high made +138% in 12 months.'],
+ ['2017-18 super-cycle','Peak May-2018 · trough Apr-2019','Japanese shifted capacity to high-end; standard parts went 5-10x; trade war plus 6-7 months of distributor inventory ended it.','Yageo -72%, Walsin -68%, Taiyo Yuden -51%, Murata -30%.','Best analog for today. Buying Sep-2018 at -41%: +23% at 12m, +49% at 24m, with only 7.5% further downside.'],
+ ['2020-21 COVID boom','Peak Dec-2020 · trough Aug-2022','Work-from-home electronics and chip-shortage over-ordering. Murata orders fell 37% over 7 quarters.','Walsin -68%, Yageo -52%, Taiyo Yuden -43%, Murata -33%.','Took 17 months to fall 35%; from there +40% over 24 months.'],
+];
+const CHECK = [
+ ['Daily','Basket and single-name prices vs 2026 high','SC10','Exchange closes'],
+ ['Weekly','Distributor lead times and spot quotes (DigiKey, Fusion, Astute)','SC03','Distributor notes'],
+ ['Monthly ~8-10th','Yageo and Walsin revenue, YoY and MoM','SC06','TWSE MOPS'],
+ ['Monthly','TrendForce MLCC bulletin: price, inventory, lead time','SC02-SC04','trendforce.com'],
+ ['Monthly ~30th','JEITA passive-component shipments','SC06','JEITA'],
+ ['Quarterly','Murata orders, book-to-bill, backlog, utilization, price stance','SC01, SC02, SC11','Murata IR'],
+ ['Quarterly','Taiyo Yuden and SEMCO book-to-bill and utilization; Yageo channel inventory','SC04, SC05','Company IR'],
+ ['Quarterly','Hyperscaler capex guides','SC08','10-Q calls'],
+ ['Annual','Capex guides and new plants (SEMCO, Murata, China)','SC07, SC12','Company IR'],
+];
+const CAL = [
+ ['~8-9 Oct','Yageo and Walsin September revenue (est.)'],['Mid-Oct','TrendForce MLCC bulletin; 4Q contract read-through (est.)'],
+ ['27 Oct','Yageo 3Q26 results: channel inventory, 4Q pricing'],['29 Oct','Kyocera 2Q FY3/27'],['~29-30 Oct','SEMCO 3Q26 (consensus OP ₩605bn) (est.)'],
+ ['30 Oct','Murata 2Q FY3/27: book-to-bill, MLCC price stance, guidance'],['30 Oct','TDK 2Q FY3/27'],['5 Nov','Taiyo Yuden 2Q FY3/27'],
+ ['~9-10 Nov','Yageo and Walsin October revenue (est.)'],['Nov-Dec','Supplier replenishment: SEMCO Nov, Yageo Dec; Japanese 1Q27 price decisions'],
+ ['1 Jan 2027','SEMCO ₩1.07tn single-customer AI LTA starts'],['Late Jan','SEMCO 4Q26, TDK and Kyocera 3Q (est.)'],['~2-5 Feb','Murata and Taiyo Yuden 3Q (est.)']];
+
+// ---------- header ----------
+$('#asof').textContent = D.as_of; $('#score').textContent = D.score.toFixed(1);
+$('#bar-score').textContent = D.score.toFixed(0);
+$('#band').textContent = '● ' + D.band;
+['green','amber','red'].forEach(k => $('#n-'+k).textContent = D.counts[k]);
+const bands = [[25,'--good'],[25,'--warn'],[20,'--warm'],[30,'--bad']];
+$('#bscale').innerHTML = bands.map(([w,c]) => `<span style="flex:${w};background:var(${c});opacity:.55"></span>`).join('') + `<i class="bscale-mark" style="left:${D.score}%"></i>`;
+$('#phase').textContent = D.phase; $('#summary').textContent = D.summary;
+$('#flip-down').innerHTML = D.flip_down.map(x => `<li>${esc(x)}</li>`).join('');
+$('#flip-up').innerHTML = D.flip_up.map(x => `<li>${esc(x)}</li>`).join('');
+
+// ---------- signals ----------
+const order = [...D.scorecard].sort((a,b) => b.weight - a.weight);
+$('#sig-rows').innerHTML = order.map(s => `<div class="sig">
+  <div style="display:grid;gap:7px;align-content:start">
+    <div class="sig-meta"><span class="mono">${s.id}</span><span>weight ${s.weight}</span><span class="pill s-${s.status}">${s.status==='green'?'●':s.status==='amber'?'▲':'■'} ${s.status}</span></div>
+    <h3>${esc(s.name)}</h3><p class="read">${esc(s.read)}</p>
+    <div class="small muted">${esc(s.src)} · next: ${esc(s.next)}</div></div>
+  <div style="display:grid;gap:8px;align-content:start">
+    <div class="rules"><div class="g"><b>Green</b><span>${esc(s.green)}</span></div><div class="a"><b>Amber</b><span>${esc(s.amber)}</span></div><div class="r"><b>Red</b><span>${esc(s.red)}</span></div></div>
+    <p class="why">${esc(s.why)}</p></div></div>`).join('');
+
+// ---------- backtest ----------
+const ep = D.backtest.entry_minus35_basket.filter(e => e.entry);
+const row = e => `<tr><td>${e.peak}</td><td class="num">${e.entry}</td><td class="r num ${e.fwd12<0?'neg':'pos'}">${pct(e.fwd12)}</td><td class="r num ${e.fwd24<0?'neg':'pos'}">${pct(e.fwd24)}</td><td class="r num ${e.fwd36==null?'':e.fwd36<0?'neg':'pos'}">${pct(e.fwd36)}</td><td class="r num">${pct(e.further_dd)}</td></tr>`;
+$('#bt-rows').innerHTML = ep.map(row).join('');
+$('#bt-mur').innerHTML = D.backtest.entry_minus30_murata.filter(e=>e.entry).map(row).join('');
+const med = a => { const s=[...a].filter(x=>x!=null).sort((x,y)=>x-y); const m=Math.floor(s.length/2); return s.length%2?s[m]:(s[m-1]+s[m])/2; };
+const m12 = med(ep.map(e=>e.fwd12)), m24 = med(ep.map(e=>e.fwd24)), pos24 = ep.filter(e=>e.fwd24>0).length, pos12 = ep.filter(e=>e.fwd12>0).length;
+$('#bt-verdict').textContent = `Good over 2 years (${pos24} of ${ep.length}), a coin toss over 1`;
+$('#bt-detail').textContent = `Median return ${pct(m12)} at 12 months and ${pct(m24)} at 24 months; ${pos12} of ${ep.length} were up after 12 months. Median further fall after entry ${pct(med(ep.map(e=>e.further_dd)))}, worst ${pct(Math.min(...ep.map(e=>e.further_dd)))} (2007). Caveat: this run-up (8x in two years) is bigger than any before it; the closest in size, 2018 (4.7x), returned +23% / +49%.`;
+
+// ---------- charts ----------
+const charts = [];
+function mk(id, cfg){ const c = new Chart(document.getElementById(id), cfg); charts.push([c, cfg._build]); return c; }
+function base(){ return {responsive:true, maintainAspectRatio:false, animation:false,
+  plugins:{legend:{labels:{color:css('--ink-2'), boxWidth:10, font:{size:11}}}, tooltip:{backgroundColor:css('--ink'), titleColor:css('--ground'), bodyColor:css('--ground')}},
+  scales:{x:{ticks:{color:css('--ink-3'), font:{size:10.5}}, grid:{color:css('--rule')}}, y:{ticks:{color:css('--ink-3'), font:{size:10.5}}, grid:{color:css('--rule')}}}}; }
+const refLine = (val, axis='y') => ({id:'ref'+val, afterDatasetsDraw(ch){ const s=ch.scales[axis], a=ch.chartArea, x=ch.ctx; x.save(); x.setLineDash([4,4]); x.strokeStyle=css('--ink-3'); x.beginPath();
+  if(axis==='y'){ const p=s.getPixelForValue(val); x.moveTo(a.left,p); x.lineTo(a.right,p);} else { const p=s.getPixelForValue(val); x.moveTo(p,a.top); x.lineTo(p,a.bottom);} x.stroke(); x.restore(); }});
+
+let heroRange='all';
+function heroCfg(){
+  const all = Object.entries(D.backtest.basket_core);
+  const cut = heroRange==='all' ? all : all.slice(-12*+heroRange);
+  const peaks = new Set(D.backtest.peaks);
+  const o = base(); o.scales.y.type='logarithmic'; o.plugins.legend.display=false;
+  o.scales.x.ticks.maxTicksLimit = 10; o.scales.y.ticks.callback = v => [50,100,200,500,1000,2000,5000].includes(v)?v:'';
+  return {type:'line', data:{labels:cut.map(e=>e[0]), datasets:[{data:cut.map(e=>e[1]), borderColor:css('--s1'), borderWidth:2, fill:{target:'origin'}, backgroundColor:css('--accent-soft'),
+    pointRadius:cut.map(e=>peaks.has(e[0])?4:0), pointBackgroundColor:css('--warm'), pointBorderColor:css('--surface'), pointBorderWidth:2, tension:.1}]}, options:o};
+}
+let hero = new Chart($('#c-hero'), heroCfg());
+document.querySelectorAll('.seg button').forEach(b => b.onclick = () => { document.querySelectorAll('.seg button').forEach(x=>x.setAttribute('aria-pressed', x===b)); heroRange=b.dataset.r; hero.destroy(); hero=new Chart($('#c-hero'), heroCfg()); });
+
+function drawAll(){
+  charts.forEach(([c]) => c.destroy()); charts.length=0;
+  // BBR
+  { const o=base(); o.plugins.legend.display=false; o.scales.y.min=0.7; o.scales.y.max=1.55; o.scales.x.ticks.maxTicksLimit=8;
+    mk('c-bbr',{type:'line',data:{labels:D.murata_bbr.map(x=>x[0]),datasets:[{data:D.murata_bbr.map(x=>x[1]),borderColor:css('--s1'),borderWidth:2,pointRadius:D.murata_bbr.map((x,i)=>i===D.murata_bbr.length-1?5:0),pointBackgroundColor:css('--s1'),tension:.15}]},options:o,plugins:[refLine(1)]}); }
+  // backtest
+  { const o=base(); o.scales.y.ticks.callback=v=>(v*100).toFixed(0)+'%';
+    mk('c-bt',{type:'bar',data:{labels:ep.map(e=>e.peak.slice(0,4)+' cycle'),datasets:[
+      {label:'12 months',data:ep.map(e=>e.fwd12),backgroundColor:css('--s4'),borderRadius:4,borderSkipped:'start'},
+      {label:'24 months',data:ep.map(e=>e.fwd24),backgroundColor:css('--s1'),borderRadius:4,borderSkipped:'start'},
+      {label:'36 months',data:ep.map(e=>e.fwd36),backgroundColor:css('--s3'),borderRadius:4,borderSkipped:'start'}]},options:o,plugins:[refLine(0)]}); }
+  // capacity
+  { const o=base(); o.indexAxis='y'; o.plugins.legend.display=false; o.scales.x.title={display:true,text:'bn pcs / month',color:css('--ink-3')};
+    const L=['Murata','SEMCO','Three-Circle (claim)','Fenghua (claim)','Taiyo Yuden'], V=[140,98,55,50,40];
+    mk('c-cap',{type:'bar',data:{labels:L,datasets:[{data:V,backgroundColor:[css('--s1'),css('--s2'),css('--grey'),css('--grey'),css('--s3')],borderRadius:4}]},options:o}); }
+  // share
+  { const o=base(); o.indexAxis='y'; o.scales.x.ticks.callback=v=>v+'%';
+    const L=['Murata','SEMCO','TDK','Taiyo Yuden','Yageo','Kyocera AVX'];
+    mk('c-share',{type:'bar',data:{labels:L,datasets:[{label:'Value share',data:[40,18,12,10,10,5],backgroundColor:css('--s1'),borderRadius:4},{label:'AI-server share',data:[45,40,5,4,3,null],backgroundColor:css('--s2'),borderRadius:4}]},options:o}); }
+  // content
+  { const o=base(); o.indexAxis='y'; o.plugins.legend.display=false; o.scales.x.type='logarithmic'; o.scales.x.ticks.callback=v=>[1000,10000,100000,1000000].includes(v)?v.toLocaleString():'';
+    const L=['Smartphone','Enterprise server','ICE car','GB200 board','Electric car','8-GPU AI server','GB200 NVL72 rack'], V=[1100,2500,3000,6500,14000,20000,440000];
+    mk('c-content',{type:'bar',data:{labels:L,datasets:[{data:V,backgroundColor:L.map((l,i)=>i>=3&&l!=='Electric car'?css('--s1'):l==='Electric car'?css('--s3'):css('--grey')),borderRadius:4}]},options:o}); }
+  // drawdown
+  { const o=base(); o.indexAxis='y'; o.plugins.legend.display=false; o.scales.x.ticks.callback=v=>(v*100).toFixed(0)+'%'; o.scales.x.max=0;
+    o.plugins.tooltip.callbacks={label:c=>{const s=S[c.dataIndex]; return ` ${pct(s.dd)} from high · 12m ${pct(s.r12)}`;}};
+    const S=[...D.stocks].sort((a,b)=>a.dd-b.dd); mk('c-dd',{type:'bar',data:{labels:S.map(s=>s.short),datasets:[{data:S.map(s=>s.dd),backgroundColor:S.map(s=>css(TCOL[s.t])),borderRadius:4}]},options:o}); }
+}
+drawAll();
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { drawAll(); hero.destroy(); hero=new Chart($('#c-hero'), heroCfg()); });
+new MutationObserver(() => { drawAll(); hero.destroy(); hero=new Chart($('#c-hero'), heroCfg()); }).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+
+// ---------- tables & cards ----------
+$('#cap-rows').innerHTML = CAP.map(r => `<tr>${r.map((c,i)=>`<td${i===4?' class="num"':''}>${esc(c)}</td>`).join('')}</tr>`).join('');
+const DRV = {
+ '6981.T':['~40% value share, ~45% AI-server; in-house powder and thinnest layers','Book-to-bill 1.47, guide raised; data-center sales +80%','Risk: still cutting price; 37.8x forward; RF modules and batteries dilute'],
+ '009150.KS':['#2 in AI-server MLCC plus FC-BGA substrates','+30% price hike, ₩3.3tn of hyperscaler LTAs','Risk: capex doubling to ~₩6tn in 2027; 47.6x forward'],
+ '6976.T':['High-cap MLCC specialist, 69% capacitors','Book-to-bill 1.72, OP guide raised to ¥45bn','Risk: AI exposure under 4%; most volatile name (-55% from high)'],
+ '6762.T':['MLCC is a minor line; batteries (ATL) are 55% of sales','Exploring MLCC alliance with Taiyo Yuden','Risk: guide unchanged despite beat; cycle exposure diluted'],
+ '2327.TW':['#1 non-Japanese passives group (KEMET, Pulse)','+50% list price, book-to-bill 2.2, six record months','Risk: commodity-heavy mix; 2018 analog is direct'],
+ '6971.T':['AVX MLCC is small; packaging and ceramics drive it','KDDI stake sale and up to ¥500bn buyback','Risk: barely an MLCC play; consensus target below price'],
+ '2492.TW':['Taiwan #2-3 in MLCC (46% of sales) plus resistors','Revenue +45% YoY, best since 2018; book-to-bill >1.8','Risk: commodity mix; thin coverage'],
+};
+$('#stock-cards').innerHTML = D.stocks.map(s => { const f=v=>v==null?'—':(+v).toFixed(1)+'x'; const d=DRV[s.t];
+  const up = s.tp ? (s.tp/s.last-1) : null;
+  return `<article class="card"><div class="top"><h3><span style="display:inline-block;width:9px;height:9px;border-radius:2px;background:var(${TCOL[s.t]});margin-right:6px"></span>${esc(s.name)}</h3><span class="mono small muted">${s.t}</span></div>
+  <div class="top"><span class="big">${s.last.toLocaleString()}</span><span class="pill ${s.dd<-.35?'s-red':s.dd<-.2?'s-amber':'s-green'}">${pct(s.dd)} from high</span></div>
+  <div class="kv"><div><span class="label">Fwd P/E</span><span class="num">${f(s.fpe)}</span></div><div><span class="label">EV/EBITDA</span><span class="num">${f(s.evebitda)}</span></div><div><span class="label">Avg target</span><span class="num">${s.tp?pct(up):'—'}</span></div></div>
+  <ul><li>${esc(d[0])}</li><li>${esc(d[1])}</li><li>${esc(d[2])}</li></ul>
+  <div class="small muted">${s.ccy} · high ${s.peak.toLocaleString()} on ${s.peak_date} · consensus stockanalysis.com</div></article>`; }).join('');
+$('#debate-list').innerHTML = DEB.map(d => `<div class="debate"><h3>${esc(d[0])}</h3><div class="sides"><div class="side bull"><div class="label">Bull</div>${esc(d[1])}</div><div class="side bear"><div class="label">Bear</div>${esc(d[2])}</div></div><p class="lean"><b>Our lean:</b> ${esc(d[3])}</p></div>`).join('');
+$('#cycle-cards').innerHTML = HIST.map(h => `<div class="cycle"><h3>${esc(h[0])}</h3><div class="dates">${esc(h[1])}</div><p>${esc(h[2])}</p><p class="muted">${esc(h[3])}</p><p class="lesson">${esc(h[4])}</p></div>`).join('')
+  + `<div class="cycle" style="border-color:var(--accent)"><h3>2025-26 AI-server cycle</h3><div class="dates">Stocks peaked 19 Jun-1 Jul 2026 · orders still rising</div><p>AI servers need 8-15x the MLCCs of a normal server; SEMCO and Yageo lifted prices 30-50%; lead times doubled.</p><p class="muted">Basket +8x in two years, then -50% by the June trough; now -36%.</p><p class="lesson">Fundamentals look like mid-2018; the stocks already did what they did in 2H18.</p></div>`
+  + `<div class="cycle"><h3>Patterns that repeat</h3><ul style="margin:0;padding-left:16px;color:var(--ink-2);display:grid;gap:3px"><li>Stocks top 2-4 quarters before orders.</li><li>Shortages last 10-14 months before capacity lands.</li><li>Busts start with distributor double-ordering, not end demand.</li><li>Murata falls least in every bust; Taiyo Yuden and the Taiwanese most.</li></ul></div>`;
+$('#check-rows').innerHTML = CHECK.map(r => `<tr>${r.map(c=>`<td>${esc(c)}</td>`).join('')}</tr>`).join('');
+$('#cal').innerHTML = CAL.map(c => `<div class="cal-item"><span class="d">${esc(c[0])}</span><span>${esc(c[1])}</span></div>`).join('');
+</script>

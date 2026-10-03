@@ -1,0 +1,24 @@
+{
+ "ticker": "6762",
+ "name": "TDK (6762.T)",
+ "price": "¥3,198",
+ "verdict": "PASS",
+ "stance": "Not an MLCC play",
+ "thesis": "Batteries (ATL) are 55% of sales; MLCC is a minor line inside passives",
+ "bull": [
+  "1Q OP ¥86bn (+53%) [ATTRIBUTED]",
+  "EV / 4y-mean EBITDA ~14x: cheapest of the set [EST]",
+  "Taiyo Yuden alliance could consolidate #3-4 [ATTRIBUTED]"
+ ],
+ "bear": [
+  "MLCC share of group revenue small; capacitors ¥257bn [FACT]",
+  "Guide left unchanged despite the beat [ATTRIBUTED]",
+  "Battery cycle, not MLCC cycle, drives the stock [EST]"
+ ],
+ "driver": "ATL battery margins, not MLCC.",
+ "valuation": "Fwd P/E 22.8x; EV/EBITDA 11.6x; consensus TP ¥4,158 (+30%).",
+ "entry": "Out of scope for the MLCC cycle trade.",
+ "risk": "An MLCC merger with Taiyo Yuden would make it relevant.",
+ "asof": "2026-10-02",
+ "footnote": "Prices Yahoo, consensus stockanalysis.com, 2-Oct-2026. Ops data mostly [ATTRIBUTED]. Not advice."
+}

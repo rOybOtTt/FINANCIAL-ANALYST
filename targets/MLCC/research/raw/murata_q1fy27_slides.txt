@@ -1,0 +1,1152 @@
+Earnings Release Conference
+First Quarter of FY2026
+(April 1, 2026 to June 30, 2026)
+July 31, 2026
+Murata Manufacturing Co., Ltd.
+Earnings Highlights for Q1 FY2026 (1/2)
+Financial Results of First Quarter of FY2026
+
+Revenue 502.3 billion yen
+• Revenue reached an all-time high in the first quarter. Revenue increased 20.7%
+  year-on-year and was up 12.6% on a constant currency basis.
+• Although revenue from lithium-ion secondary batteries for power tools decreased,
+  revenue grew mainly in the component business across a wide range of applications,
+  including data centers and mobility.
+
+Operating profit 98.5 billion yen
+• Operating profit was up 59.8% year-on-year and up 32.6% on a constant currency
+  basis.
+• Operating profit increased year on year due to gains in capacity utilization from
+  higher production output and the positive impact of a weaker yen, despite
+  increased fixed costs and a decline in product prices.
+
+
+
+                                                                                       2
+ Earnings Highlights for Q1 FY2026 (2/2)
+ Projected Financial Results for FY2026 (July)
+Revenue 2.11 trillion yen
+• Revenue is expected to reach a record high, up 4.8% on a constant currency basis, and the full-year
+  revenue forecast has been revised upward by 7.7% (+150.0 billion yen) from the April forecast.
+• The main factors are expected to be stronger demand for data-center-related components, particularly
+  for AI servers, and a revision to the assumed exchange rate (from Q2 onward: JPY 155/USD).
+Operating profit     430.0 billion yen
+• Operating profit is expected to reach a record high, up 5.9% on a constant currency basis, and the full-
+  year operating profit forecast was revised upward by 13.2% (+50.0 billion yen) compared with the
+  April forecast.
+• For the full-year profit forecast, rising material costs and higher fixed costs are expected to weigh on
+  profit, while gains in capacity utilization from higher production output and the weaker yen are
+  expected to contribute positively to profit.
+Capital investment     255.0 billion yen
+• The capital expenditure plan was revised upward by 5.0 billion yen from the April plan, primarily to
+  expand production capacity for device and module products in response to growing demand.
+Shareholder returns
+• The full-year dividend forecast remains unchanged from the April forecast.
+• The Company also plans to carry out the 150.0 billion yen share repurchase during the current fiscal
+  year as originally planned.
+                                                                                                             3
+First Quarter of FY2026
+Financial Results Summary
+and Business Overview
+
+From April 1, 2026 to June 30, 2026
+Consolidated Basis
+Financial Results Overview
+FY2026 1st Quarter(YoY)
+• Revenue increased overall, as growth in components across a wide range of applications,
+  mainly data centers and mobility, together with the positive impact of the weaker yen, more
+  than offset the decrease in lithium-ion secondary batteries due to lower demand for power
+  tools.
+• Operating profit increased, as gains in capacity utilization from higher production output and
+  the positive impact of the weaker yen more than offset the negative impact of higher fixed
+  costs and product price declines.
+
+                           FY2025              FY2025              FY2026
+                                                                                      Y on Y Change                                                Q on Q Change
+                                                                                                             Impact of
+                         1st Quarter         4th Quarter         1st Quarter                               exchange rate
+                                                                                                                         Constant Currency basis
+
+                          (B JPY)      (%)    (B JPY)      (%)    (B JPY)      (%)      (B JPY)      (%)        (B JPY)      (B JPY)         (%)     (B JPY)      (%)
+
+
+Revenue                  416.2      100.0    460.6      100.0    502.3      100.0      +86.1      +20.7        +33.5        +52.6       +12.6       +41.6       +9.0
+
+Operating profit          61.6       14.8     78.8       17.1     98.5       19.6      +36.8      +59.8        +16.8        +20.1       +32.6       +19.6      +24.9
+
+Profit before tax         62.3       15.0     84.4       18.3    109.2       21.7      +46.9      +75.3                                             +24.9      +29.5
+
+Profit attributable to
+owners of parent
+                          49.7       11.9     76.6       16.6     81.4       16.2      +31.7      +63.7                                              +4.8       +6.3
+
+Average exchange rates                                                               *Exchange rate sensitivity (per 1 JPY/USD change per year)
+yen/US dollar
+                           144.60              156.87              159.49             Revenue :9.0 BJPY Operating profit : 4.5 BJPY
+                                                                                                                                                                        5
+Quarterly Financial Results
+                                        (B JPY)                             Operating profit    Profit before tax     Profit attributable to owners of parent        Revenue     (B JPY)
+                                                             120.0                                                                                                               600.0
+
+
+
+
+                                                                                                                                                                                           Revenue
+    Operating profit･Profit before tax･Profit attributable
+
+
+                                                             100.0                                                                                                               500.0
+
+
+
+
+                                                              80.0                                                                                                               400.0
+
+
+
+
+                                                              60.0                                                                                                               300.0
+
+
+
+
+                                                              40.0                                                                                                               200.0
+
+
+
+
+                                                              20.0                                                                                                               100.0
+
+
+
+
+                                                               0.0                                                                                                               0.0
+                                                                     FY24                                           FY25                                                  FY26
+                                                                      1Q              2Q       3Q           4Q       1Q             2Q              3Q          4Q         1Q
+
+                                                                                                                                                                                                     6
+Quarterly Revenue, Order and Backlog
+• Quarterly orders reached a record high in the first quarter. With data center-related demand
+  remaining strong and orders increasing across a wide range of applications, total orders increased
+  both year on year and quarter on quarter.
+• Given both the increase in long-lead-time orders and concerns that orders in some applications
+  may have been brought forward in anticipation of supply constraints, we will closely monitor these
+  trends.
+                                         Backlog          Revenue          Order
+                        700.0
+                        (B JPY)                                                                                 26Q1 Order
+                                                                                                                673.9B JPY
+                        600.0
+                                                                                          26Q1 Revenue
+                                                                                            502.3B JPY
+                        500.0
+
+
+
+                        400.0
+
+
+
+                        300.0
+
+
+                                                                                                                         26Q1 Backlog
+                        200.0
+                                                                                                                          617.8B JPY
+
+                        100.0
+
+
+
+                           0.0
+                                  FY23                              FY24                                 FY25                            FY26
+                                   1Q     2Q       3Q        4Q      1Q            2Q      3Q     4Q      1Q      2Q       3Q     4Q      1Q
+                    Book-to-
+                                  0.98   0.95      0.95      1.05   1.02           0.92    1.00   1.01   1.04     1.00     1.07   1.24   1.34
+                    Bill Ratio
+
+
+       * Orders = Revenue + Backlogs at the Current Quarter - Backlogs at the Previous Quarter * Backlogs are calculated based on exchange rates as of the end of each quarter.
+       * Exchange rate against the U.S. dollar: 144.82 yen at the end of June 2025, 159.93 yen at the end of March 2026, 162.45 yen at the end of June 2026                       7
+Revenue by Operating Segments
+                            FY2025              FY2025               FY2026
+                                                                                       Y on Y Change         Q on Q Change
+                          1st Quarter         4th Quarter          1st Quarter
+                           (B JPY)      (%)     (B JPY)      (%)    (B JPY)      (%)     (B JPY)       (%)     (B JPY)      (%)
+
+
+Capacitors                 217.3      52.2     242.4       52.6     282.5      56.2      +65.2     +30.0       +40.1     +16.5
+
+Inductors and EMI
+filters
+                            52.5      12.6      56.2       12.2      64.3      12.8      +11.8     +22.4        +8.1     +14.3
+High-Frequency Device
+and Communications          82.1      19.7      89.9       19.5      86.1      17.2       +4.1      +5.0        (3.8)    (4.2)
+Module
+Battery and Power
+supply
+                            35.8        8.6     40.2        8.7      34.8        6.9      (1.0)    (2.7)        (5.4) (13.5)
+
+Functional Device           24.8        6.0     27.8        6.1      30.5        6.1      +5.7     +23.0        +2.7      +9.7
+
+Others                       3.7        0.9       4.1       0.9       4.1        0.8      +0.4     +10.0        +0.0      +0.1
+
+Total                      416.2     100.0     460.6      100.0     502.3     100.0      +86.1     +20.7       +41.6      +9.0
+
+*Based on our estimate.
+
+                                                                                                                                  8
+Overview by Segment – Components
+[FY26 1st Quarter vs FY25 1st Quarter]
+                                                                                           YoY
+                                                                             Revenue           Operating profit
+                                                                           ↑＋27.5%                ↑＋59.5％
+                                ○ Multilayer ceramic capacitor (MLCC）      (B JPY)
+            Capacitors           Revenue increased, driven mainly by                                     Revenue
+                                                                                                          349.3
+            ＋３０．０％               demand from data center and mobility
+                                 applications                               Revenue
+
+Revenue                         ○ EMI Suppression filters：
+                                                                            274.0
+
+                                  Increased for mobility and servers
+            Inductors and                                                                                  282.5
+            EMI filters         ○ Inductors：                                                                        Operating
+            ＋２２．４％                                                           217.3                                  profit
+                                  Increased for smartphones and mobility              Operating                     113.6
+                                                                                      profit                         32.5%
+                                                                                      71.2
+                                 Operating profit increased year on                    26.0%
+
+                                 year due to gains in capacity
+                                 utilization from higher production           52.5                          64.3
+
+Operating profit
+                                 output and the positive impact of a          4.2
+                                                                            FY2025
+                                                                                                            2.6
+                                                                                                          FY2026
+                                 weaker yen, despite lower product            1Q
+                                                                                       ■Capacitors
+                                                                                                            1Q
+
+
+                                 prices and higher material costs.                     ■Inductors and EMI filters
+                                                                                       ■Intersegment
+                                                                                       ■Operating profit / ratio
+
+
+                                                                                                                             9
+Overview by Segment – Devices and modules
+[FY26 1st Quarter vs FY25 1st Quarter]                                                                                         YoY
+                                                                                                         Revenue                    Operating profit
+             High-Frequency     ▲ High-frequency modules：                                               ↑ ＋6.2%                                ↓ー
+             Device and           Decreased for smartphones and PCs                                     (B JPY)
+                                                                                                                                               Revenue
+             Communications                                                                               Revenue                               151.4
+             Module             〇 Multilayer resin substrates：                                            142.6
+             ＋５．０％               Increased for smartphones
+                                〇 Power modules：
+                                 Increased for servers                                                                                             86.1
+Revenue      Battery and
+                                ▲ Lithium-Ion secondary batteries：                                          82.1
+             Power supply
+             （２．７％）              Decreased for power tools.
+                                 Decreased due to the transfer of the micro
+                                 primary battery business
+                                                                                                                                                   34.8
+             Functional         ○ Sensors：                                                                  35.8
+
+             Device              Increased for servers, mobility, and
+             ＋２３．０％              smartphones.                                                                                                      30.5
+                                                                                                            24.8
+                                 Despite the positive impact of further yen                                 0.0                                   0.0
+                                                                                                          FY2025                                FY2026
+                                 depreciation, operating profit decreased                                   1Q          (5.6%)                    1Q
+                                 due to lower selling prices, surging                                                   (8.0)
+                                                                                                                                                              (8.5%)
+                                                                                                                                                             (12.9)
+                                 material prices, and the impact of                                                   Operating
+Operating profit                 compensation associated with a project
+                                                                                                                      profit                              Operating
+                                                                                                                                                          profit
+
+                                 being dropped in the power module
+                                                                                                                   ■High-Frequency Device and Communications Module
+                                                                                                                   ■Battery and Power supply
+
+                                 business.                                                                         ■Functional Device
+                                                                                                                   ■Intersegment
+                                 *The comparison includes the impact of one-time expenses incurred in
+                                                                                                                   ■Operating profit / ratio
+                                 the current period.
+                                                                                                                                                                      10
+Revenue by Application
+                               FY2025              FY2025              FY2026
+                                                                                         Y on Y Change         Q on Q Change
+                             1st Quarter         4th Quarter         1st Quarter
+                              (B JPY)      (%)    (B JPY)      (%)    (B JPY)      (%)     (B JPY)       (%)     (B JPY)      (%)
+
+
+Communication                 137.6      33.1     152.7      33.2     156.4      31.1      +18.9     +13.7        +3.7      +2.4
+
+Mobility                      113.3      27.2     118.1      25.6     131.6      26.2      +18.2     +16.1       +13.4     +11.4
+
+Computers                      70.0      16.8      87.2      18.9     102.9      20.5      +32.9     +47.0       +15.7     +18.0
+
+        Revenue breakdown-
+        Datacenter-related
+                               38.5       9.2      56.0      12.2      69.7      13.9      +31.2     +81.1       +13.7     +24.4
+
+Home Electronics               36.8       8.9      33.7       7.3      34.3       6.8       (2.5)    (6.7)        +0.6      +1.9
+
+Industry and Others            58.5      14.0      68.9      15.0      77.1      15.4      +18.6     +31.9        +8.2     +11.9
+
+Total                         416.2     100.0     460.6     100.0     502.3     100.0      +86.1     +20.7       +41.6      +9.0
+
+*Based on our estimate.
+
+
+                                                                                                                                    11
+Breakdown of Operating Profit Changes
+[FY25 1st Quarter to FY26 1st Quarter]
+              (B JPY)
+                                                                                                                                                         FY26 1Q
+                             JPY/US$: 144.60 YEN (FY25 1Q) → 159.49 YEN(FY26 1Q)                                                                      Operating profit
+                                                                                                                                                           98.5
+                             Sensitivity: 4.5 BJPY per 1 JPY/US$ change per year.
+                             Production output: 427.0 BJPY (FY25 1Q) → 519.0 BJPY (FY26 1Q)
+               90.0          *The production output incorporates the effect of exchange rate fluctuations
+
+
+                           FY25 1Q
+                        Operating profit                                     ＜ One-time revenues and expenses ＞
+                             61.6
+                                                        Production           FY2025 Q1 Results         ー
+               60.0                                      Increase
+                                                        (estimate)           FY2026 Q1 Results Total +1.0 B JPY
+                                                           +48.0             • U.S. tariff impact, including refunds: +4.0 B JPY
+                                                                             • Loss associated with a dropped project in the Power
+                                                                               supply business: (3.0) B JPY
+
+
+               30.0
+                                                                                     Exchange rate
+                                              Cost                                     (estimate)
+                                           reduction                                     +17.0
+                                           (estimate)                                                                                     Others
+                                              +8.0                                                                                   (Product mix etc.)
+                                                                                                                                           +0.8
+
+                0.0
+
+                                                                                                      increase of
+                                                                                                     depreciation
+                                                                                                       expenses
+                                                                     Price decline                       (3.9)
+                                                                      (estimate)                                     Increase of
+                                                                         (15.0)                                     semi variable
+              (30.0)                                                                                                cost and other
+                                                                                                                      fixed cost
+                                                                                                                         (18.0)
+
+       *“Production increase” is calculated on the basis of production output excluding the effect of sales price reductions and exchange rate fluctuations.
+                                                                                                                                                                         12
+Current Inventory Situation
+• Inventories as of the end of June 2026 increased 18.5 billion yen from the end of the
+  previous quarter. Excluding the impact of yen appreciation at the end of the quarter, there
+  was an increase of 13.4 billion yen. Capacitor inventories decreased slightly, reflecting strong
+  current demand.
+• Inventories increased, mainly due to inventory buildup in multilayer resin substrates and
+  high-frequency modules in preparation for the seasonal pickup in smartphone demand.
+
+                            Merchandise and finished goods puls Work in process   Raw materials and supplies
+                 (B JPY)
+                  600.0
+
+
+
+                  500.0
+
+
+
+                  400.0
+
+                                                                                                    405.2
+                                                                373.4             390.5
+                  300.0    363.1             370.0
+
+
+
+                  200.0
+
+
+
+                  100.0
+                           119.7             118.6              127.8             130.0             133.8
+
+                    0.0
+                           25/3               25/9              25/12             26/3               26/6      13
+Cash Flows
+
+                                                FY2025              FY2026
+                                                                                      Y on Y Change
+                                              1st Quarter         1st Quarter
+                                                       (B JPY)             (B JPY)              (B JPY)
+
+ Cash flows from operating activities                   40.0                42.2                +2.2
+
+ Cash flows from investing activities                 (33.6)              (75.1)               (41.5)
+
+ Cash flows from financing activities                 (96.0)              (67.6)               +28.5
+ Effect of exchange rate changes                      (16.0)                    4.2            +20.2
+
+ Cash and cash equivalents at end of period            519.6               557.5               +37.9
+
+ Free Cash Flows                                            6.4           (32.9)               (39.3)
+
+ Purchase of property, plant and equipment            (47.8)              (57.1)                (9.3)
+
+ Depreciation and amortization                          42.0                45.6                +3.6
+
+
+
+                                                                                                          14
+Projected Financial Results
+for FY2026
+
+From April 2026 to March 2027
+Projections of Demand
+•   Smartphones：Reflecting supply constraints for memory semiconductors, mid- and low-end models,
+                 mainly for IDHs, are expected to decrease by 50 million units year on year. The impact on
+                  high-end models was limited.
+•   Vehicles   ：Although the share of xEVs is expected to rise, production of internal combustion engine
+                (ICE) vehicles is projected to decrease due to surging crude oil prices, with total vehicle
+                 production expected to decrease by approximately 1.8 million units year on year.
+•   PCs        : Decreased by 40 million units year on year, reflecting supply constraints and rising prices
+                  for memory semiconductors.
+
+                                              FY2025           FY2026             FY2026                   Change
+                                                                                                               Projections(April)
+                                              Actual       Projections(April) Projections(July)   FY25vsFY26           vs
+                                                                                                               Projections(July)
+
+                  Smartphones (units)       1,240      M     1200       M        1,190     M        (4%)            (1%)
+
+                           therein
+                       5G smartphones
+                                             65.7      %     67.7       %         67.7     %         +3%             Flat
+
+                    Vehicles (units)         92.2      M     92.9       M         90.4     M        (2%)            (3%)
+
+                          therein xEV        42.5      %     49.5       %         50.2     %        +18%            +1%
+
+                       PCs (units)            396      M     356        M          356     M        (10%)            Flat
+
+          *Smartphones and PCs are based on the number of demand for components. Vehicles are based on the number of units produced.
+                                                                                                                                       16
+Projected Financial Results for FY2026
+• The full-year projections for both revenue and profits reached record highs.
+  ＊The assumed exchange rate has been revised to 155 yen /USD from the second quarter of FY2026.
+• Revenue is projected to exceed the April forecast, mainly due to stronger demand for data-center-
+  related components, particularly for AI servers, and a revision to the assumed exchange rate.
+• Operating profit is expected to exceed the forecast announced in April, driven by gains in capacity
+  utilization from higher production output and favorable foreign exchange effects, despite higher
+  material costs and increased fixed costs.
+                                                         FY2026                                         FY2026            Y on Y Change
+                                                    Projections(April)                              Projections(July)     Projections (April) vs       Impact of
+                          1st Half     2nd Half                           1st Half     2nd Half                           Projections (October)      exchange rate
+                                                                                                                                                                     Constant Currency basis
+
+                             (B JPY)      (B JPY)      (B JPY)      (%)      (B JPY)      (B JPY)     (B JPY)       (%)      (B JPY)           (%)        (B JPY)        (B JPY)          (%)
+
+
+ Revenue                    959.5 1,000.5 1,960.0                100.0 1,040.0 1,070.0 2,110.0                  100.0 +150.0               +7.7          +55.1         +94.9           +4.8
+
+ Operating profit           177.0        203.0        380.0       19.4      202.0        228.0       430.0       20.4      +50.0         +13.2           +27.5         +22.5           +5.9
+
+ Profit before tax          182.0        208.0        390.0       19.9      216.0        235.0       451.0       21.4      +61.0         +15.6
+
+ Profit attributable to
+ owners of parent
+                            137.0        156.0        293.0       14.9      161.0        177.0       338.0       16.0      +45.0         +15.4
+
+ ROIC (post tax basis)
+ (%)
+                                                          12.3                                           13.9
+                                                                                                                            *Exchange rate sensitivity(per 1 JPY/US$ change per year)
+ Average exchange                                                                                                            Revenue :9.0 BJPY
+ rates yen/US dollar
+                                                         150.00                                         156.12               Operating profit : 4.5 BJPY
+
+
+
+                                                                                                                                                                                                17
+      Premises of projected financial results
+                                                                        Opportunities and Risks not factored into
+           Assumptions for projected financial results
+                                                                               projected financial results
+           •   Significant growth in demand for data-center-   •   Significant growth in demand for data-center-related components,
+               related components                                  but with a more cautious outlook than the previous forecast.
+           •   Impact of memory semiconductor supply           •   Set volumes expected to decrease, while demand for our
+               constraints has already been factored in            components assumed to remain firm; at the same time, close
+           •   Electrification advancing, led by the Greater       monitoring of the increase in long-lead-time orders and the risk of
+Revenue                                                            front-loaded orders due to concerns over supply constraints
+               China region
+           •   The decline in product prices has been          •   The decline in product prices is expected to be more moderate
+               moderate                                            than in the previous forecast.
+                                                               •   Assumed exchange rates from the second quarter onward： 155
+           •   The assumed full-year exchange rate: 150 yen
+                                                                   yen / USD
+               / USD
+           •   Higher production output driven by demand for
+               data center components                          •   Inventory buildup over the year to prepare for future demand
+Production •   Inventory buildup planned, mainly of                growth, but planned buildup lower than previously forecast
+               components to prepare for future demand
+               growth
+
+           •   Higher costs from the impact of the Strait of •     Higher costs from surging prices of raw materials such as
+               Hormuz                                              precious metals and the impact of a closure of the Strait of
+           •   Impact of rising raw material prices                Hormuz
+           •   Increased spending including human capital    •     Spending in line with expectations, with higher costs also
+  Cost         investments and DX-related expenses                 planned, including higher personnel expenses associated with
+           •   Implementing investments to expand production       increased production
+               capacity for compact-sized, high-capacity     •     There is no change in the investment plan from a medium- to
+               products for data centers                           long-term perspective                                                 18
+Projected Revenue by Operating Segments
+                                                                               FY2026
+                               FY2025
+                                                                             Projections      YonY Change
+                               Actual        1st Half        2nd Half           (July)
+                                   (B JPY)         (B JPY)         (B JPY)          (B JPY)    (B JPY)         (%)
+
+   Capacitors                      936.4          569.6           587.9          1,157.5      +221.1        +23.6
+
+   Inductors and EMI filters       223.3          128.9           125.9            254.8       +31.5        +14.1
+
+ Components                      1,159.7          698.5           713.8          1,412.3      +252.6        +21.8
+   High-Frequency Device
+   and Communications
+                                   394.8          193.8           186.6            380.4      (14.5)        (3.7)
+
+   Battery and Power supply        154.1           75.9           103.2            179.1       +25.0        +16.2
+
+   Functional Device               107.1           60.1            59.1            119.3       +12.2        +11.4
+
+ Devices/Module                    656.0          329.8           349.0            678.7       +22.8         +3.5
+
+ Others                             15.2           11.8              7.2             19.0       +3.8        +25.3
+
+ Total                           1,830.9        1,040.0         1,070.0          2,110.0      +279.1        +15.2
+
+ *Based on our estimate.
+
+                                                                                                                     19
+Projected Revenue by Operating segments [FY2025 to FY2026]
+                            ○ Multilayer ceramic capacitor（MLCC）
+Capacitors
+                              Revenue is expected to increase in multilayer ceramic capacitors,
+＋２３．６％
+                              driven by strong demand for components for data center applications.
+                            ○ EMI suppression filters
+Inductors and EMI filters
+                              Revenue is expected to increase in EMI suppression filters, mainly for
+＋１４．１％
+                              data center and mobility applications.
+High Frequency Device
+                            ▲ Multilayer resin substrates
+and
+                              Revenue is expected to decrease in resin multilayer substrates for
+Communications Module         smartphone applications.
+（３．７％）
+
+                            ○ Power supply
+Batteries and Power           Revenue is expected to increase in power supplies for server applications.
+supply                      ▲ Lithium-ion secondary batteries
+＋１６．２％                        Revenue is expected to decrease in lithium-ion batteries for power tool
+                              applications.
+
+                            ○ Actuator
+                              Revenue is expected to increase in actuators, driven by growing demand
+Functional Device             for HDD applications.
++１１．４％                      ○ Sensors・Timing devices
+                              Revenue is expected to increase in sensors and timing devices, driven by
+                              increasing sensor demand for mobility applications.
+*Based on our estimate.                                                                                    20
+Projected Sales by Operating segment
+                                                                            FY2026
+                            FY2025
+                                                                          Projections      YonY Change
+                            Actual        1st Half        2nd Half           (July)
+                                (B JPY)         (B JPY)         (B JPY)          (B JPY)    (B JPY)          (%)
+
+
+   Communication                653.0          337.3           326.6            664.0       +11.0          +1.7
+
+   Mobility                     474.5          259.5           255.7            515.2       +40.7          +8.6
+
+   Computers                    310.4          222.5           279.5            502.0      +191.6         +61.7
+
+      Revenue breakdown-
+      Datacenter-related
+                                176.7          156.2           214.4            370.6      +193.9        +109.7
+
+   Home Electronics             142.7           67.6            61.2            128.8      (13.9)          (9.7)
+
+   Industry and Others          250.3          153.1           146.9            300.0       +49.7         +19.8
+
+   Total                      1,830.9        1,040.0         1,070.0          2,110.0      +279.1         +15.2
+
+  *Based on our estimate.
+
+                                                                                                                   21
+Projected Revenue by Application [FY2025 to FY2026]
+
+ Communications            ○ Revenue is expected to increase in capacitors for automotive
+ ＋１．７％                       applications.
+
+
+ Mobility                  ○ Revenue is expected to increase in capacitors and sensors
+ ＋８．６％                       for automotive applications.
+
+
+ Computers                 ○ Revenue is expected to increase in capacitors and power
+ ＋６１．７％                      modules for data center applications.
+
+
+ Home Electronics          ▲ Revenue is expected to decrease in lithium-ion batteries for
+ （９．７％）                      power tool applications.
+
+
+ Industry and Others       ○ Revenue is expected to increase mainly in capacitors for
+ ＋１９．８％                      distributor channels.
+
+ ＊Based on our estimate.
+
+                                                                                            22
+Breakdown of Operating Profit Changes
+[FY2026 Full-Year Projection (April) vs FY2026 Full-Year Projection (July)]
+
+                                                                                                                                                      FY2026
+                                                                                                                                                     Operating
+                                                                                                                                                       profit
+       (B JPY)                                                                                                                                      (Projection
+                   FY2026
+                                                                                                                                                     July 2026)
+                  Operating
+                    profit
+                               JPY/US$: 150.00YEN (FY26 projection April 2026) → 155.00YEN(FY26                                                        430.0
+                 (Projection   projection July 2026)
+                 April 2026)   Sensitivity:4.5 BJPY per 1 JPY/US$ change per year.
+                    380.0      Production output:.1,985.0 BJPY (FY26 projection Aplil 2026) → 2,130.0 BJPY
+       370.0                   (FY26 projection July 2026)
+                               *The production output incorporates the effect of exchange rate fluctuations
+
+
+                                                            ＜ One-time revenues and expenses ＞
+       270.0                                                FY2026 Full-Year Projection (April)           ー
+                                                            FY2026 Full-Year Projection (July）
+                                                            • U.S. tariff impact, including refunds: +4.0 B JPY
+                                                            • Loss associated with a dropped project in the Power supply
+                                                              business: (3.0) B JPY
+       170.0
+
+
+
+
+                                               Production
+                                                Increase
+        70.0                                   (estimate)
+                                                                               Exchange rate
+                                                  +48.0        Price decline
+                                     Cost                                        (estimate)
+                                   reduction                    (estimate)         +28.0
+                                  (estimate)                       +18.0
+                                     +0.0
+
+                                                                                               Increase of
+                                                                                                               Increase of
+       (30.0)                                                                                  depreciation                         Others
+                                                                                                              semi variable
+                                                                                                expenses                       (Product mix etc.)
+                                                                                                              cost and other
+                                                                                                  (4.2)                             (22.8)
+                                                                                                                fixed cost
+                                                                                                                   (17.0)
+      *“Production increase” is calculated on the basis of production output excluding the effect of sales price reductions and exchange rate fluctuations.
+                                                                                                                                                                  23
+Breakdown of Operating Profit Changes
+[FY2025 Results vs FY2026 Full-Year projection (July)]
+
+                                                                                                                                                   FY2026
+                                                                                                                                                  Operating
+         (B JPY)                                                                                                                                    profit
+                               JPY/US$:150.78 YEN (FY25) → 155.00 YEN (FY26 projection July 2026)                                                (Projection
+                                                                                                                                                  July 2026)
+         450.0                 Sensitivity:4.5 BJPY per 1 JPY/US$ change per year.                                                                  430.0
+                               Production output:1,845.0 BJPY (FY25) → 2,130.0 BJPY (FY26 projection July
+         400.0                 2026)
+                               *The production output incorporates the effect of exchange rate fluctuations
+         350.0                                               ＜One-time revenues and expenses ＞
+                    FY2025
+                   Operating
+                     profit
+                                                             FY2025 Result Total (43.8) B JPY
+         300.0       281.8                                   ・Impairment loss on goodwill for the SAW filters business
+                                                               (43.8) B JPY
+                                                             ・Impairment loss on fixed assets (4.5) B JPY
+         250.0                                 Production
+                                                Increase     ・Environmental measures expenses (1.5) B JPY
+                                               (estimate)    ・Transfer of the micro primary battery business: +6.0 B JPY
+         200.0                                   +191.0
+                                                             FY2026 Projections (July)
+                                                             • U.S. tariff impact, including refunds: +4.0 B JPY
+         150.0                                               • Loss associated with a dropped project in the Power supply
+                                                               business: (3.0) B JPY
+
+         100.0                                                                                                                   Others
+                                     Cost                                                                                   (Product mix etc.)
+                                   reduction                                                                                     +49.2
+                                                                            Exchange rate
+                                  (estimate)                                  (estimate)
+           50.0                      +30.0                                      +24.0
+
+            0.0
+                                                                                             Increase of
+                                                                                            depreciation
+          (50.0)                                                                              expenses
+                                                            Price decline                       (4.0)
+                                                             (estimate)
+         (100.0)                                                (55.0)                                      Increase of
+                                                                                                           semi variable
+                                                                                                           cost and other
+                                                                                                             fixed cost
+                                                                                                                (87.0)
+          *“Production increase” is calculated on the basis of production output excluding the effect of sales price reductions and exchange rate fluctuations.
+                                                                                                                                                                  24
+Projected Financial Results
+
+
+                              FY2025            FY2026
+                              Result          Projections
+  Depreciation and
+  amortization
+                           178.2 B JPY      182.0 B JPY
+
+  R & D expenses           158.9 B JPY      174.0 B JPY
+
+  Capital expenditures     247.8 B JPY      255.0 B JPY
+
+  Average exchange rate   150.78 JPY/USD   156.12 JPY/USD
+
+
+
+
+                                                            25
+Quarterly Financial Results
+
+                                                                (B JPY)           Operating profit      Profit before tax        Profit attributable to owners of parent      Revenue      (B JPY)
+                                                                120.0                                                                                                                      600.0
+
+       Operating profit･Profit before tax･Profit attributable
+                                                                                                                                                     537.7
+
+
+
+
+                                                                                                                                                                                                     Revenue
+                                                                                                                                                                  529.0        541.0
+                                                                                                                                       502.3
+                                                                                                486.6
+                                                                100.0                                                                                                                      500.0
+                                                                                                            467.5       460.6
+
+
+                                                                          411.9   416.2
+                                                                 80.0                                                                                                                      400.0
+
+
+
+                                                                 60.0                                                                                                                      300.0
+
+
+
+                                                                 40.0                                                                                                                      200.0
+
+
+
+                                                                 20.0                                                                                                                      100.0
+
+
+
+                                                                  0.0                                                                                                                      0.0
+                                                                                  FY25                                                 FY26
+                                                                            Q4     Q1            Q2          Q3             Q4          Q1            Q2           Q3           Q4
+                                                                                                                                                  (Projection) (Projection) (Projection)
+
+
+
+                                                                                                                                                                                                               26
+This report contains forward-looking statements concerning Murata Manufacturing Co., Ltd. and its
+group companies' projections, plans, policies, strategies, schedules, and decisions. These forward-
+looking statements are not historical facts; rather, they represent the assumptions of the Murata
+Group (the “Group”) based on information currently available and certain assumptions we deem as
+reasonable. Actual results may differ materially from expectations due to various risks and
+uncertainties. Readers are therefore requested not to rely on these forward-looking statements as
+the sole basis for evaluating the Group. The Company has no obligation to revise any of the forward
+looking statements as a result of new information, future events or otherwise.
+
+Risks and uncertainties that may affect actual results include, but are not limited to, the following:
+(1) economic conditions of the Company's business environment, and trends, supply-demand
+balance, and price fluctuations in the markets for electronic devices and components; (2) price
+fluctuations and insufficient supply of raw materials; (3) exchange rate fluctuations; (4) the Group's
+ability to provide a stable supply of new products that are compatible with the rapid technical
+innovation of the electronic components market and to continue to design and develop products and
+services that satisfy customers; (5) changes in the market value of the Group's financial assets; (6)
+drastic legal, political, and social changes in the Group's business environment; and (7) other
+uncertainties and contingencies. The Company undertakes no obligation to publicly update any
+forward-looking statements included in this report.
+
+                                                                                                         27
+Thank you
+Appendixes
+Consolidated Statement of Financial Position
+                                                    Change from                                                             Change from
+                          Mar.2026     Jun.2026                                                 Mar.2026     Jun.2026
+                                                     Jun.2026                                                                Jun.2026
+
+   Cash and cash                                                   Bonds and
+                              653.7        557.5         (96.2)                                        3.3          2.6                 (0.6)
+   equivalents                                                     borrowings
+
+   Trade receivables          328.2        348.2          +20.0    Trade payables                     79.8         80.7                 +0.9
+                                                                   Other current liabilities･
+   Inventories                520.5        539.0          +18.6                                     398.2        369.3                 (28.9)
+                                                                   non-current liabilities
+
+   Other current assets         79.1       128.6          +49.5 Total liabilities                   481.3        452.6                 (28.7)
+
+                                                                   Equity attributable
+   Total current assets     1,581.4      1,573.3           (8.1)                                  2,718.7      2,758.9                 +40.1
+                                                                   to owners of parent
+   Property, plant and                                             Non-controlling
+                            1,300.9      1,306.5           +5.6                                      (0.9)        (1.0)                 (0.0)
+   equipment                                                       interests
+
+   Right-of-use assets          59.6         59.9          +0.4 Total equity                      2,717.8      2,757.9                 +40.1
+
+                                                                   Total liabilities and
+   Goodwill                     99.5       100.7           +1.2 equity                            3,199.1      3,210.5                 +11.4
+
+   Other non-current
+   assets
+                              157.8        170.0          +12.3
+                                                                                                                                         (JPY)
+
+   Total non-current                                                                                                       Change from
+                            1,617.7      1,637.2          +19.5       Exchange rates            Mar.2026     Jun.2026
+                                                                                                                            Jun.2026
+   assets
+                                                                                                                                 Yen
+   Total assets             3,199.1      3,210.5          +11.4    Yen/US dollar                   159.93       162.45 (2.52) depreciation
+
+
+                                                                                                                                                 30
+Revenue by Operating segments [FY26 1st Quarter vs FY25 4th Quarter]
+
+Capacitors                ○ MLCCs：
+＋１６．５％
+                            Revenue increased mainly in data center, mobility, and distributor
+                            channels.
+                          ○ EMI suppression filters：
+Inductors and               Revenue increased, mainly for mobility and data center applications.
+EMI filters
+＋１４．３％                    ○ Inductors：
+                            Revenue increased, mainly for mobility and smartphones applications.
+High-Frequency Device
+and Communications        ▲ Multilayer resin substrates：
+Module                      Decreased for smartphone applications.
+（４．２％）
+
+Battery and Power         ▲ Lithium-ion secondary batteries：
+Supply                      Decreased for power tools applications.
+（１３．５％）                     Decreased due to the business transfer of the micro battery business.
+
+
+Functional Device         ○ Sensors：
+＋９．７％                       Increased for smartphones and mobility applications.
+
+＊Based on our estimate.
+                                                                                                    31
+Revenue by Application [FY26 1st Quarter vs FY25 1st Quarter]
+
+                          ▲ Revenue decreased in high-frequency modules for smartphones
+ Communication              applications.
+ ＋１３．７％                   ○ Revenue increased for capacitors and multilayer resin substrates for
+                            smartphone applications.
+
+ Mobility                 ○ Revenue increased in capacitors, EMI suppression filters and sensors
+ ＋１６．１％                     for mobility applications.
+
+
+ Computer                 ○ Revenue increased in capacitors, power modules and lithium-ion
+ ＋４７．０％                     secondary batteries for data center applications.
+
+
+ Home Electronics         ▲ Revenue decreased in lithium-ion batteries for power tool applications.
+ （６．７％）
+
+
+
+ Industry and Others      ○ Revenue increased in capacitors for distributor channels and
+ ＋３１．９％                     industrial equipment.
+
+＊Based on our estimate.
+
+                                                                                                      32
+Revenue by Application [FY26 1st Quarter vs FY25 4th Quarter]
+
+                          ▲ Revenue of multilayer resin substrates decreased for smartphones.
+Communication
+＋２．４％
+                          ○ Revenue increased in capacitors for smartphone and base station
+                            applications.
+
+Mobility                  ○ Revenue increased in capacitors, EMI suppression filters and
+＋１１．４％                      inductors for mobility applications.
+
+
+Computers                 ○ Revenue of capacitors increased for servers.
+＋１８．０％
+
+
+                          ▲ Revenue decreased in lithium-ion batteries for power tool applications.
+Home Electronics
+＋１．９％
+                          ○ Revenue increased in capacitors and lithium-ion secondary batteries
+                            for AV equipment .
+
+Industry and Others ○ Revenue of capacitors increased for distributors.
+＋１１．９％
+
+
+＊Based on our estimate.
+
+
+                                                                                                      33
+Revenue by Application and Main Applications
+     • Date Center-related revenue is included mainly in revenue for computers.
+     Revenue by Application                       Main Applications
+                              Smartphone
+     Communication            Wearable Appliance
+                              Base Station
+                              Automobile
+     Mobility
+                              Motor Cycle
+                              PCs（including Tablet PCs）、Computers Peripherals
+                              Date Center
+     Computers
+                              Including General-Purpose Servers, AI Servers,
+                              HDDs, and Accelerator Cards
+                              Power Tool and Outdoor Power Equipment
+     Home Electronics         AV Equipment
+                              Home Electrical Appliance
+                              Industrial Equipment
+                              Distributors
+     Industry and Others
+                              Healthcare Products
+                              Others
+                                                                                  34
+Breakdown of Operating Profit Changes
+[FY2025 Q4 vs FY2026 Q1]
+                                                                                                                                             FY2026 Q1
+                                                                                                                                           Operating profit
+    (B JPY)                                                                                                                                     98.5
+
+                                 JPY/US$: 156.87YEN (FY25 Q4)→ 159.49YEN (FY26 Q1)
+                FY2025 Q4
+                                 Sensitivity:4.5 BJPY per 1 JPY/US$ change per year.
+              Operating profit   Production output: 477.0 BJPY (FY25 Q4) → 519.0 BJPY (FY26 Q1)
+      80.0
+                   78.8          *The production output incorporates the effect of exchange rate fluctuations
+
+
+                                                                    ＜ One-time revenues and expenses ＞
+                                                                    FY2025 Q4 Results Total: +6.0 billion B JPY
+                                                                    ・ Transfer of the micro primary battery business:
+                                                                      6.0 B JPY
+                                                                    FY2026 Q1 Results Total: +1.0 billion B JPY
+                                                                    • U.S. tariff impact, including refunds: +4.0 B JPY
+                                                                    • Loss associated with a dropped project in the Power
+                                               Production
+                                                increase               supply business: (3.0) B JPY
+      30.0                                     (estimate)
+                                                  +25.0
+
+
+                                     Cost                                                   decrease of
+                                  reduction                                 Exchange rate   depreciation
+                                  (estimate)                                  (estimate)     expenses
+                                     +4.0                                        +3.0          +3.5
+
+
+
+                                                            Price decline                                   Increase of
+                                                             (estimate)                                    semi variable
+                                                                (3.0)                                      cost and other      Others
+                                                                                                             fixed cost     (Product mix
+     (20.0)                                                                                                     (4.0)           etc.)
+                                                                                                                                (8.8)
+
+
+     *“Production increase” is calculated on the basis of production output excluding the effect of sales price reductions and exchange rate fluctuations.
+                                                                                                                                                              35
+Return to Shareholders
+                                                                                                                             Total
+                                                                                                                     DOE    payout
+  (B JPY)                                                                                                                    ratio
+                                 Annual dividends                   Stock Repurchase
+  300.0                          Total payout ratio                 Dividend on equity(DOE)                           10%
+                                                                                                                     100%   100%
+
+                                                                                                                      9%
+                                                                                                                     90%    90%
+                                                                                                          81.8%
+  250.0
+                                                                                                                      8%
+                                                                                                                     80%    80%
+                                                                                                          150.0
+                                                                                                                     70%
+                                                                                                                      7%    70%
+  200.0
+                                                                                                100.0                60%
+                                                                                                                      6%    60%
+
+  150.0                                                                                         4.5%       4.6%      50%
+                                                                                                                      5%    50%
+                                                                        80.0             80.0
+                                                                                                                     40%
+                                                                                                                      4%    40%
+  100.0
+                                                                                                                     30%
+                                                                                                                      3%    30%
+                                                                                                118.6     126.5      20%
+   50.0                                                                                 106.4                         2%    20%
+                                                                        94.5    98.2
+                                                      73.6   83.2
+                          55.4       59.7     62.1                                                                   10%
+            44.5   46.8                                                                                              1%     10%
+    0.0                                                                                                              0%
+                                                                                                                     0%     0%
+            FY15   FY16   FY17      FY18      FY19    FY20   FY21      FY22     FY23    FY24    FY25      FY26
+                                                                                                        (estimate)
+
+
+
+                                                                                                                                     36
+Quarterly Financial Data_Financial Results
+                                                                            (B JPY)
+                                                FY2025                     FY2026
+                                  1Q       2Q            3Q       4Q        1Q
+
+         Revenue                   416.2    486.6         467.5    460.6     502.3
+
+         Operating profit           61.6    103.5          37.9     78.8      98.5
+
+         Profit before tax          62.3    112.5          49.5     84.4     109.2
+
+         Profit attributable to
+         owners of parent
+                                    49.7     82.7          25.0     76.6      81.4
+
+         Capital
+         expenditures
+                                    34.7     40.7          88.8     83.6      41.0
+
+         Depreciation and
+         amortization
+                                    42.0     42.6          44.3     49.3      45.6
+
+         R & D expenses             39.8     38.2          39.7     41.1      44.9
+
+
+         Average exchange
+         rates (yen)
+                                  144.60   147.48        154.15   156.87    159.49
+
+                                                                                      37
+Quarterly Financial Data _Revenue
+                                                                                                                     (B JPY)
+                                                                                     FY2025                         FY2026
+                                                                     1Q         2Q            3Q         4Q          1Q
+                                         Capacitors                  217.3      237.6         239.1      242.4        282.5
+
+                                         Inductors and EMI filters    52.5       58.3          56.4       56.2         64.3
+
+
+
+       Revenue by Operating segments
+                                       Components                    269.8      295.8         295.5      298.6        346.8
+                                         High-Frequency Device and
+                                         Communications Module
+                                                                      82.1      120.6         102.2       89.9         86.1
+
+                                         Battery and Power supply     35.8       39.1          38.9       40.2         34.8
+
+                                         Functional Device            24.8       27.4          27.1       27.8         30.5
+
+                                       Devices/Module                142.6      187.1         168.2      158.0        151.4
+
+                                       Others                             3.7        3.7           3.7        4.1         4.1
+
+                                       Total                         416.2      486.6         467.5      460.6        502.3
+
+                                       Communication                 137.6      191.0         171.7      152.7        156.4
+       Revenue by Application
+
+
+
+
+                                       Mobility                      113.3      121.2         121.8      118.1        131.6
+
+                                       Computers                      70.0       75.9          77.3       87.2        102.9
+
+                                       Home Electronics               36.8       36.6          35.6       33.7         34.3
+
+                                       Industry and Others            58.5       62.0          61.0       68.9         77.1
+
+                                       Total                         416.2      486.6         467.5      460.6        502.3
+
+       ＊Based on our estimate.
+                                                                                                                                38
+Quarterly Financial Data _ Segment Information
+                                                                                                        (B JPY)
+                                                                  FY2025                             FY2026
+                                               1Q           2Q             3Q           4Q            1Q
+
+                        Revenue                 274.0        300.2          300.0        301.0           349.3
+
+      Components        Operating profit            71.2         86.5           76.4         81.1        113.6
+                       Operating profit rate    26.0%        28.8%          25.5%        26.9%          32.5%
+                        Revenue                 142.6        187.1          168.2        158.0           151.4
+      Devices and
+                        Operating profit            (8.0)        18.3       (36.4)           (0.4)      (12.9)
+      modules
+                       Operating profit rate    (5.6%)           9.8%       (21.7)       (0.2%)         (8.5%)
+
+                        Revenue                     17.2         15.8           16.0         20.8          19.0
+
+      Others            Operating profit            (1.5)        (1.3)          (2.1)        (1.9)         (2.2)
+                       Operating profit rate    (8.9%)       (8.3%)        (13.0%)       (9.1%)        (11.6%)
+
+      Eliminations      Revenue                 (17.7)       (16.5)         (16.8)       (19.1)         (17.5)
+
+                        Revenue                 416.2        486.6          467.5        460.6           502.3
+
+      Consolidated Operating profit                 61.6     103.5              37.9         78.8          98.5
+                       Operating profit rate    14.8%        21.3%              8.1%     17.1%          19.6%
+
+     ＊Based on our estimate.
+                                                                                                                   39
+

@@ -1,0 +1,26 @@
+{
+ "ticker": "2327",
+ "name": "Yageo (2327.TW)",
+ "price": "NT$626",
+ "verdict": "WATCH",
+ "stance": "Two-sided: 2018 analog",
+ "thesis": "Biggest price-hiker (+50% list) and book-to-bill 2.2: the 2018 playbook, good and bad",
+ "bull": [
+  "+50% list price from 1 Jul, extended to direct customers [ATTRIBUTED]",
+  "Six straight record months; Aug +51.8% YoY [ATTRIBUTED]",
+  "Utilization 80-85% heading >90%: volume left [ATTRIBUTED]",
+  "Fwd P/E 24.4x; -45% from high [FACT/EST]"
+ ],
+ "bear": [
+  "2018: book-to-bill 3, then ASP -15% a quarter in 2019 [ATTRIBUTED]",
+  "Channel inventory 2-6 months by channel [ATTRIBUTED]",
+  "AI-server share ~3%: a commodity-cycle name [ATTRIBUTED]",
+  "EV / 4y-mean EBITDA ~34x [EST]"
+ ],
+ "driver": "Distributor inventory months (Yageo 3Q call, 27 Oct).",
+ "valuation": "Fwd P/E 24.4x; EV/EBITDA 27.5x; TPs NT$1,280-1,465 (GS/Citi/MS) [ATTRIBUTED].",
+ "entry": "Buy only if 27 Oct shows distribution inventory flat-to-down; else wait for monthly revenue to roll.",
+ "risk": "Monthly revenue down 3 months in a row = the 2018 turn.",
+ "asof": "2026-10-02",
+ "footnote": "Prices Yahoo, consensus stockanalysis.com, 2-Oct-2026. Ops data mostly [ATTRIBUTED]. Not advice."
+}
